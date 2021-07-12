@@ -212,6 +212,16 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         });
     }
+
+    if (window.screen.width < 440) {
+        if (document.getElementById('mobSliderTab')) {
+            new Swiper('#mobSliderTab', {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                slideClass: 'nav-item'
+            });
+        }
+    }
 });
 
 

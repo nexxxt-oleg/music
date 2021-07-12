@@ -233,24 +233,25 @@
                     <h2 class="h2">Распродажа</h2>
                 </div>
                 <div class="col-lg-6 col-xl-7 d-flex align-items-center voessen__header-caption__col-tabs">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab1">
-                                <span>Чистые газы</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab2">
-                                <span>Газовые смеси</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab3">
-                                <span>Оборудование</span>
-                            </a>
-                        </li>
-                    </ul>
-
+                    <div class="swiper-nav-tabs swiper-container" id="mobSliderTab">
+                        <ul class="nav nav-tabs swiper-wrapper">
+                            <li class="nav-item swiper-slide">
+                                <a class="nav-link active" data-toggle="tab" href="#tab1">
+                                    <span>Чистые газы</span>
+                                </a>
+                            </li>
+                            <li class="nav-item swiper-slide">
+                                <a class="nav-link" data-toggle="tab" href="#tab2">
+                                    <span>Газовые смеси</span>
+                                </a>
+                            </li>
+                            <li class="nav-item swiper-slide">
+                                <a class="nav-link" data-toggle="tab" href="#tab3">
+                                    <span>Оборудование</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-xl-2 d-flex col-6 voessen__header-caption__col-more-link">
                     <div class="ml-auto">

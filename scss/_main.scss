@@ -476,6 +476,32 @@ body {
   }
 }
 
+.voessen__btn-border {
+  display: inline-flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 10px 40px;
+  position: relative;
+  text-decoration: none;
+  color: #0092d2;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #0092d2;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #0092d2;
+    color: #fff;
+  }
+}
+
 .voessen__header__main-nav__col-menu {
   position: static;
 }
@@ -1011,7 +1037,6 @@ h2, .h2 {
 }
 
 .nav-tabs {
-  margin-left: -10px;
 
   li:not(:last-child) {
     margin-right: 10px;
@@ -3697,5 +3722,24 @@ figcaption {
   line-height: 18px;
   svg {
     margin-right: 10px;
+  }
+}
+.voessen__page404 {
+  background-color: #e9f8ff;
+}
+.voessen__header-caption__col-tabs {
+  .swiper-nav-tabs {
+    margin-left: 0;
+  }
+  .nav-tabs {
+    .nav-item.swiper-slide {
+      flex-basis: auto;
+      width: auto;
+    }
+  }
+}
+.voessen__title-box.voessen__text--white {
+  h1 {
+    color: #fff !important;
   }
 }

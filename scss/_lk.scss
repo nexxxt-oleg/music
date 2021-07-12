@@ -1,0 +1,212 @@
+.voessen__personal-account {
+  background-color: #f6f6f6;
+  padding: 40px 0;
+
+  .navbar-brand {
+    display: none;
+  }
+  &__header {
+    margin-bottom: 40px;
+    background-color: #fff;
+    .navbar {
+      padding: 0;
+    }
+    &__nav {
+      padding: 0 20px;
+      width: 100%;
+      .nav-item:not(:last-child) {
+        padding: 0 35px 0 0;
+      }
+      .nav-link {
+        padding: 0;
+        height: 60px;
+        position: relative;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+        align-items: center;
+        display: flex;
+        svg {
+          margin-right: 15px;
+        }
+        &:hover {
+          color: #0092d2;
+        }
+        &.active {
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 10;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #0092d2;
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+  .voessen__form {
+    background-color: #fff;
+  }
+}
+.voessen__form__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  h2 {
+    padding: 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .voessen__form__edit-nav a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.voessen__form__edit-nav {
+  margin-left: auto;
+  li:not(:last-child) {
+    padding-right: 25px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    svg {
+      margin-right: 12px;
+    }
+    &:hover {
+      color: #0092d2;
+    }
+  }
+}
+.voessen__form__group {
+  &__header {
+    border-bottom: 2px solid #efefef;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+  }
+  &__body {
+      padding-bottom: 15px;
+    h4 {
+      padding: 0 0 15px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+  &__footer {
+    margin-top: -15px;
+  }
+}
+.voessen__form {
+  & .form-control:disabled,
+  & .form-control[readonly] {
+    background: #f0f0f0 !important;
+    border:1px solid #e1e1e1 !important;
+  }
+}
+.voessen__personal-account__header__nav .nav-item.nav-item--mob {
+  display: none;
+}
+.voessen__form__filter__label {
+  white-space: nowrap;
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+.voessen__form__filter__date {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  &__inp {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+  &__sel {
+    min-width: 30px;
+    text-align: center;
+    flex-basis: 30px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+  }
+}
+.form-control.form-control--date {
+  padding-right: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230092d2' d='M19,2H18V1a1,1,0,0,0-2,0V2H8V1A1,1,0,0,0,6,1V2H5A5,5,0,0,0,0,7V19a5,5,0,0,0,5,5H19a5,5,0,0,0,5-5V7A5,5,0,0,0,19,2ZM2,7A3,3,0,0,1,5,4H19a3,3,0,0,1,3,3V8H2ZM19,22H5a3,3,0,0,1-3-3V10H22v9A3,3,0,0,1,19,22Z'/%3E%3Ccircle fill='%230092d2' cx='12' cy='15' r='1.5'/%3E%3Ccircle fill='%230092d2' cx='7' cy='15' r='1.5'/%3E%3Ccircle fill='%230092d2' cx='17' cy='15' r='1.5'/%3E%3C/svg%3E");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+}
+.form-select {
+  &--h32{
+    height: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.form-control {
+  &--h32{
+    height: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.voessen__form__filter {
+  padding: 20px 0 5px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 30px;
+}
+.voessen__form__filter__search {
+  position: relative;
+  label {
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 0;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form-control {
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+  &__submit {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: #0092d2;
+    padding: 0 5px;
+    justify-content: center;
+  }
+}
