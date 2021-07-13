@@ -391,66 +391,7 @@
     </div>
 </footer>
 
-<?php
-/*
-?>
-<div class="modal fade" id="loginModal2" aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog voessen__modal">
-        <div class="container min-vh-100">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-12">
-                    <div class="voessen__modal__content">
-                        <span class="voessen__modal__close" data-dismiss="modal">
-                            <svg width="24" height="24">
-                                <use xlink:href="#svg-close"></use>
-                            </svg>
-                        </span>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="voessen__modal__left">
-                                    <div class="voessen__modal__left__content">
-                                        <svg class="voessen__modal__left__logo" width="170" height="21">
-                                            <use xlink:href="#svg-logo"></use>
-                                        </svg>
-                                        <h3>Преимущества и возможности личного кабинета:</h3>
-                                        <ul class="nav flex-column">
-                                            <li>Каталог с актуальными ценами</li>
-                                            <li>Управление заказами</li>
-                                            <li>Удобный документооборот</li>
-                                            <li>Индивидуальная поддержка</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="voessen__modal__right">
-                                    <div class="tab-content">
-                                        <div
-                                                class="tab-pane fade show active"
-                                                id="login-tabs-1"
-                                        >
-                                            Tab 1 content
-                                            <a data-toggle="tab" href="#login-tabs-2" role="tab" >
-                                                Tab 2
-                                            </a
-                                        </div>
-                                        <div class="tab-pane fade" id="login-tabs-2" >
-                                            Tab 2 content
-                                        </div>
-                                        <div class="tab-pane fade" id="login-tabs-2" >
-                                            Tab 3 content
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-*/ ?>
+
 
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog--full">
