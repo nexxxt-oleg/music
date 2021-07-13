@@ -176,10 +176,10 @@
             </div>
             <div class="col-lg-1 col-xl-1">
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#fixNavbar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
             <div class="col-lg-2 col-xl-3">
@@ -391,4 +391,328 @@
     </div>
 </footer>
 
+<?php
+/*
+?>
+<div class="modal fade" id="loginModal2" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog voessen__modal">
+        <div class="container min-vh-100">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12">
+                    <div class="voessen__modal__content">
+                        <span class="voessen__modal__close" data-dismiss="modal">
+                            <svg width="24" height="24">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                        </span>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="voessen__modal__left">
+                                    <div class="voessen__modal__left__content">
+                                        <svg class="voessen__modal__left__logo" width="170" height="21">
+                                            <use xlink:href="#svg-logo"></use>
+                                        </svg>
+                                        <h3>Преимущества и возможности личного кабинета:</h3>
+                                        <ul class="nav flex-column">
+                                            <li>Каталог с актуальными ценами</li>
+                                            <li>Управление заказами</li>
+                                            <li>Удобный документооборот</li>
+                                            <li>Индивидуальная поддержка</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="voessen__modal__right">
+                                    <div class="tab-content">
+                                        <div
+                                                class="tab-pane fade show active"
+                                                id="login-tabs-1"
+                                        >
+                                            Tab 1 content
+                                            <a data-toggle="tab" href="#login-tabs-2" role="tab" >
+                                                Tab 2
+                                            </a
+                                        </div>
+                                        <div class="tab-pane fade" id="login-tabs-2" >
+                                            Tab 2 content
+                                        </div>
+                                        <div class="tab-pane fade" id="login-tabs-2" >
+                                            Tab 3 content
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+*/ ?>
 
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog--full">
+        <div class="modal-content">
+            <div class="voessen__modal">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-12">
+                            <div class="voessen__modal__content">
+                                <span class="voessen__modal__close" data-dismiss="modal">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#svg-close"></use>
+                                    </svg>
+                                </span>
+                                <div class="row align-items-center voessen__modal__mob-row">
+                                    <div class="col-lg-6 voessen__modal__mob-col-top">
+                                        <div class="voessen__modal__left">
+                                            <div class="voessen__modal__left__content">
+                                                <svg class="voessen__modal__left__logo" width="170" height="21">
+                                                    <use xlink:href="#svg-logo"></use>
+                                                </svg>
+                                                <h3>Преимущества и возможности личного кабинета:</h3>
+                                                <ul class="nav flex-column">
+                                                    <li>Каталог с актуальными ценами</li>
+                                                    <li>Управление заказами</li>
+                                                    <li>Удобный документооборот</li>
+                                                    <li>Индивидуальная поддержка</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 voessen__modal__mob-col-bottom">
+                                        <div class="voessen__modal__right">
+                                            <div class="tab-content nav" id="loginTab">
+                                                <div class="tab-pane fade show active" id="login-tabs-1">
+                                                    <form action="">
+                                                        <div class="voessen__modal__form">
+                                                            <h2 class="voessen__modal__form__title">Личный кабинет</h2>
+                                                            <div class="only-mob">
+                                                                <div class="d-flex align-items-center justify-content-between voessen__modal__form__nav-top">
+                                                                    <a class="voessen__btn2">
+                                                                        Вход
+                                                                    </a>
+                                                                    <a class="voessen__btn2 voessen__btn2--active js-mod-tab"
+                                                                       href="#login-tabs-3" >
+                                                                        Регистрация
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">E-mail или Номер
+                                                                    телефона</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">Пароль</label>
+                                                                <div class="voessen__form__inp-pass">
+                                                                    <input type="password" class="form-control">
+                                                                    <span onclick="passOpen(this)"
+                                                                          class="pass-open"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center justify-content-between fpad30">
+                                                                <label class="voessen__checkbox-item">
+                                                                    <input type="checkbox" name="save" value="1"
+                                                                           checked>
+                                                                    <span>Запомнить меня</span>
+                                                                </label>
+                                                                <a class="voessen__modal__form__link js-mod-tab"
+                                                                   href="#login-tabs-2" >
+                                                                    Восстановить пароль
+                                                                </a>
+                                                            </div>
+                                                            <div class="voessen__modal__form__footer">
+                                                                <button class="voessen__btn-green w-100" type="submit">
+                                                                    Войти
+                                                                </button>
+                                                                <a class="voessen__modal__form__link mob-hidden js-mod-tab"
+                                                                   href="#login-tabs-3">
+                                                                    Зарегистрироваться
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+
+
+                                                </div>
+                                                <div class="tab-pane fade" id="login-tabs-2">
+                                                    <form action="">
+                                                        <div class="voessen__modal__form">
+                                                            <h2 class="voessen__modal__form__title">Восстановить пароль</h2>
+                                                            <div class="only-mob">
+                                                                <div class="d-flex align-items-center justify-content-between voessen__modal__form__nav-top">
+                                                                    <a class="voessen__btn2 voessen__btn2--active js-mod-tab" href="#login-tabs-1" >
+                                                                        Вход
+                                                                    </a>
+                                                                    <a class="voessen__btn2 voessen__btn2--active js-mod-tab" href="#login-tabs-3" >
+                                                                        Регистрация
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <p class="voessen__modal__form__p">Укажите E-mail или Номер телефона, который
+                                                            Вы использовали для регистрации.</p>
+
+                                                            <p class="voessen__modal__form__p">На указанный e-mail или телефон будет отправлено письмо
+                                                            со ссылкой для сброса пароля.</p>
+
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">E-mail или Номер
+                                                                    телефона</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="fpad30">
+                                                                <button class="voessen__btn-green w-100" type="submit">
+                                                                    Восстановить пароль
+                                                                </button>
+                                                            </div>
+                                                            <a href="#login-tabs-4" class="js-mod-tab voessen__modal__form__link">Не помню адрес электронной почты для входа</a>
+                                                            <div class="tpad15 mob-hidden d-flex align-items-center justify-content-between">
+                                                                <a href="#login-tabs-1" class="js-mod-tab voessen__modal__form__link">Авторизация</a>
+                                                                <a href="#login-tabs-3" class="js-mod-tab voessen__modal__form__link">Регистрация</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="login-tabs-3">
+                                                    <form action="">
+                                                        <div class="voessen__modal__form">
+                                                            <h2 class="voessen__modal__form__title">Регистрация</h2>
+                                                            <div class="only-mob">
+                                                                <div class="d-flex align-items-center justify-content-between voessen__modal__form__nav-top">
+                                                                    <a class="voessen__btn2 voessen__btn2--active js-mod-tab" href="#login-tabs-1" >
+                                                                        Вход
+                                                                    </a>
+                                                                    <a class="voessen__btn2" >
+                                                                        Регистрация
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fpad30 row">
+                                                                <div class="col-6">
+                                                                    <label class="voessen__radio-item">
+                                                                        <input type="radio" name="type" value="1" checked>
+                                                                        <span>Физическое лицо</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <label class="voessen__radio-item">
+                                                                        <input type="radio" name="type" value="2" >
+                                                                        <span>Юридическое  лицо</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">E-mail или Номер
+                                                                    телефона</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">Пароль</label>
+                                                                <div class="voessen__form__inp-pass">
+                                                                    <input type="password" class="form-control">
+                                                                    <span onclick="passOpen(this)"
+                                                                          class="pass-open"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">Пароль</label>
+                                                                <div class="voessen__form__inp-pass">
+                                                                    <input type="password" class="form-control">
+                                                                    <span onclick="passOpen(this)"
+                                                                          class="pass-open"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fpad30">
+                                                                <label class="voessen__checkbox-item">
+                                                                    <input type="checkbox" name="dd" value="1"
+                                                                           checked>
+                                                                    <span>Я подтверждаю, что ознакомлен с политикой обработки
+                                                                        <a href="" class="voessen__modal__form__link">персональных данных</a></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="voessen__modal__form__footer">
+                                                                <button class="voessen__btn-green w-100" type="submit">
+                                                                    Зарегистрироваться
+                                                                </button>
+                                                                <a class="voessen__modal__form__link mob-hidden js-mod-tab"
+                                                                   href="#login-tabs-1">
+                                                                    Авторизация
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="login-tabs-4">
+                                                    <form action="">
+                                                        <div class="voessen__modal__form">
+                                                            <h2 class="voessen__modal__form__title">Забыли адрес электронной
+                                                                почты для входа</h2>
+                                                            <div class="only-mob">
+                                                                <div class="d-flex align-items-center justify-content-between voessen__modal__form__nav-top">
+                                                                    <a class="voessen__btn2 voessen__btn2--active js-mod-tab" href="#login-tabs-1" >
+                                                                        Вход
+                                                                    </a>
+                                                                    <a class="voessen__btn2 voessen__btn2--active js-mod-tab" href="#login-tabs-3">
+                                                                        Регистрация
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <p class="voessen__modal__form__p">Заполните поля формы, мы свяжемся с Вами
+                                                                <br>в ближайшеевремя.</p>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">ФИО</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                        <label class="form-label2">Номер телефона</label>
+                                                                        <input type="tel" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                        <label class="form-label2">E-mail</label>
+                                                                        <input type="email" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                                                                <label class="form-label2">Ваша компания</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="fpad30">
+                                                                <button class="voessen__btn-green w-100" type="submit">
+                                                                    ОТПРАВИТЬ
+                                                                </button>
+                                                            </div>
+                                                            <label class="voessen__checkbox-item">
+                                                                <input type="checkbox" name="save" value="1"
+                                                                       checked>
+                                                                <span>Нажимая на кнопку «Отправить», вы соглашаетесь с условиями
+                                                                    <a href="" class="voessen__modal__form__link">Политики конфиденциальности</a></span>
+                                                            </label>
+                                                            <div class="tpad15 mob-hidden d-flex align-items-center justify-content-between">
+                                                                <a href="#login-tabs-1" class="js-mod-tab voessen__modal__form__link">Авторизация</a>
+                                                                <a href="#login-tabs-3" class="js-mod-tab voessen__modal__form__link">Регистрация</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

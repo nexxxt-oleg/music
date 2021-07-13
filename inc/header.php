@@ -90,7 +90,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#loginModal" data-toggle="modal" id="loginBtn">
                                     <svg class="voessen__header__logo__icon" width="18" height="23">
                                         <use xlink:href="#svg-user"></use>
                                     </svg>
@@ -598,7 +598,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#loginModal" data-toggle="modal" id="loginBtnMob">
                             <svg class="voessen__header__logo__icon" width="15" height="20">
                                 <use xlink:href="#svg-user"></use>
                             </svg>

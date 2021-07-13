@@ -1,5 +1,6 @@
 .voessen__header-mob,
-.mobile-nav {
+.mobile-nav,
+.only-mob {
   display: none;
 }
 
@@ -215,6 +216,32 @@
       padding: 10px 0 10px 10px;
     }
   }
+  .voessen__modal::after {
+    width: 100%;
+  }
+  .voessen__modal__close {
+    color: #fff;
+  }
+  .voessen__modal {
+    .min-vh-100 {
+      min-height: auto !important;
+    }
+  }
+  .voessen__modal__left__content .voessen__modal__left__logo {
+    margin-bottom: 40px;
+  }
+  .voessen__modal__left__content {
+    padding-bottom: 30px;
+  }
+  .voessen__modal__right {
+    background-color: #fff;
+    padding-top: 30px;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 40px;
+  }
+  .voessen__modal__left__content li {
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -304,6 +331,10 @@
     svg {
       margin-right: 0;
     }
+  }
+  .voessen__modal__right {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -473,6 +504,97 @@
   }
   .voessen__personal-account .voessen__form {
     padding: 15px;
+  }
+  .voessen__modal__right {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  .voessen__modal__close svg {
+    width: 12px;
+    height: 12px;
+  }
+  .voessen__modal .voessen__modal__left__logo {
+    width: 80px !important;
+    height: auto !important;
+    margin-top: 5px;
+    margin-bottom: 20px !important;
+  }
+  .voessen__modal__left__content h3 {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 12px;
+  }
+  .voessen__modal__left__content li {
+    padding-left: 20px;
+    background-position: 0 5px;
+    background-size: 10px auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .voessen__modal__mob-row {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .voessen__modal__mob-col-bottom {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    .voessen__modal__right {
+      flex-grow: 1;
+    }
+  }
+  .only-mob {
+    display: block !important;
+  }
+  .voessen__modal__form__nav-top {
+    padding-bottom: 15px;
+    .voessen__btn2 {
+      flex-basis: 125px;
+      max-width: 125px;
+      text-align: center;
+      height: 32px;
+      color: #0092d2;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 16px;
+      font-weight: bold;
+      border: 1px solid #0092d2;
+      text-decoration: none;
+      &--active {
+        border-color: #9c9c9c;
+        color: #9c9c9c;
+      }
+    }
+  }
+  .voessen__modal__form__title {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+  .voessen__modal__right .voessen__form__inp-box--v2 {
+    padding-bottom: 15px;
+  }
+  .mob-hidden {
+    display: none;
+  }
+  .voessen__modal__form__footer button {
+    margin-bottom: 0;
+  }
+  .voessen__modal__form {
+    .fpad30 {
+      padding-bottom: 15px;
+    }
+  }
+  .voessen__modal__form__footer {
+    padding: 0;
+  }
+  .voessen__modal__left__content {
+    padding-bottom: 10px;
   }
 }
 

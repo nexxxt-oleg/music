@@ -222,6 +222,23 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
+
+    if (document.getElementById('loginModal')) {
+        //let loginModal = document.getElementById('loginModal')
+
+        let triggerTabList = [].slice.call(document.querySelectorAll('.js-mod-tab'))
+        triggerTabList.forEach(function (triggerEl) {
+            let tabTrigger = new bootstrap.Tab(triggerEl)
+
+            triggerEl.addEventListener('click', function (event) {
+                if(event.target.classList.contains("active")) {
+                    event.target.classList.toggle('active');
+                }
+                event.preventDefault();
+                tabTrigger.show();
+            })
+        })
+    }
 });
 
 
@@ -229,4 +246,12 @@ function getFileName() {
     let file = document.getElementById('uploaded-file').value;
     file = file.replace(/\\/g, '/').split('/').pop();
     document.getElementById('file-name').innerHTML = 'Имя файла: ' + file;
+}
+
+function passOpen(e) {
+    if(e.previousElementSibling.type == 'text') {
+        e.previousElementSibling.type = 'password';
+    } else {
+        e.previousElementSibling.type = 'text';
+    }
 }
