@@ -1709,7 +1709,7 @@ img {
     color: #525252;
   }
 
-  ul {
+  ul:not(.nav) {
     list-style-type: none;
     margin: 0;
     padding: 10px 0 10px 40px;
@@ -1729,6 +1729,22 @@ img {
         left: -40px;
       }
     }
+  }
+  h3 {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  h4 {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+    font-weight: bold;
   }
 }
 
@@ -3951,4 +3967,28 @@ figcaption {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
+}
+.voessen__btn-more {
+  display: flex;
+  min-width: 230px;
+  height: 48px;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #e6f7ff;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  color: #0092d2;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  &:hover {
+    background-color: #0092d2;
+    color: #fff;
+  }
+}
+.f-mar40 {
+  margin-bottom: 40px;
 }
