@@ -251,20 +251,23 @@
   .voessen__pagination {
     border-bottom-color: #f6f6f6;
   }
+
   .table {
     margin-bottom: 0 !important;
   }
 }
 
 .voessen__table__edit-nav {
-    li:not(:last-child) {
-      padding-right: 15px;
+  li:not(:last-child) {
+    padding-right: 15px;
   }
+
   span {
     font-size: 16px;
     line-height: 18px;
   }
 }
+
 .voessen__form__edit-nav--lk {
   li {
     padding-right: 0 !important;
@@ -280,19 +283,254 @@
     font-weight: bold;
   }
 }
+
 .voessen__personal-account__nav-top {
   padding: 5px 0 5px 30px;
   border-left: 1px solid #f1f1f1;
 }
+
 .voessen__form__list-order-lk {
   display: block;
+
   svg {
     margin-right: 5px;
   }
 }
+
 .voessen__table__label-mob {
   display: none;
 }
+
 .table--top td {
   vertical-align: top !important;
+}
+
+.voessen__table__order {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.voessen__order-info-box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 0px rgba(173, 173, 173, 0.6);
+  position: absolute;
+  width: 350px;
+  z-index: 100;
+  bottom: 100%;
+  left: -10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 110;
+    bottom: -8px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #fff;
+  }
+  &__caption {
+    padding-bottom: 25px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000;
+    padding-right: 20px;
+  }
+  &__close {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    right: 15px;
+    color: #000;
+  }
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000 !important;
+    text-decoration: none;
+    border-bottom: 1px solid #0092d2;
+    &:hover {
+      text-decoration: none !important;
+      border-bottom-color: transparent;
+    }
+  }
+  &__footer {
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+.voessen__order-info-box__item {
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+  &__img {
+    flex-basis: 50px;
+    max-width: 50px;
+    height: 50px;
+    border: 1px solid #efefef;
+    display: flex;
+    padding: 5px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      margin: auto auto;
+      display: block;
+    }
+  }
+  &__desc {
+    flex-basis: 150px;
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+  &__title {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+  &__text {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+  &__price {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  &__ps {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.voessen__form {
+  .h3 {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.dropzone {
+  height: 350px;
+  margin-bottom: 20px;
+  border: 2px dashed #0092d2;
+  background-color: #e6f7ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .dropzone__text1 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #0092d2;
+  }
+  .dropzone__text2 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    padding: 20px 0;
+  }
+  .dropzone__btn .fileup-btn {
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+    .icon {
+      width: 16px;
+      height: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.fileup-file {
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  .fileup-description{
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    .fileup-name {
+      color: #0092d2;
+    }
+
+  }
+
+}
+.fileup-file .fileup-controls .fileup-remove {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Outline'%3E%3Cpath d='M23.71.29h0a1,1,0,0,0-1.42,0L12,10.59,1.71.29A1,1,0,0,0,.29.29h0a1,1,0,0,0,0,1.42L10.59,12,.29,22.29a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0L12,13.41l10.29,10.3a1,1,0,0,0,1.42,0h0a1,1,0,0,0,0-1.42L13.41,12,23.71,1.71A1,1,0,0,0,23.71.29Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.fileup-result {
+  display: none;
+}
+.fileup-btn input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+.voessen__form__group__list-file {
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 30px;
+}
+.voessen__form__header__support {
+  margin-left: auto;
+  display: flex;
+  .voessen__btn-green--min {
+    min-height: 32px !important;
+    margin-left: 50px;
+  }
 }

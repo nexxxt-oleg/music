@@ -18,10 +18,10 @@
             <div class="voessen__personal-account__header">
                 <nav class="navbar navbar-expand-lg">
                     <div class="navbar-brand">
-                        <svg class="voessen_lk-icon" width="15" height="18">
-                            <use xlink:href="#svg-lk3"></use>
+                        <svg class="voessen_lk-icon" width="17" height="18">
+                            <use xlink:href="#svg-lk4"></use>
                         </svg>
-                        Документы
+                        Настройки
                     </div>
                     <button
                             class="navbar-toggler"
@@ -43,89 +43,113 @@
             </div>
             <div class="voessen__form voessen__form--pading">
                 <div class="voessen__form__header">
-                    <h2>Документы</h2>
+                    <h2>Контактные лица</h2>
                     <ul class="voessen__form__edit-nav nav">
                         <li>
-                            <a href="" title="Отправить документы">
-                                <svg width="12" height="12">
-                                    <use xlink:href="#edit-send-doc"></use>
+                            <a href="" title="Добавить">
+                                <svg width="18" height="18">
+                                    <use xlink:href="#edit-add-user"></use>
                                 </svg>
-                                <span>Отправить документы</span>
+                                <span>Добавить</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="voessen__form__filter">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 fpad15">
-                            <div class="d-flex align-items-center">
-                                <label class="voessen__form__filter__label">Тип документа:</label>
-                                <div class="flex-grow-1">
-                                    <select name="" class="form-select form-select--h32">
-                                        <option value="Все">Все</option>
-                                        <option value="Все">Все</option>
-                                        <option value="Все">Все</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 fpad15">
-                            <div class="d-flex align-items-center">
-                                <label class="voessen__form__filter__label">Период:</label>
-                                <div class="voessen__form__filter__date">
-                                    <div class="voessen__form__filter__date__inp">
-                                        <input type="text" class="form-control form-control--h32 form-control--date"
-                                               id="dateDoc1">
-                                    </div>
-                                    <div class="voessen__form__filter__date__sel">&mdash;</div>
-                                    <div class="voessen__form__filter__date__inp">
-                                        <input type="text" class="form-control form-control--h32 form-control--date"
-                                               id="dateDoc2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 fpad15">
-                            <div class="voessen__form__filter__search">
-                                <label>Быстрый поиск</label>
-                                <input type="text" class="form-control form-control--h32">
-                                <button class="voessen__form__filter__search__submit">
-                                    <svg class="icon--search" width="18" height="18">
-                                        <use xlink:href="#svg-search"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div class="table-responsive table-responsive-lg voessen__product__table-list-product">
                     <table class="table table-hover voessen__table">
                         <thead>
                         <tr>
-                            <th>Номер заказа</th>
-                            <th>Статус</th>
-                            <th>Дата</th>
-                            <th>Сумма</th>
-                            <th>Документы</th>
+                            <th>ФИО</th>
+                            <th>Должность</th>
+                            <th>Роль</th>
+                            <th>Телефон</th>
+                            <th>Моб. телефон</th>
+                            <th>E-mail</th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>1000-5000-5000-470</td>
-                            <td>В обработке</td>
-                            <td>10.08.2020</td>
-                            <td>10 000 000, 00 ₽</td>
-                            <td>Счет № 1000-5000-5000-470</td>
+                            <td>Космодемьянский
+                                Александр Анатольевич</td>
+                            <td>Генеральный директор</td>
+                            <td> </td>
+                            <td>+7 (495) 555-44-22</td>
+                            <td>+7 (495) 555-44-22</td>
+                            <td>mail@website.com</td>
+                            <td>
+                                <ul class="nav flex-nowrap voessen__table__edit-nav">
+                                    <li>
+                                        <a href="" title="Редактировать">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#edit-edit"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="Удалить">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#edit-del-user"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td>1000-5000-5000-470</td>
-                            <td>Выполнен</td>
-                            <td>10.08.2020</td>
-                            <td>10 000 000, 00 ₽</td>
-                            <td>Договор № 1000-5000-5000-470<br>
-                                Счет № 1000-5000-5000-470<br>
-                                Акт № 1000-5000-5000-470
+                            <td>Космодемьянский
+                                Александр Анатольевич</td>
+                            <td>Генеральный директор</td>
+                            <td> </td>
+                            <td>+7 (495) 555-44-22</td>
+                            <td>+7 (495) 555-44-22</td>
+                            <td>mail@website.com</td>
+                            <td>
+                                <ul class="nav flex-nowrap voessen__table__edit-nav">
+                                    <li>
+                                        <a href="" title="Редактировать">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#edit-edit"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="Удалить">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#edit-del-user"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Космодемьянский
+                                Александр Анатольевич</td>
+                            <td>Генеральный директор</td>
+                            <td> </td>
+                            <td>+7 (495) 555-44-22</td>
+                            <td>+7 (495) 555-44-22</td>
+                            <td>mail@website.com</td>
+                            <td>
+                                <ul class="nav flex-nowrap voessen__table__edit-nav">
+                                    <li>
+                                        <a href="" title="Редактировать">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#edit-edit"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="Удалить">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#edit-del-user"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
 

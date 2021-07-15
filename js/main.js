@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let tabTrigger = new bootstrap.Tab(triggerEl)
 
             triggerEl.addEventListener('click', function (event) {
-                if(event.target.classList.contains("active")) {
+                if (event.target.classList.contains("active")) {
                     event.target.classList.toggle('active');
                 }
                 event.preventDefault();
@@ -249,9 +249,40 @@ function getFileName() {
 }
 
 function passOpen(e) {
-    if(e.previousElementSibling.type == 'text') {
+    if (e.previousElementSibling.type == 'text') {
         e.previousElementSibling.type = 'password';
     } else {
         e.previousElementSibling.type = 'text';
+    }
+}
+
+function orderInfo(e) {
+    if (window.screen.width > 768) {
+
+        axios({
+            method: 'post',
+            url: '/inc/lk/ajax-order.php',
+            data: {
+                orderId: e.dataset.order
+            }
+        }).then(function (response) {
+            closeorderInfo();
+            //console.log(response.data);
+            e.insertAdjacentHTML('afterend', response.data);
+            let listProducts = document.getElementById('listProducts');
+            if (listProducts.clientHeight > 290) {
+                listProducts.parentNode.style.height = '285px';
+                let jsScrollbar = new MiniBar(listProducts, {});
+            }
+        }).catch(function (error) {
+            console.log(error);
+        });
+    }
+}
+
+function closeorderInfo() {
+    if (document.getElementById('orderInfo')) {
+        let elem = document.getElementById('orderInfo');
+        elem.parentNode.removeChild(elem);
     }
 }

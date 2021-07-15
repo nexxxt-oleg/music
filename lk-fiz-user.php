@@ -108,6 +108,89 @@
                     </div>
                 </div>
             </div>
+            <div class="voessen__form voessen__form--pading f-mar40">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-sm-8 col-10 voessen__text">
+                        <h4>Здравствуйте, Иванов Иван Иванович</h4>
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8">
+                                <ul class="nav d-block voessen__personal-account__info-user">
+                                    <li class="row fpad15">
+                                        <div class="col-sm-4">
+                                            <b>Организация</b>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            ОАО “Сбербанк”
+                                        </div>
+                                    </li>
+                                    <li class="row fpad15">
+                                        <div class="col-sm-4">
+                                            <b>Электронная почтa</b>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            alekseev.d@mail.com
+                                        </div>
+                                    </li>
+                                    <li class="row fpad15">
+                                        <div class="col-sm-4">
+                                            <b>Телефон</b>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            +7 (495) 555-44-44
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-sm-4">
+                                            <b>Адрес доставки</b>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            Москва, Золоторожский Вал, 11с26
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 col-2 tpad15">
+                        <nav class="voessen__personal-account__nav-top">
+                            <ul class="voessen__form__edit-nav voessen__form__edit-nav--lk nav d-block">
+                                <li class="fpad20">
+                                    <a href="" title="Редактировать личные данные">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#edit-edit"></use>
+                                        </svg>
+                                        <span>Редактировать данные организации</span>
+                                    </a>
+                                </li>
+                                <li class="fpad20">
+                                    <a href="" title="Адреса доставки">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#edit-adr"></use>
+                                        </svg>
+                                        <span>Адреса доставки</span>
+                                    </a>
+                                </li>
+                                <li class="fpad20">
+                                    <a href="" title="Контактные лица">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#edit-users"></use>
+                                        </svg>
+                                        <span>Контактные лица</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="Редактировать личные данные">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#edit-pass"></use>
+                                        </svg>
+                                        <span>Изменить пароль</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
             <?php
             include __DIR__ . '/inc/lk/list-order.php';
             ?>

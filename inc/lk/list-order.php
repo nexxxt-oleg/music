@@ -18,7 +18,14 @@
             <tr>
                 <td>
                     <span class="voessen__table__label-mob">Номер заказа</span>
-                    1000-5000-5000-470
+                    <div class="position-relative">
+                        <span onclick="orderInfo(this)"
+                              data-order="1000-5000-5000-471"
+                              class="voessen__table__order"
+                        >
+                            1000-5000-5000-471
+                        </span>
+                    </div>
                 </td>
                 <td>
                     <span class="voessen__table__label-mob">Статус</span>
@@ -55,7 +62,14 @@
             <tr>
                 <td>
                     <span class="voessen__table__label-mob">Номер заказа</span>
-                    1000-5000-5000-470
+                    <div class="position-relative">
+                        <span onclick="orderInfo(this)"
+                              data-order="1000-5000-5000-470"
+                              class="voessen__table__order"
+                        >
+                            1000-5000-5000-470
+                        </span>
+                    </div>
                 </td>
                 <td>
                     <span class="voessen__table__label-mob">Статус</span>
