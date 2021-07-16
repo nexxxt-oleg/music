@@ -154,6 +154,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    if (document.getElementById('jsScrollTicket')) {
+        let scrollTicket = document.getElementById('jsScrollTicket');
+        if (scrollTicket.clientHeight > 300) {
+            scrollTicket.parentNode.style.height = '440px';
+            let jsScrollbar = new MiniBar(scrollTicket);
+        }
+    }
+
     if (window.innerWidth > 768) {
         if (document.getElementsByClassName("voessen__section-box__info").length) {
             let popoverTriggerList = [].slice.call(document.querySelectorAll('.voessen__section-box__info'))

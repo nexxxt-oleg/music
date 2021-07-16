@@ -412,19 +412,54 @@
   .voessen__personal-account__header__nav__title {
     max-width: 516px;
   }
-  .voessen__form__edit-nav a {
-    span {
-      display: none;
-    }
-    svg {
-      margin-right: 0;
-    }
+  .voessen__form__edit-nav {
+    flex-basis: 100%;
+    padding-top: 10px;
   }
   .voessen__modal__right {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .modal-dialog.modal-dialog--support {
+    max-width: 100%;
+    .modal-content {
+      padding: 25px 15px;
 
+      .btn-close {
+        right: 15px;
+        top: 5px;
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+      }
+    }
+  }
+  .voessen__form__ps {
+    padding-bottom: 10px;
+  }
+  .voessen__form__header {
+    flex-wrap: wrap;
+    &__support {
+      flex-basis: 100%;
+      padding-top: 15px;
+      flex-wrap: wrap;
+      .voessen__form__filter__search {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+      }
+      .voessen__btn-green--min {
+        margin-left: auto;
+      }
+    }
+  }
+  .voessen__form--pading {
+    padding: 15px;
+  }
+  .voessen__form__group__header {
+    display: block;
+  }
+  .voessen__personal-account__nav-top {
+    padding-left: 0;
+    border-left: none;
+  }
 }
 
 @media screen and (max-width: 574px) {

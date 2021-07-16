@@ -43,7 +43,7 @@
             </div>
             <div class="voessen__form voessen__form--pading f-mar40">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-sm-8 col-10 voessen__text">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-12 voessen__text">
                         <h4>Здравствуйте, Иванов Иван Иванович</h4>
                         <div class="row">
                             <div class="col-xl-8 col-lg-8">
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-4 col-2 tpad15">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 tpad15">
                         <nav class="voessen__personal-account__nav-top">
                             <ul class="voessen__form__edit-nav voessen__form__edit-nav--lk nav d-block">
                                 <li class="fpad20">
@@ -110,7 +110,7 @@
             </div>
             <div class="voessen__form voessen__form--pading f-mar40">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-sm-8 col-10 voessen__text">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-12 voessen__text">
                         <h4>Здравствуйте, Иванов Иван Иванович</h4>
                         <div class="row">
                             <div class="col-xl-8 col-lg-8">
@@ -151,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-4 col-2 tpad15">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 tpad15">
                         <nav class="voessen__personal-account__nav-top">
                             <ul class="voessen__form__edit-nav voessen__form__edit-nav--lk nav d-block">
                                 <li class="fpad20">

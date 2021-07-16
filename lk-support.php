@@ -115,19 +115,44 @@
 </div>
 
 <div class="modal fade" id="questionModal" tabindex="-1" >
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog--support">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title">Задать вопрос</h5>
+            <form action="">
+            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                <label class="form-label">Ваше имя</label>
+                <input type="text" class="form-control"  required="" value="">
             </div>
-            <div class="modal-body">
-                ...
+            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                <label class="form-label">Номер телефона</label>
+                <input type="tel" class="form-control"  required="" value="">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control"  required="" value="">
             </div>
+            <div class="voessen__form__inp-box voessen__form__inp-box--v2">
+                <label class="form-label">Сообщение</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <label class="fileup-btn fileup-btn--v2">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 512 484.59">
+                            <path fill="#0092d2"
+                                  d="M464.06,47.86c-63.81-63.81-167.65-63.81-231.47,0L34.18,246.27A116.91,116.91,0,0,0,199.52,411.6L381.39,229.73a70.14,70.14,0,1,0-99.2-99.2L163.26,249.46a23.38,23.38,0,1,0,33.06,33.07L315.26,163.6a23.38,23.38,0,1,1,33.07,33.06L166.46,378.54a70.15,70.15,0,0,1-99.21-99.21L265.66,80.93A116.91,116.91,0,1,1,431,246.26L232.59,444.67a23.38,23.38,0,1,0,33.07,33.07l198.4-198.41a163.67,163.67,0,0,0,0-231.47Z"/>
+                        </svg>
+                        Выбрать файлы
+                        <input type="file"  multiple>
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <buttom class="voessen__btn-green w-100" type="submit">Отправить</buttom>
+                </div>
+            </div>
+            </form>
         </div>
     </div>
 </div>
@@ -135,6 +160,6 @@
 <?php
 include_once __DIR__ . '/inc/script.php';
 ?>
-<script src="./js/datepicker.js"></script>
+
 </body>
 </html>
