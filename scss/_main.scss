@@ -1612,6 +1612,7 @@ img {
 
   &--konstruct {
     margin-bottom: 0;
+    padding-bottom: 70px !important;
   }
 }
 
@@ -2365,6 +2366,9 @@ img {
 
   &__body {
     padding: 30px;
+    .accordion-collapse {
+      border: none;
+    }
   }
 
   &__header {
@@ -3242,6 +3246,7 @@ button:hover {
   &__ico {
     border-left: 1px solid #e6e6e6;
     width: 60px;
+    min-width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4014,4 +4019,19 @@ figcaption {
 }
 .f-mar40 {
   margin-bottom: 40px;
+}
+.voessen__filter {
+  .collapse--lk {
+    flex-direction: column;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+.voessen__box-scroll {
+  width: 100%;
+  overflow-x: auto;
+  &__inner {
+    min-width: 1180px;
+  }
 }

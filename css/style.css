@@ -3777,9 +3777,7 @@ textarea.form-control-lg {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+          justify-content: space-between; }
   .navbar > .container,
   .navbar > .container-fluid,
   .navbar > .container-sm,
@@ -12070,7 +12068,8 @@ img {
   .voessen__full-banner .voessen__breadcrumbs li span {
     color: #fff; }
   .voessen__full-banner--konstruct {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 70px !important; }
 
 .voessen__breadcrumbs {
   padding-top: 25px;
@@ -12716,6 +12715,8 @@ img {
     margin-bottom: 0; }
   .voessen__tab-box__body {
     padding: 30px; }
+    .voessen__tab-box__body .accordion-collapse {
+      border: none; }
   .voessen__tab-box__header {
     border-bottom: 2px solid #f6f6f6; }
     .voessen__tab-box__header .nav-item {
@@ -13508,6 +13509,7 @@ button:hover {
   .voessen__download-box__ico {
     border-left: 1px solid #e6e6e6;
     width: 60px;
+    min-width: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -14290,6 +14292,20 @@ figcaption {
 
 .f-mar40 {
   margin-bottom: 40px; }
+
+.voessen__filter .collapse--lk {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+.voessen__filter .navbar-brand {
+  display: none; }
+
+.voessen__box-scroll {
+  width: 100%;
+  overflow-x: auto; }
+  .voessen__box-scroll__inner {
+    min-width: 1180px; }
 
 .datepicker {
   display: inline-block;
@@ -15268,10 +15284,41 @@ figcaption {
       .voessen__personal-account__order-itog__row dd .b-rub {
         font-weight: 400; }
 
+.fonts24 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000; }
+
+.voessen__form__item-doc {
+  padding: 20px 0 !important; }
+  .voessen__form__item-doc:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1; }
+  .voessen__form__item-doc a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px; }
+
+.voessen__back-link {
+  text-decoration: none; }
+  .voessen__back-link svg {
+    color: #000; }
+
+.fpad10 {
+  padding-bottom: 10px; }
+
+.pl-20 {
+  padding-left: 20px; }
+
+.navbar-brand {
+  margin-right: 0;
+  padding-right: 10px; }
+
 .voessen__header-mob,
 .mobile-nav,
 .only-mob,
-.only-w7 {
+.only-w7,
+.voessen__tab-box__mob-accordion {
   display: none; }
 
 @media screen and (max-width: 1199px) {
@@ -15289,11 +15336,20 @@ figcaption {
     padding: 0; }
 
   .voessen__personal-account__header__nav .nav-item:not(:last-child) {
-    padding-right: 15px; } }
+    padding-right: 15px; }
+
+  .voessen__product__sb__list-check {
+    overflow-y: auto; } }
 @media screen and (max-width: 991px) {
   .voessen__header,
   .voessen__fix-nav.active {
     display: none !important; }
+
+  .hidden-911 {
+    display: none !important; }
+
+  .voessen__product__sb.voessen__filter {
+    margin-bottom: 5px; }
 
   .voessen__header-mob {
     display: block;
@@ -15436,6 +15492,9 @@ figcaption {
               justify-content: center;
       height: 50px;
       width: 100%; }
+
+  .voessen__title-box__col-link {
+    display: none; }
 
   .voessen__personal-account__header .navbar-brand {
     display: -webkit-box;
@@ -15610,7 +15669,55 @@ figcaption {
 
   .voessen__form__edit-nav a svg {
     width: 18px;
-    min-width: 18px; } }
+    min-width: 18px; }
+
+  .voessen__filter__mob-title {
+    height: 40px; }
+    .voessen__filter__mob-title span {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold; }
+
+  .voessen__filter .navbar-brand {
+    display: block; }
+
+  .voessen__item-product__fav {
+    right: 55%; }
+
+  .col-w120,
+  .col-w100,
+  .col-w200,
+  .col-w-min {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    max-width: 33%; }
+
+  .voessen__banner__caption {
+    font-size: 18px;
+    line-height: 24px; }
+
+  .voessen__product__col-pic .voessen__item-product__fav {
+    display: none; }
+
+  .voessen__item-product__fav-btn {
+    position: relative;
+    top: auto;
+    right: auto;
+    height: 50px;
+    background-color: #0092d2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff; }
+
+  .voessen__tab-box__header .nav-item {
+    padding-right: 0; } }
 @media screen and (max-width: 768px) {
   .voessen__personal-account {
     padding-top: 10px; }
@@ -15752,7 +15859,185 @@ figcaption {
 
   .voessen__personal-account__nav-top {
     padding-left: 0;
-    border-left: none; } }
+    border-left: none; }
+
+  .voessen__form--mob {
+    padding: 0 !important;
+    background-color: transparent !important; }
+    .voessen__form--mob .voessen__form__header {
+      padding: 15px 10px;
+      background-color: #fff;
+      margin-bottom: 10px; }
+      .voessen__form--mob .voessen__form__header .voessen__form__header__order-top__info {
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 5px; }
+    .voessen__form--mob .voessen__table--mob tbody tr {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #fff; }
+    .voessen__form--mob .voessen__product__table__mob-product {
+      padding-left: 0 !important; }
+    .voessen__form--mob .voessen__product__table__card-pr__img {
+      -ms-flex-preferred-size: 100px;
+          flex-basis: 100px;
+      min-width: 100px;
+      height: 100px;
+      border: none; }
+    .voessen__form--mob .voessen__product__table__card-pr__desc {
+      padding-left: 10px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      min-height: 110px; }
+    .voessen__form--mob .voessen__product__table__card-pr .voessen__product__table__card-pr__title {
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      padding-right: 0;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding-bottom: 10px; }
+    .voessen__form--mob .voessen__product__table__card-pr .voessen__product__table__card-pr__count {
+      width: 100%;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      margin-top: auto; }
+    .voessen__form--mob .voessen__product__table-list-product .table tbody tr td:last-child {
+      border-bottom: none !important; }
+    .voessen__form--mob .voessen__personal-account__order-itog {
+      padding: 0 10px 10px;
+      background-color: #fff;
+      max-width: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+
+  .fonts24 {
+    font-size: 18px;
+    line-height: 24px; }
+
+  .voessen__form__item-doc {
+    border: 1px solid #e6e6e6;
+    padding: 10px !important;
+    background-color: #fff;
+    margin-bottom: 10px; }
+    .voessen__form__item-doc:not(:last-child) {
+      border-bottom: 1px solid #e6e6e6; }
+
+  .voessen__item-art .voessen__item-art__wrap {
+    padding: 20px; }
+
+  .nav-tabs .nav-item .nav-link {
+    height: auto; }
+
+  .voessen__full-banner {
+    margin-bottom: 20px; }
+
+  .voessen__subcat-link {
+    padding: 20px; }
+
+  .fpad30 {
+    padding-bottom: 10px; }
+
+  .voessen__title-box h1, .voessen__title-box .h1, .voessen__title-box .h1 {
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 30px; }
+
+  .voessen__breadcrumbs {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+  .voessen__item-product--mob-col .col-mob-fav {
+    width: 25%; }
+  .voessen__item-product--mob-col .voessen__item-product__col-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .voessen__text h2, .voessen__text .h2,
+  .voessen__text .h2 {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 15px; }
+
+  .nav--view {
+    display: none !important; }
+
+  .voessen__product__card-bay {
+    padding: 15px 10px; }
+
+  .h4 {
+    font-size: 16px;
+    line-height: 20px; }
+
+  .voessen__product__card-bay .voessen__item-product__price .voessen__item-product__price__value {
+    font-size: 18px;
+    line-height: 24px; }
+
+  .voessen__tab-box__header .nav-item {
+    padding: 0 10px; }
+
+  .voessen__tab-box__body {
+    padding: 15px 10px; }
+    .voessen__tab-box__body .table-responsive .table {
+      width: 700px; }
+
+  .voessen__tab-box__header--product {
+    display: none; }
+
+  .voessen__tab-box__mob-accordion {
+    display: block; }
+
+  .voessen__tab-box__body--product {
+    padding: 0; }
+
+  .voessen__tab-box {
+    background-color: transparent; }
+
+  .voessen__tab-box__body__item {
+    margin-bottom: 5px;
+    background-color: #fff; }
+    .voessen__tab-box__body__item .accordion-button {
+      background-color: #fff;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding: 15px 30px 15px 10px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #f3f3f3;
+      text-align: left;
+      color: #000 !important;
+      font-size: 16px;
+      line-height: 1;
+      position: relative; }
+      .voessen__tab-box__body__item .accordion-button::after {
+        width: 20px;
+        position: absolute;
+        z-index: 10;
+        right: 10px;
+        display: block;
+        height: 45px;
+        top: 0;
+        background-position: 50% 50%; }
+    .voessen__tab-box__body__item__inner {
+      padding: 20px 10px;
+      color: #525252; }
+
+  .voessen__product__square {
+    height: auto; } }
 @media screen and (max-width: 574px) {
   .voessen__wrap-slider {
     margin: 0 -15px; }
@@ -16046,7 +16331,48 @@ figcaption {
   .voessen__text h4, .voessen__text .h4, .voessen__text .h4 {
     font-size: 18px;
     line-height: 20px;
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+
+  .voessen__item-product--mob-col {
+    padding: 10px; }
+    .voessen__item-product--mob-col .voessen__item-product__col-count {
+      padding-bottom: 0; }
+    .voessen__item-product--mob-col .voessen__item-product__price .voessen__item-product__price__value {
+      font-size: 16px; }
+    .voessen__item-product--mob-col .voessen__item-product__title {
+      font-size: 16px; }
+    .voessen__item-product--mob-col .voessen__item-product__img {
+      height: 150px; }
+
+  .voessen__banner__footer__center {
+    display: none; }
+
+  .voessen__banner--v1 .text-left {
+    text-align: center;
+    padding-bottom: 15px; }
+
+  .voessen__konstruct {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .col-w120,
+  .col-w100,
+  .col-w200,
+  .col-w-min {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%; }
+
+  .voessen__text h1, .voessen__text .h1, .voessen__text .h1, .voessen__text .h1, .voessen__text h2, .voessen__text .h2, .voessen__text .h2, .voessen__text .h2 {
+    font-size: 24px;
+    line-height: 30px; }
+
+  .voessen__product__col-pic__item {
+    padding: 10px;
+    height: 200px; }
+
+  .voessen__product__card-bay .voessen__product__har-select {
+    margin-left: 0; } }
 @media screen and (max-width: 440px) {
   .voessen__header-caption__col-tabs {
     margin-right: -15px;

@@ -120,18 +120,18 @@
                     </div>
                 </div>
                 <div class="row tpad30">
-                    <div class="col-lg-3 col-6 fpad30">
+                    <div class="col-lg-3 col-md-6 col-12 fpad30">
                         <button class="voessen__btn-blue w-100"><span>Добавить компонент</span></button>
                     </div>
-                    <div class="col-lg-3 col-6 fpad30">
+                    <div class="col-lg-3 col-md-6 col-12 fpad30">
                         <button class="voessen__btn-blue w-100"><span>Готово</span></button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-6 fpad30">
+                    <div class="col-lg-3 col-md-6 col-12 fpad30">
                         <button class="voessen__btn-green-a w-100"><span>В корзину</span></button>
                     </div>
-                    <div class="col-lg-3 col-6 fpad30">
+                    <div class="col-lg-3 col-md-6 col-12 fpad30">
                         <button class="voessen__btn-green-a w-100"><span>Отправить заявку на E-mail</span></button>
                     </div>
                 </div>

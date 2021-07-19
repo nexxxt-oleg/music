@@ -147,14 +147,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (document.getElementById('jsScrollWrap')) {
+    if (document.getElementById('jsScrollWrap') && window.innerWidth > 1200) {
+        console.log('222');
         if (document.getElementById('jsScrollWrap').clientHeight > 200) {
             document.getElementById('jsScrollWrap').parentNode.style.height = '230px';
             let jsScrollbar = new MiniBar(document.getElementById("jsScrollWrap"), {});
         }
     }
 
-    if (document.getElementById('jsScrollTicket')) {
+    if (document.getElementById('jsScrollTicket')  ) {
+
         let scrollTicket = document.getElementById('jsScrollTicket');
         if (scrollTicket.clientHeight > 300) {
             scrollTicket.parentNode.style.height = '440px';

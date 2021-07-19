@@ -37,8 +37,8 @@
         <div class="row voessen__product__body">
             <div class="col-lg-4 fpad30">
                 <div class="voessen__product__col-pic">
-                    <div class="voessen__product__img" id="lightgallery">
-                        <a href="/img/lot1@2.jpg" class="voessen__product__col-pic__item">
+                    <div class="voessen__product__img">
+                        <a href="/img/lot1@2.jpg" class="voessen__product__col-pic__item" data-fancybox="gallery">
                             <img
                                     src="./img/lot1.jpg"
                                     data-src="./img/lot1.jpg"
@@ -94,7 +94,7 @@
                         </span>
                     </div>
                     <div class="row row--min">
-                        <div class="col-6 col-sm-5 col-lg-5 voessen__item-product__col-count">
+                        <div class="col-6 col-sm-6 col-lg-5 voessen__item-product__col-count">
                             <div class="voessen__product__count-box">
                                 <input type="text" value="1" readonly="" class="voessen__product__count-box__value"
                                        id="countProduct2">
@@ -106,8 +106,14 @@
                                 </button>
                             </div>
                         </div>
-
-                        <div class="col-6 col-sm-7 col-lg-7 voessen__item-product__btn-bay">
+                        <div class="d-lg-none col-3">
+                            <a href="" class="voessen__item-product__fav-btn">
+                                <svg width="24" height="23">
+                                    <use xlink:href="#svg-fav"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-3 col-sm-3 col-lg-7 voessen__item-product__btn-bay">
                             <button class="btn-cart">
                                 <svg class="btn-cart__icon" width="24" height="24">
                                     <use xlink:href="#svg-cart"></use>

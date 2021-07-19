@@ -43,131 +43,135 @@
                 </div>
             </div>
 
-            <div class="row voessen__product__th">
-                <div class="col-lg-2 voessen__product__th__rb">Номер в Госреестре СО</div>
-                <div class="col-lg-3 voessen__product__th__rb">Наименование СО</div>
-                <div class="col-lg-3 d-flex pr-0">
-                    <div class="voessen__product__th__rb voessen__product__th__col-1">
-                        Индекс СО
+            <div class="voessen__box-scroll">
+                <div class="voessen__box-scroll__inner">
+                    <div class="row voessen__product__th">
+                        <div class="col-2 voessen__product__th__rb">Номер в Госреестре СО</div>
+                        <div class="col-3 voessen__product__th__rb">Наименование СО</div>
+                        <div class="col-3 d-flex pr-0">
+                            <div class="voessen__product__th__rb voessen__product__th__col-1">
+                                Индекс СО
+                            </div>
+                            <div class="voessen__product__th__rb voessen__product__th__col-2">
+                                Разряд
+                            </div>
+                            <div class="voessen__product__th__rb voessen__product__th__col-3">
+                                Срок годности
+                            </div>
+                        </div>
+                        <div class="col-2">ТУ</div>
                     </div>
-                    <div class="voessen__product__th__rb voessen__product__th__col-2">
-                        Разряд
-                    </div>
-                    <div class="voessen__product__th__rb voessen__product__th__col-3">
-                        Срок годности
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xl-2">ТУ</div>
-            </div>
 
-            <div class="voessen__product__search-item">
-                <div class="row align-items-center">
-                    <div class="col-lg-2">
-                        10524-2014
-                    </div>
-                    <div class="col-lg-3">
-                        СО состава искусственной газо-жидкостной
-                        смеси на основе углеводородов
-                    </div>
-                    <div class="col-lg-3 voessen__product__search-item__min-col">
-                        <div class="col1">
-                            СЖ-М-0
-                        </div>
-                        <div class="text-center col2">
-                            1
-                        </div>
-                        <div class="col3">
-                            24 месяца
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex align-items-center">
-                        ТУ 0272-013-20810646-2014
-                        <div class="voessen__product__search-item__link">
-                            <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="voessen__product__search-item">
-                <div class="row align-items-center">
-                    <div class="col-lg-2">
-                        10524-2014
-                    </div>
-                    <div class="col-lg-3">
-                        СО состава искусственной газо-жидкостной
-                        смеси на основе углеводородов
-                    </div>
-                    <div class="col-lg-3 voessen__product__search-item__min-col">
-                        <div class="col1">
-                            СЖ-М-0
-                        </div>
-                        <div class="text-center col2">
-                            1
-                        </div>
-                        <div class="col3">
-                            24 месяца
+                    <div class="voessen__product__search-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                10524-2014
+                            </div>
+                            <div class="col-3">
+                                СО состава искусственной газо-жидкостной
+                                смеси на основе углеводородов
+                            </div>
+                            <div class="col-3 voessen__product__search-item__min-col">
+                                <div class="col1">
+                                    СЖ-М-0
+                                </div>
+                                <div class="text-center col2">
+                                    1
+                                </div>
+                                <div class="col3">
+                                    24 месяца
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                ТУ 0272-013-20810646-2014
+                                <div class="voessen__product__search-item__link">
+                                    <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex align-items-center">
-                        ТУ 0272-013-20810646-2014
-                        <div class="voessen__product__search-item__link">
-                            <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
+                    <div class="voessen__product__search-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                10524-2014
+                            </div>
+                            <div class="col-3">
+                                СО состава искусственной газо-жидкостной
+                                смеси на основе углеводородов
+                            </div>
+                            <div class="col-3 voessen__product__search-item__min-col">
+                                <div class="col1">
+                                    СЖ-М-0
+                                </div>
+                                <div class="text-center col2">
+                                    1
+                                </div>
+                                <div class="col3">
+                                    24 месяца
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                ТУ 0272-013-20810646-2014
+                                <div class="voessen__product__search-item__link">
+                                    <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="voessen__product__search-item">
-                <div class="row align-items-center">
-                    <div class="col-lg-2">
-                        10524-2014
-                    </div>
-                    <div class="col-lg-3">
-                        СО состава искусственной газо-жидкостной
-                        смеси на основе углеводородов
-                    </div>
-                    <div class="col-lg-3 voessen__product__search-item__min-col">
-                        <div class="col1">
-                            СЖ-М-0
-                        </div>
-                        <div class="text-center col2">
-                            1
-                        </div>
-                        <div class="col3">
-                            24 месяца
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex align-items-center">
-                        ТУ 0272-013-20810646-2014
-                        <div class="voessen__product__search-item__link">
-                            <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="voessen__product__search-item">
-                <div class="row align-items-center">
-                    <div class="col-lg-2">
-                        10524-2014
-                    </div>
-                    <div class="col-lg-3">
-                        СО состава искусственной газо-жидкостной
-                        смеси на основе углеводородов
-                    </div>
-                    <div class="col-lg-3 voessen__product__search-item__min-col">
-                        <div class="col1">
-                            СЖ-М-0
-                        </div>
-                        <div class="text-center col2">
-                            1
-                        </div>
-                        <div class="col3">
-                            24 месяца
+                    <div class="voessen__product__search-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                10524-2014
+                            </div>
+                            <div class="col-3">
+                                СО состава искусственной газо-жидкостной
+                                смеси на основе углеводородов
+                            </div>
+                            <div class="col-3 voessen__product__search-item__min-col">
+                                <div class="col1">
+                                    СЖ-М-0
+                                </div>
+                                <div class="text-center col2">
+                                    1
+                                </div>
+                                <div class="col3">
+                                    24 месяца
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                ТУ 0272-013-20810646-2014
+                                <div class="voessen__product__search-item__link">
+                                    <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex align-items-center">
-                        ТУ 0272-013-20810646-2014
-                        <div class="voessen__product__search-item__link">
-                            <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
+                    <div class="voessen__product__search-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                10524-2014
+                            </div>
+                            <div class="col-3">
+                                СО состава искусственной газо-жидкостной
+                                смеси на основе углеводородов
+                            </div>
+                            <div class="col-3 voessen__product__search-item__min-col">
+                                <div class="col1">
+                                    СЖ-М-0
+                                </div>
+                                <div class="text-center col2">
+                                    1
+                                </div>
+                                <div class="col3">
+                                    24 месяца
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                ТУ 0272-013-20810646-2014
+                                <div class="voessen__product__search-item__link">
+                                    <a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

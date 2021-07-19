@@ -41,7 +41,19 @@
                     ?>
                 </nav>
             </div>
-            <div class="voessen__form voessen__form--pading voessen__form--mob">
+
+            <div class="only-mob">
+                <div class=" fpad10 voessen__text">
+                    <a href="" class="d-flex align-items-center voessen__back-link">
+                        <svg width="25" height="13" class="mr-10">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                        Вернуться назад
+                    </a>
+                </div>
+            </div>
+
+            <div class="voessen__form voessen__form--pading voessen__form--mob f-mar40">
                 <div class="voessen__form__header">
                     <div class="voessen__form__header__order-top">
                         <h2>Заказ № 1000-5000-5000-470</h2>
@@ -113,7 +125,7 @@
                                 <span class="voessen__table__label-mob">Цена</span>
                                 10 000 000, 00 <span class="b-rub">Р</span>
                             </td>
-                            <td class="voessen__table__mob-footer">
+                            <td>
                                 <span class="voessen__table__label-mob">Сумма</span>
                                 10 000 000, 00 <span class="b-rub">Р</span>
                             </td>
@@ -145,7 +157,7 @@
                                 <span class="voessen__table__label-mob">Цена</span>
                                 10 000 000, 00 <span class="b-rub">Р</span>
                             </td>
-                            <td class="voessen__table__mob-footer">
+                            <td>
                                 <span class="voessen__table__label-mob">Сумма</span>
                                 10 000 000, 00 <span class="b-rub">Р</span>
                             </td>
@@ -172,6 +184,147 @@
                             </dl>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="voessen__form voessen__form--pading voessen__form--mob">
+                <div class="row align-items-center fpad30">
+                    <div class="col-lg-3 col-xl-3 col-4 order-lg-1 order-1">
+                        <div class="fonts24 voessen__form__col-title-min">
+                            Документы
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-12 order-lg-2 order-3 voessen__header-caption__col-tabs">
+                        <div class="swiper-nav-tabs swiper-container" id="mobSliderTab">
+                            <ul class="nav nav-tabs swiper-wrapper">
+                                <li class="nav-item swiper-slide">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab1">
+                                        <span>Все</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item swiper-slide">
+                                    <a class="nav-link" data-toggle="tab" href="#tab2">
+                                        <span>Договоры по заказам</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item swiper-slide">
+                                    <a class="nav-link" data-toggle="tab" href="#tab3">
+                                        <span>Закрывающие документы</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-8 order-lg-3 order-2 d-flex">
+                        <ul class="voessen__form__edit-nav nav">
+                            <li>
+                                <a href="" title="Отправить документы">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#edit-send-doc"></use>
+                                    </svg>
+                                    <span>Отправить документы</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab1">
+                        <ul class="nav flex-column">
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                        <ul class="nav flex-column">
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="tab3">
+                        <ul class="nav flex-column">
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="voessen__form__item-doc">
+                                <a href="" download="" class="d-flex align-items-center justify-content-between">
+                                    Отчет о проведении специальной оценки труда в ООО «Фессен Эм Ай И»
+                                    <div class="ml-3">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-file"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div
+                </div>
+            </div>
+
+            <div class="only-mob">
+                <div class=" fpad10 voessen__text">
+                    <a href="" class="d-flex align-items-center voessen__back-link">
+                        <svg width="25" height="13" class="mr-10">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                        Вернуться назад
+                    </a>
                 </div>
             </div>
         </div>

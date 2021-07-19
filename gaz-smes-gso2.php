@@ -42,193 +42,195 @@
                     </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-10">
-                    <div class="voessen__product__th voessen__product__th--min">
-                        <div class="voessen__product__th__rb voessen__col-145">
-                            № ГСО<br>
-                            (№ ЭМ ВНИИМ)
-                        </div>
-                        <div class="voessen__product__th__rb voessen__col-200">
-                            Компонентный состав
-                        </div>
-                        <div class="voessen__product__th__rb voessen__col-200">
-                            Номинальное значение
-                            объемной (молярной) доли
-                            определяемого компонента
-                        </div>
-                        <div class="voessen__product__th__rb voessen__col-96">
-                            Единицы
-                            измерений
-                        </div>
-                        <div class="voessen__product__th__rb voessen__col-120">
-                            Пределы
-                            допускаемого
-                            отклонения ±Д
-                        </div>
-                        <div class="voessen__product__th__rb voessen__col-130">
-                            Пределы
-                            допускаемой
-                            погрешности ±Д *
-                        </div>
-                        <div class="voessen__col-65">
-                            Разряд
+            <div class="voessen__box-scroll">
+                <div class="voessen__box-scroll__inner">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="voessen__product__th voessen__product__th--min">
+                                <div class="voessen__product__th__rb voessen__col-145">
+                                    № ГСО<br>
+                                    (№ ЭМ ВНИИМ)
+                                </div>
+                                <div class="voessen__product__th__rb voessen__col-200">
+                                    Компонентный состав
+                                </div>
+                                <div class="voessen__product__th__rb voessen__col-200">
+                                    Номинальное значение
+                                    объемной (молярной) доли
+                                    определяемого компонента
+                                </div>
+                                <div class="voessen__product__th__rb voessen__col-96">
+                                    Единицы
+                                    измерений
+                                </div>
+                                <div class="voessen__product__th__rb voessen__col-120">
+                                    Пределы
+                                    допускаемого
+                                    отклонения ±Д
+                                </div>
+                                <div class="voessen__product__th__rb voessen__col-130">
+                                    Пределы
+                                    допускаемой
+                                    погрешности ±Д *
+                                </div>
+                                <div class="voessen__col-65">
+                                    Разряд
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="voessen__product__search-item voessen__product__search-item--v2">
-                <div class="voessen__col-145 voessen__rb">
+                    <div class="voessen__product__search-item voessen__product__search-item--v2">
+                        <div class="voessen__col-145 voessen__rb">
+                        <span>
+                            5832-91<br>
+                            (06.01.480)
+                        </span>
+                        </div>
+                        <div class="voessen__col-200 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>аргон [Ar]</span>
+                            </div>
+                            <div>
+                                <span>гелий [He]</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-200 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>0.5</span>
+                            </div>
+                            <div>
+                                <span>остальное</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-96 voessen__rb">
+                            <span>млн-1 об.</span>
+                        </div>
+                        <div class="voessen__col-120 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>0.3 абс.</span>
+                            </div>
+                            <div>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-130 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>0.1 абс.</span>
+                            </div>
+                            <div>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-65 voessen__rb">
+                            <span>2</span>
+                        </div>
+                        <div class="voessen__col-link-btn">
+                            <a href="" class="voessen__btn-green2">Купить действующий
+                                аналог ГСО ХХХХ-ХХ</a>
+                        </div>
+                    </div>
+                    <div class="voessen__product__search-item voessen__product__search-item--v2">
+                        <div class="voessen__col-145 voessen__rb">
+                        <span>
+                            5832-91<br>
+                            (06.01.480)
+                        </span>
+                        </div>
+                        <div class="voessen__col-200 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>аргон [Ar]</span>
+                            </div>
+                            <div>
+                                <span>гелий [He]</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-200 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>0.5</span>
+                            </div>
+                            <div>
+                                <span>остальное</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-96 voessen__rb">
+                            <span>млн-1 об.</span>
+                        </div>
+                        <div class="voessen__col-120 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>0.3 абс.</span>
+                            </div>
+                            <div>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-130 voessen__rb voessen__two-row">
+                            <div class="voessen__two-row__top">
+                                <span>0.1 абс.</span>
+                            </div>
+                            <div>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="voessen__col-65 voessen__rb">
+                            <span>2</span>
+                        </div>
+                        <div class="voessen__col-link-btn">
+                            <a href="" class="voessen__btn-green2">Купить действующий
+                                аналог ГСО ХХХХ-ХХ</a>
+                        </div>
+                    </div>
+                    <div class="voessen__product__search-item voessen__product__search-item--v2">
+                    <div class="voessen__col-145 voessen__rb">
                     <span>
                         5832-91<br>
                         (06.01.480)
                     </span>
-                </div>
-                <div class="voessen__col-200 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>аргон [Ar]</span>
                     </div>
-                    <div>
-                        <span>гелий [He]</span>
+                    <div class="voessen__col-200 voessen__rb voessen__two-row">
+                        <div class="voessen__two-row__top">
+                            <span>аргон [Ar]</span>
+                        </div>
+                        <div>
+                            <span>гелий [He]</span>
+                        </div>
                     </div>
-                </div>
-                <div class="voessen__col-200 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.5</span>
+                    <div class="voessen__col-200 voessen__rb voessen__two-row">
+                        <div class="voessen__two-row__top">
+                            <span>0.5</span>
+                        </div>
+                        <div>
+                            <span>остальное</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>остальное</span>
+                    <div class="voessen__col-96 voessen__rb">
+                        <span>млн-1 об.</span>
                     </div>
-                </div>
-                <div class="voessen__col-96 voessen__rb">
-                    <span>млн-1 об.</span>
-                </div>
-                <div class="voessen__col-120 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.3 абс.</span>
+                    <div class="voessen__col-120 voessen__rb voessen__two-row">
+                        <div class="voessen__two-row__top">
+                            <span>0.3 абс.</span>
+                        </div>
+                        <div>
+                            <span>-</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>-</span>
+                    <div class="voessen__col-130 voessen__rb voessen__two-row">
+                        <div class="voessen__two-row__top">
+                            <span>0.1 абс.</span>
+                        </div>
+                        <div>
+                            <span>-</span>
+                        </div>
                     </div>
-                </div>
-                <div class="voessen__col-130 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.1 абс.</span>
+                    <div class="voessen__col-65 voessen__rb">
+                        <span>2</span>
                     </div>
-                    <div>
-                        <span>-</span>
-                    </div>
-                </div>
-                <div class="voessen__col-65 voessen__rb">
-                    <span>2</span>
-                </div>
-                <div class="voessen__col-link-btn">
-                    <a href="" class="voessen__btn-green2">Купить действующий
-                        аналог ГСО ХХХХ-ХХ</a>
-                </div>
-            </div>
-            <div class="voessen__product__search-item voessen__product__search-item--v2">
-                <div class="voessen__col-145 voessen__rb">
-                    <span>
-                        5832-91<br>
-                        (06.01.480)
-                    </span>
-                </div>
-                <div class="voessen__col-200 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>аргон [Ar]</span>
-                    </div>
-                    <div>
-                        <span>гелий [He]</span>
+                    <div class="voessen__col-link-btn">
+                        <a href="" class="voessen__btn-green2">Купить действующий
+                            аналог ГСО ХХХХ-ХХ</a>
                     </div>
                 </div>
-                <div class="voessen__col-200 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.5</span>
-                    </div>
-                    <div>
-                        <span>остальное</span>
-                    </div>
-                </div>
-                <div class="voessen__col-96 voessen__rb">
-                    <span>млн-1 об.</span>
-                </div>
-                <div class="voessen__col-120 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.3 абс.</span>
-                    </div>
-                    <div>
-                        <span>-</span>
-                    </div>
-                </div>
-                <div class="voessen__col-130 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.1 абс.</span>
-                    </div>
-                    <div>
-                        <span>-</span>
-                    </div>
-                </div>
-                <div class="voessen__col-65 voessen__rb">
-                    <span>2</span>
-                </div>
-                <div class="voessen__col-link-btn">
-                    <a href="" class="voessen__btn-green2">Купить действующий
-                        аналог ГСО ХХХХ-ХХ</a>
                 </div>
             </div>
-            <div class="voessen__product__search-item voessen__product__search-item--v2">
-                <div class="voessen__col-145 voessen__rb">
-                    <span>
-                        5832-91<br>
-                        (06.01.480)
-                    </span>
-                </div>
-                <div class="voessen__col-200 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>аргон [Ar]</span>
-                    </div>
-                    <div>
-                        <span>гелий [He]</span>
-                    </div>
-                </div>
-                <div class="voessen__col-200 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.5</span>
-                    </div>
-                    <div>
-                        <span>остальное</span>
-                    </div>
-                </div>
-                <div class="voessen__col-96 voessen__rb">
-                    <span>млн-1 об.</span>
-                </div>
-                <div class="voessen__col-120 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.3 абс.</span>
-                    </div>
-                    <div>
-                        <span>-</span>
-                    </div>
-                </div>
-                <div class="voessen__col-130 voessen__rb voessen__two-row">
-                    <div class="voessen__two-row__top">
-                        <span>0.1 абс.</span>
-                    </div>
-                    <div>
-                        <span>-</span>
-                    </div>
-                </div>
-                <div class="voessen__col-65 voessen__rb">
-                    <span>2</span>
-                </div>
-                <div class="voessen__col-link-btn">
-                    <a href="" class="voessen__btn-green2">Купить действующий
-                        аналог ГСО ХХХХ-ХХ</a>
-                </div>
-            </div>
-
             <div class="voessen__pagination">
                 <ul class="nav justify-content-center">
                     <li class="voessen__pagination__prev">

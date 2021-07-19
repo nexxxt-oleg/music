@@ -27,116 +27,147 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4">
                     <div class="voessen__product__sb voessen__filter">
-                        <div class="voessen__product__sb__caption">Подбор по параметрам</div>
-                        <form action="">
-                            <div class="voessen__product__sb__section voessen__product__sb__section--border">
-                                <div class="voessen__product__sb__section__caption">
-                                    Газ-разбавитель
+                        <div class="voessen__product__sb__caption hidden-911">Подбор по параметрам</div>
+                        <div class="navbar navbar-expand-lg position-static">
+                            <button class="navbar-toggler collapsed w-100" type="button" data-toggle="collapse"
+                                    data-target="#filterNav" aria-controls="filterNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <div class="d-flex align-items-center voessen__filter__mob-title ">
+                                    <svg width="20" height="20" class="mr-10">
+                                        <use xlink:href="#svg-filter"></use>
+                                    </svg>
+                                    <span>Подбор по параметрам</span>
                                 </div>
-                                <select class="form-select form-select-sm" name="har1">
-                                    <option value="1">air [воздух]</option>
-                                    <option value="2">air [воздух]</option>
-                                    <option value="3">air [воздух]</option>
-                                </select>
-                            </div>
-                            <div class="voessen__product__sb__section">
-                                <div class="voessen__product__sb__section__caption">
-                                    Компоненты
-                                </div>
-                                <div class="voessen__search-box">
-                                    <input class="voessen__search-box__inp" type="text" name="search">
-                                    <button type="submit" class="voessen__search-box__submit">
-                                        <svg class="icon--search" width="18" height="18">
-                                            <use xlink:href="#svg-search"></use>
+
+                            </button>
+                            <div class="navbar-collapse w-100 collapse--lk collapse" id="filterNav">
+                                <div class="navbar-brand border-bottom">
+                                    <div class="d-flex align-items-center voessen__filter__mob-title pl-20">
+                                        <svg width="20" height="20" class="mr-10">
+                                            <use xlink:href="#svg-filter"></use>
                                         </svg>
-                                    </button>
-                                </div>
-                                <div class="voessen__product__sb__list-check">
-                                    <div id="jsScrollWrap">
-                                        <ul class="nav flex-column voessen__checkbox-list">
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="1" checked>
-                                                    <span>Ar [аргон]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="2">
-                                                    <span>AsH3 [арсин]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="3">
-                                                    <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="1">
-                                                    <span>C10H12 [дициклопентадиен]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="3">
-                                                    <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="1">
-                                                    <span>C10H12 [дициклопентадиен]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="3">
-                                                    <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="1">
-                                                    <span>C10H12 [дициклопентадиен]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="3">
-                                                    <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
-                                                </label>
-                                            </li>
-
-                                            <li>
-                                                <label class="voessen__checkbox-item">
-                                                    <input type="checkbox" name="ff" value="1">
-                                                    <span>C10H12 [дициклопентадиен]</span>
-                                                </label>
-                                            </li>
-                                        </ul>
+                                        <span>Подбор по параметрам</span>
+                                        <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
+                                                data-target="#filterNav" aria-controls="filterNav" aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                            <svg width="13" height="13" >
+                                                <use xlink:href="#svg-close"></use>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
+                                <form action="">
+                                    <div class="voessen__product__sb__section voessen__product__sb__section--border">
+                                        <div class="voessen__product__sb__section__caption">
+                                            Газ-разбавитель
+                                        </div>
+                                        <select class="form-select form-select-sm" name="har1">
+                                            <option value="1">air [воздух]</option>
+                                            <option value="2">air [воздух]</option>
+                                            <option value="3">air [воздух]</option>
+                                        </select>
+                                    </div>
+                                    <div class="voessen__product__sb__section">
+                                        <div class="voessen__product__sb__section__caption">
+                                            Компоненты
+                                        </div>
+                                        <div class="voessen__search-box">
+                                            <input class="voessen__search-box__inp" type="text" name="search">
+                                            <button type="submit" class="voessen__search-box__submit">
+                                                <svg class="icon--search" width="18" height="18">
+                                                    <use xlink:href="#svg-search"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="voessen__product__sb__list-check">
+                                            <div id="jsScrollWrap">
+                                                <ul class="nav flex-column voessen__checkbox-list">
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="1" checked>
+                                                            <span>Ar [аргон]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="2">
+                                                            <span>AsH3 [арсин]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="3">
+                                                            <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="1">
+                                                            <span>C10H12 [дициклопентадиен]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="3">
+                                                            <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="1">
+                                                            <span>C10H12 [дициклопентадиен]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="3">
+                                                            <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="1">
+                                                            <span>C10H12 [дициклопентадиен]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="3">
+                                                            <span>BCl3 [бор треххлористый (трихлорид бора)]</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li>
+                                                        <label class="voessen__checkbox-item">
+                                                            <input type="checkbox" name="ff" value="1">
+                                                            <span>C10H12 [дициклопентадиен]</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="voessen__product__sb__footer">
+                                        <button type="submit" class="voessen__btn-blue w-100"><span>Применить</span>
+                                        </button>
+                                        <a href="" class="voessen__filter__clear">
+                                            <svg width="12" height="12">
+                                                <use xlink:href="#svg-close"></use>
+                                            </svg>
+                                            Сбросить фильтры
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="voessen__product__sb__footer">
-                                <button type="submit" class="voessen__btn-blue w-100"><span>Применить</span></button>
-                                <a href="" class="voessen__filter__clear">
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#svg-close"></use>
-                                    </svg>
-                                    Сбросить фильтры
-                                </a>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-8">
@@ -175,39 +206,39 @@
                         </ul>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
-                        <div class="col-lg-4 fpad30">
+                        <div class="col-xl-4 col-lg-6 fpad30">
                             <?php
-                            include __DIR__ . '/inc/product-item.php'
+                            include __DIR__ . '/inc/product-item4.php'
                             ?>
                         </div>
                         <div class="col-12">
