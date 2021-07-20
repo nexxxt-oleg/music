@@ -22,10 +22,10 @@
         <header class="voessen__title-box voessen__text">
             <h1>Реквизиты компании</h1>
         </header>
-        <div class="d-flex align-items-center justify-content-between border-bottom fpad30">
+        <div class="d-flex align-items-center justify-content-between border-bottom fpad30 voessen__rekvizit-caption">
             <div class="fots20">Общество с ограниченной ответственностью «Фёссен Эм Ай И»</div>
             <a
-                class="voessen__font16-l"
+                class="voessen__font16-l voessen__rekvizit-caption__file"
                 href="">
                 <svg width="18" height="24">
                     <use xlink:href="#svg-file"></use>

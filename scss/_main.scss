@@ -4028,10 +4028,6 @@ figcaption {
     display: none;
   }
 }
-.voessen__box-scroll {
-  width: 100%;
-  overflow-x: auto;
-  &__inner {
-    min-width: 1180px;
-  }
+.voessen__product__square__inner span {
+  display: block;
 }

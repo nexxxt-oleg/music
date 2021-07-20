@@ -63,37 +63,37 @@
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-lg-4 col-xl-3 fpad30">
                     <?php
-                    include __DIR__ . '/inc/product-item.php'
+                    include __DIR__ . '/inc/product-item4.php'
                     ?>
                 </div>
                 <div class="col-12">

@@ -216,22 +216,22 @@
                 <div id="sliderImages" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link">
+                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link" data-fancybox="gallery">
                                 <img src="./img/portfolio1.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link">
+                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link" data-fancybox="gallery">
                                 <img src="./img/portfolio1.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link">
+                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link" data-fancybox="gallery">
                                 <img src="./img/portfolio1.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link">
+                            <a href="/img/portfolio1.jpg" class="voessen__zoom-link" data-fancybox="gallery">
                                 <img src="./img/portfolio1.jpg" alt="">
                             </a>
                         </div>

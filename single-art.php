@@ -95,9 +95,9 @@
                 непосредственный контакт с кислородом, удаляют все масло и смазку, оставшиеся после механической
                 обработки. Иначе кислород, вступив в контакт с жирами или маслами, быстро окислит их, смесь
                 воспламенится и разрушит манометр.</p>
-            <div class="row voessen__gallery" id="lightgallery">
+            <div class="row voessen__gallery">
                 <div class="col-lg-4 fpad30">
-                    <a href="/img/map@2.jpg">
+                    <a href="/img/map@2.jpg" data-fancybox="gallery">
                         <img
                                 src="./img/map.jpg"
                                 data-src="./img/map.jpg"
@@ -107,7 +107,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 fpad30">
-                    <a href="/img/map@2.jpg">
+                    <a href="/img/map@2.jpg" data-fancybox="gallery">
                         <img
                                 src="./img/map.jpg"
                                 data-src="./img/map.jpg"
@@ -117,7 +117,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 fpad30">
-                    <a href="/img/map@2.jpg">
+                    <a href="/img/map@2.jpg" data-fancybox="gallery">
                         <img
                                 src="./img/map.jpg"
                                 data-src="./img/map.jpg"

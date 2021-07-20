@@ -73,10 +73,12 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
                     <div class="voessen__product__square voessen__product__square__sub-nav">
-                        <span class="voessen__product__formula">
-                            N<sub>2</sub>
-                        </span>
-                        <span class="voessen__product__name">Азот</span>
+                        <div class="voessen__product__square__inner">
+                            <span class="voessen__product__formula">
+                                N<sub>2</sub>
+                            </span>
+                            <span class="voessen__product__name">Азот</span>
+                        </div>
                         <div class="voessen__sub-catalog-hover">
                             <span class="voessen__sub-catalog-hover__formula">
                                 N<sub>2</sub>
@@ -92,10 +94,12 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
                     <div class="voessen__product__square voessen__product__square__sub-nav">
-                        <span class="voessen__product__formula">
-                            NH<sub>3</sub>
-                        </span>
-                        <span class="voessen__product__name">Аммиак</span>
+                        <div class="voessen__product__square__inner">
+                            <span class="voessen__product__formula">
+                                NH<sub>3</sub>
+                            </span>
+                            <span class="voessen__product__name">Аммиак</span>
+                        </div>
                         <div class="voessen__sub-catalog-hover">
                             <span class="voessen__sub-catalog-hover__formula">
                                 NH<sub>3</sub>
@@ -111,10 +115,12 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
                     <div class="voessen__product__square voessen__product__square__sub-nav">
-                        <span class="voessen__product__formula">
-                            Ar
-                        </span>
-                        <span class="voessen__product__name">Аргон</span>
+                        <div class="voessen__product__square__inner">
+                            <span class="voessen__product__formula">
+                                Ar
+                            </span>
+                            <span class="voessen__product__name">Аргон</span>
+                        </div>
                         <div class="voessen__sub-catalog-hover">
                             <span class="voessen__sub-catalog-hover__formula">
                                 Ar
@@ -130,10 +136,12 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
                     <div class="voessen__product__square voessen__product__square__sub-nav">
-                        <span class="voessen__product__formula">
-                            N<sub>2</sub>
-                        </span>
-                        <span class="voessen__product__name">Азот</span>
+                        <div class="voessen__product__square__inner">
+                            <span class="voessen__product__formula">
+                                N<sub>2</sub>
+                            </span>
+                            <span class="voessen__product__name">Азот</span>
+                        </div>
                         <div class="voessen__sub-catalog-hover">
                             <span class="voessen__sub-catalog-hover__formula">
                                 C<sub>2</sub>H<sub>2</sub>
@@ -142,6 +150,8 @@
                                 <li><a href="">Азот нулевой ПНГ</a></li>
                                 <li><a href="">Азот 5.0</a></li>
                                 <li><a href="">Азот 5.5</a></li>
+                                <li><a href="">Азот 6.0</a></li>
+                                <li><a href="">Азот 6.0</a></li>
                                 <li><a href="">Азот 6.0</a></li>
                             </ul>
                         </div>

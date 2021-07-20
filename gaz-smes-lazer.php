@@ -51,49 +51,71 @@
                 газов в эксимерных газовых смесях могут быть любыми, в зависимости от требований производителя лазера
                 или спецификации клиента, эксимерные смеси изготавливаются по заявкам.</p>
         </div>
-        <div class="table-responsive table-responsive-lg voessen__product__table-list-product">
-            <table class="table table-hover voessen__table">
-                <thead>
-                <tr>
-                    <th>Лазер</th>
-                    <th>Тип</th>
-                    <th>Длина волны</th>
-                    <th>Состав смеси</th>
-                    <th class="not-bg"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><a href="">COMPexPro 102</a></td>
-                    <td>СXeCl</td>
-                    <td>308 нм</td>
-                    <td>HCl + H2 + He + Xe + Ne</td>
-                    <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">COMPexPro 102</a></td>
-                    <td>СXeCl</td>
-                    <td>308 нм</td>
-                    <td>HCl + H2 + He + Xe + Ne</td>
-                    <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">COMPexPro 102</a></td>
-                    <td>СXeCl</td>
-                    <td>308 нм</td>
-                    <td>HCl + H2 + He + Xe + Ne</td>
-                    <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">COMPexPro 102</a></td>
-                    <td>СXeCl</td>
-                    <td>308 нм</td>
-                    <td>HCl + H2 + He + Xe + Ne</td>
-                    <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <table class="table table-hover voessen__table voessen__table--mob">
+            <thead>
+            <tr>
+                <th>Лазер</th>
+                <th>Тип</th>
+                <th>Длина волны</th>
+                <th>Состав смеси</th>
+                <th class="not-bg"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span class="voessen__table__label-mob">Лазер</span>
+                    <a href="">COMPexPro 102</a></td>
+                <td>
+                    <span class="voessen__table__label-mob">Тип</span>
+                    СXeCl</td>
+                <td>
+                    <span class="voessen__table__label-mob">Длина волны</span>
+                    308 нм</td>
+                <td>
+                    <span class="voessen__table__label-mob">Состав смеси</span>
+                    HCl + H2 + He + Xe + Ne</td>
+                <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="voessen__table__label-mob">Лазер</span>
+                    <a href="">COMPexPro 102</a></td>
+                <td>
+                    <span class="voessen__table__label-mob">Тип</span>
+                    СXeCl</td>
+                <td>
+                    <span class="voessen__table__label-mob">Длина волны</span>
+                    308 нм</td>
+                <td>
+                    <span class="voessen__table__label-mob">Состав смеси</span>
+                    HCl + H2 + He + Xe + Ne</td>
+                <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="voessen__table__label-mob">Лазер</span>
+                    <a href="">COMPexPro 102</a></td>
+                <td>
+                    <span class="voessen__table__label-mob">Тип</span>
+                    СXeCl</td>
+                <td><span class="voessen__table__label-mob">Длина волны</span>
+                    308 нм</td>
+                <td><span class="voessen__table__label-mob">Состав смеси</span>
+                    HCl + H2 + He + Xe + Ne</td>
+                <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
+            </tr>
+            <tr>
+                <td><span class="voessen__table__label-mob">Лазер</span>
+                    <a href="">COMPexPro 102</a></td>
+                <td><span class="voessen__table__label-mob">Тип</span>СXeCl</td>
+                <td><span class="voessen__table__label-mob">Длина волны</span>308 нм</td>
+                <td><span class="voessen__table__label-mob">Состав смеси</span>HCl + H2 + He + Xe + Ne</td>
+                <td class="td-btn"><a href="" class="voessen__btn-green voessen__btn-green--min">Посмотреть</a></td>
+            </tr>
+            </tbody>
+        </table>
+
 
     </div>
 
