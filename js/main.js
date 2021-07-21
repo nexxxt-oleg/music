@@ -139,8 +139,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (document.getElementById('jsScrollWrap') && window.innerWidth > 1200) {
+    if (document.getElementById('lightgallery')) {
+        lightGallery(document.getElementById('lightgallery'), {
+            download: false,
+            counter: false,
+            selector: 'a'
+        });
+    }
 
+    if (document.getElementById('jsScrollWrap') && window.innerWidth > 1200) {
+        console.log('222');
         if (document.getElementById('jsScrollWrap').clientHeight > 200) {
             document.getElementById('jsScrollWrap').parentNode.style.height = '230px';
             let jsScrollbar = new MiniBar(document.getElementById("jsScrollWrap"), {});
@@ -180,6 +188,11 @@ document.addEventListener("DOMContentLoaded", () => {
             spaceBetween: 30,
             on: {
                 init: function () {
+                    lightGallery(document.getElementById('sliderImages'), {
+                        download: false,
+                        counter: false,
+                        selector: 'a'
+                    });
                 },
             },
         });
@@ -200,6 +213,11 @@ document.addEventListener("DOMContentLoaded", () => {
             spaceBetween: 30,
             on: {
                 init: function () {
+                    lightGallery(document.getElementById('sliderCertificates'), {
+                        download: false,
+                        counter: false,
+                        selector: 'a'
+                    });
                 },
             },
         });

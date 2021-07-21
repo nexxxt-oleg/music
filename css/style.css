@@ -14301,8 +14301,11 @@ figcaption {
 .voessen__filter .navbar-brand {
   display: none; }
 
-.voessen__product__square__inner span {
-  display: block; }
+.voessen__box-scroll {
+  width: 100%;
+  overflow-x: auto; }
+  .voessen__box-scroll__inner {
+    min-width: 1180px; }
 
 .datepicker {
   display: inline-block;
@@ -15336,13 +15339,7 @@ figcaption {
     padding-right: 15px; }
 
   .voessen__product__sb__list-check {
-    overflow-y: auto; }
-
-  .voessen__box-scroll {
-    width: 100%;
-    overflow-x: auto; }
-    .voessen__box-scroll__inner {
-      min-width: 1180px; } }
+    overflow-y: auto; } }
 @media screen and (max-width: 991px) {
   .voessen__header,
   .voessen__fix-nav.active {
@@ -15635,9 +15632,7 @@ figcaption {
       position: relative;
       padding-left: 110px;
       border-top: none !important;
-      border-bottom-color: #e1e1e1 !important;
-      font-size: 14px;
-      line-height: 18px; }
+      border-bottom-color: #e1e1e1 !important; }
 
   .voessen__table__label-mob {
     display: block;
@@ -15722,87 +15717,7 @@ figcaption {
     color: #fff; }
 
   .voessen__tab-box__header .nav-item {
-    padding-right: 0; }
-
-  .td-btn {
-    width: 100%; }
-
-  .voessen__page-bg {
-    background-size: 1000px auto; }
-
-  .voessen__subscribe .voessen__subscribe__form__ps {
-    line-height: 18px;
-    padding-left: 0;
-    padding-bottom: 15px; }
-  .voessen__subscribe .voessen__btn-green {
-    width: 100%; }
-
-  .voessen__product__square__sub-nav .voessen__sub-catalog-hover {
-    position: relative;
-    top: auto;
-    left: auto;
-    opacity: 1;
-    visibility: visible;
-    background-color: #fff;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    padding: 0;
-    width: auto; }
-    .voessen__product__square__sub-nav .voessen__sub-catalog-hover .voessen__sub-catalog-hover__formula {
-      display: none; }
-
-  .voessen__product__square__sub-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 10px;
-    height: auto;
-    min-height: 100%; }
-
-  .voessen__product__square__inner {
-    -ms-flex-preferred-size: 120px;
-        flex-basis: 120px;
-    max-width: 120px;
-    padding-right: 10px;
-    text-align: center; }
-
-  .voessen__product__square .voessen__product__name {
-    padding-top: 10px; }
-
-  .voessen__product__square__sub-nav .voessen__sub-catalog-hover .voessen__sub-catalog-hover__nav li a {
-    color: #515151; }
-
-  .voessen__equipment__img {
-    border-right: none;
-    height: auto; }
-    .voessen__equipment__img figure {
-      border-bottom: 1px solid #e6e6e6;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin: 0 0 10px 0;
-      padding: 10px; }
-      .voessen__equipment__img figure img {
-        margin: 0;
-        border: none; }
-      .voessen__equipment__img figure ficaption {
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
-        padding: 10px 0 0 10px;
-        text-align: left; }
-
-  .voessen__equipment__nav ul {
-    padding: 0 20px; }
-
-  .voessen__equipment {
-    padding-bottom: 10px; } }
+    padding-right: 0; } }
 @media screen and (max-width: 768px) {
   .voessen__personal-account {
     padding-top: 10px; }
@@ -15831,10 +15746,6 @@ figcaption {
     text-align: center; }
     .voessen__btn-green::before {
       display: none; }
-
-  .voessen__text__caption-ico {
-    padding-bottom: 15px;
-    min-height: 60px; }
 
   .voessen__table {
     min-width: 700px; }
@@ -16126,28 +16037,7 @@ figcaption {
       color: #525252; }
 
   .voessen__product__square {
-    height: auto; }
-
-  .voessen__subscribe__form__ps {
-    padding-bottom: 15px !important; }
-
-  .voessen__form__inp-box {
-    padding-bottom: 15px; }
-
-  .voessen__page404 .h2 {
-    text-align: center; }
-
-  .voessen__product__sort-top {
-    padding: 15px 10px; }
-    .voessen__product__sort-top .voessen__product__col-sort {
-      width: 100%;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .voessen__product__sort-top .voessen__product__col-sort label {
-      padding-right: 2px; }
-    .voessen__product__sort-top .ml-3 {
-      margin-left: 2px; } }
+    height: auto; } }
 @media screen and (max-width: 574px) {
   .voessen__wrap-slider {
     margin: 0 -15px; }
@@ -16482,69 +16372,7 @@ figcaption {
     height: 200px; }
 
   .voessen__product__card-bay .voessen__product__har-select {
-    margin-left: 0; }
-
-  .voessen__jobs-item {
-    padding: 10px 10px 10px 60px; }
-
-  .voessen__jobs-item__icon {
-    width: 40px !important;
-    height: auto !important;
-    top: 10px;
-    left: 10px; }
-
-  .voessen__jobs-item__title {
-    font-size: 18px;
-    line-height: 20px; }
-
-  .voessen__form__inp-box .form-label {
-    padding-left: 0;
-    font-size: 14px;
-    line-height: 18px; }
-
-  .voessen__form__inp-box .form-control.h-29 {
-    height: 150px; }
-
-  .voessen__rekvizit-caption {
-    display: block !important; }
-    .voessen__rekvizit-caption__file {
-      margin: 15px 0 0 0; }
-
-  .voessen__download-box__title {
-    padding: 10px; }
-
-  .voessen__text ul:not(.nav) {
-    padding-left: 20px; }
-    .voessen__text ul:not(.nav) li::after {
-      left: -20px;
-      width: 10px; }
-
-  .voessen__ico-left__pic {
-    -ms-flex-preferred-size: 50px;
-        flex-basis: 50px;
-    max-width: 50px;
-    padding-right: 15px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-top: 5px; }
-
-  .voessen__faq {
-    padding: 0 10px 0 30px; }
-
-  .voessen__faq__title {
-    padding: 15px 0; }
-    .voessen__faq__title::after {
-      left: 0;
-      margin-left: -20px; }
-
-  .voessen__faq__title.collapsed::before {
-    left: 0;
-    margin-left: -15px; }
-
-  .voessen__equipment__img figure img {
-    width: 70px;
-    height: 70px; } }
+    margin-left: 0; } }
 @media screen and (max-width: 440px) {
   .voessen__header-caption__col-tabs {
     margin-right: -15px;
@@ -16562,22 +16390,6 @@ figcaption {
 
   .voessen__personal-account__nav-top {
     padding-left: 0;
-    border: none; }
-
-  .voessen__product__col-sort label,
-  .voessen__product__col-sort .voessen__sort .btn-sort {
-    font-size: 12px; }
-
-  .voessen__links-section__item .nav {
-    padding-left: 0;
-    display: block !important; }
-
-  .voessen__links-section__item .voessen__links-section__col-formula {
-    padding: 0;
-    margin-bottom: auto;
-    -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
-    max-width: 100px;
-    height: auto; } }
+    border: none; } }
 
 /*# sourceMappingURL=style.css.map */
