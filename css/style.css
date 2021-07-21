@@ -14304,6 +14304,11 @@ figcaption {
 .voessen__product__square__inner span {
   display: block; }
 
+.mobile-nav {
+  visibility: hidden;
+  position: absolute;
+  left: 100%; }
+
 .datepicker {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -15312,7 +15317,6 @@ figcaption {
   padding-right: 10px; }
 
 .voessen__header-mob,
-.mobile-nav,
 .only-mob,
 .only-w7,
 .voessen__tab-box__mob-accordion {
