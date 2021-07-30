@@ -6,26 +6,34 @@
 .form-select {
   display: block;
   width: 100%;
-  padding: 10px 20px 10px 10px;
+  padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
+  // stylelint-disable-next-line property-no-vendor-prefix
+  -moz-padding-start: subtract($form-select-padding-x, 3px); // See https://github.com/twbs/bootstrap/issues/32636
   font-family: $form-select-font-family;
-  font-size: 16px;
+  @include font-size($form-select-font-size);
   font-weight: $form-select-font-weight;
   line-height: $form-select-line-height;
   color: $form-select-color;
-  vertical-align: middle;
-  background-color: #fff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 13.17 7.59'%3E%3Cpath fill='%230092d2' d='M1,0H12.17a1,1,0,0,1,1,1,1,1,0,0,1-.29.71L7.29,7.29a1,1,0,0,1-1.41,0L.29,1.71A1,1,0,0,1,.29.29,1,1,0,0,1,1,0' transform='translate(0 0)'/%3E%3C/svg%3E%0A");
+  background-color: $form-select-bg;
+  background-image: escape-svg($form-select-indicator);
   background-repeat: no-repeat;
   background-position: $form-select-bg-position;
   background-size: $form-select-bg-size;
   border: $form-select-border-width solid $form-select-border-color;
-  @include border-radius(0, 0);
+  @include border-radius($form-select-border-radius, 0);
+  @include box-shadow($form-select-box-shadow);
+  @include transition($form-select-transition);
   appearance: none;
 
   &:focus {
     border-color: $form-select-focus-border-color;
     outline: 0;
-    box-shadow: none;
+    @if $enable-shadows {
+      @include box-shadow($form-select-box-shadow, $form-select-focus-box-shadow);
+    } @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: $form-select-focus-box-shadow;
+    }
   }
 
   &[multiple],
@@ -48,9 +56,9 @@
 }
 
 .form-select-sm {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 9px;
+  padding-top: $form-select-padding-y-sm;
+  padding-bottom: $form-select-padding-y-sm;
+  padding-left: $form-select-padding-x-sm;
   @include font-size($form-select-font-size-sm);
 }
 

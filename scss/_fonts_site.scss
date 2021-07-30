@@ -1,80 +1,89 @@
 @font-face {
-  font-family: 'Circe';
-  src: url('../fonts/Circe-Regular.eot');
-  src: local('Circe'), local('Circe-Regular'),
-  url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Circe-Regular.woff') format('woff'),
-  url('../fonts/Circe-Regular.ttf') format('truetype');
+  font-family: 'TT Norms';
+  src: url('../fonts/TTNorms-Regular.eot');
+  src: local('TT Norms Regular'), local('TTNorms-Regular'),
+  url('../fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTNorms-Regular.woff') format('woff'),
+  url('../fonts/TTNorms-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Circe';
-  src: url('../fonts/Circe-ExtraLight.eot');
-  src: local('Circe ExtraLight'), local('Circe-ExtraLight'),
-  url('../fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Circe-ExtraLight.woff') format('woff'),
-  url('../fonts/Circe-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Circe';
-  src: url('../fonts/Circe-Thin.eot');
-  src: local('Circe Thin'), local('Circe-Thin'),
-  url('../fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Circe-Thin.woff') format('woff'),
-  url('../fonts/Circe-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Circe';
-  src: url('../fonts/Circe-Light.eot');
-  src: local('Circe Light'), local('Circe-Light'),
-  url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Circe-Light.woff') format('woff'),
-  url('../fonts/Circe-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Circe';
-  src: url('../fonts/Circe-Bold.eot');
-  src: local('Circe Bold'), local('Circe-Bold'),
-  url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Circe-Bold.woff') format('woff'),
-  url('../fonts/Circe-Bold.ttf') format('truetype');
+  font-family: 'TT Norms';
+  src: url('../fonts/TTNorms-Bold.eot');
+  src: local('TT Norms Bold'), local('TTNorms-Bold'),
+  url('../fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTNorms-Bold.woff') format('woff'),
+  url('../fonts/TTNorms-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Circe';
-  src: url('../fonts/Circe-ExtraBold.eot');
-  src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
-  url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Circe-ExtraBold.woff') format('woff'),
-  url('../fonts/Circe-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'TT Norms';
+  src: url('../fonts/TTNorms-Medium.eot');
+  src: local('TT Norms Medium'), local('TTNorms-Medium'),
+  url('../fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTNorms-Medium.woff') format('woff'),
+  url('../fonts/TTNorms-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Phenomena';
+  src: local('Phenomena'), local('Phenomena-Regular'),
+  url('../fonts/Phenomena.woff2') format('woff2'),
+  url('../fonts/Phenomena.woff') format('woff'),
+  url('../fonts/Phenomena.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Phenomena';
+  src: local('Phenomena Bold'),
+  local('Phenomena-Bold'),
+  url('../fonts/Phenomenabold.woff2') format('woff2'),
+  url('../fonts/Phenomenabold.woff') format('woff'),
+  url('../fonts/Phenomenabold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'ALSRubl-Tahoma';
   src: url("../fonts/alsrubl-tahoma-regular.eot");
-  src: url("../fonts/alsrubl-tahoma-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/alsrubl-tahoma-regular.woff") format("woff"), url("../fonts/alsrubl-tahoma-regular.ttf") format("truetype"), url("../fonts/alsrubl-tahoma-regular.svg#ALSRublTahomaItalic") format("svg");
+  src: url("../fonts/alsrubl-tahoma-regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/alsrubl-tahoma-regular.woff") format("woff"),
+  url("../fonts/alsrubl-tahoma-regular.ttf") format("truetype"),
+  url("../fonts/alsrubl-tahoma-regular.svg#ALSRublTahomaItalic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'ALSRubl-Tahoma';
   src: url("../fonts/alsrubl-tahoma-bold.eot");
-  src: url("../fonts/alsrubl-tahoma-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/alsrubl-tahoma-bold.woff") format("woff"), url("../fonts/alsrubl-tahoma-bold.ttf") format("truetype"), url("../fonts/alsrubl-tahoma-bold.svg#ALSRublTahomaItalic") format("svg");
+  src: url("../fonts/alsrubl-tahoma-bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/alsrubl-tahoma-bold.woff") format("woff"),
+  url("../fonts/alsrubl-tahoma-bold.ttf") format("truetype"),
+  url("../fonts/alsrubl-tahoma-bold.svg#ALSRublTahomaItalic") format("svg");
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('../fonts/Caveat-Bold.eot');
+  src: local('Caveat Bold'), local('Caveat-Bold'),
+  url('../fonts/Caveat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Caveat-Bold.woff') format('woff'),
+  url('../fonts/Caveat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$font-p:    Phenomena, sans-serif;

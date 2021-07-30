@@ -1,8 +1,9 @@
+// scss-docs-start caret-mixins
 @mixin caret-down {
+  border-top: $caret-width solid;
+  border-right: $caret-width solid transparent;
   border-bottom: 0;
   border-left: $caret-width solid transparent;
-  border-right: $caret-width solid transparent;
-  border-top: $caret-width solid;
 }
 
 @mixin caret-up {
@@ -60,3 +61,4 @@
     }
   }
 }
+// scss-docs-end caret-mixins
