@@ -39,19 +39,44 @@ document.addEventListener("DOMContentLoaded", () => {
         slHomeText.controller.control = slHomePic;
     }
 
-    /*if (document.getElementsByClassName("voessen__slider-product").length) {
-        let swiperCatalog = new Swiper('.voessen__slider-product', {
+    if (document.getElementById('brendSlider')) {
+
+        let slHomePic = new Swiper('#brendSlider', {
+            slidesPerView: 5,
+            navigation: {
+                nextEl: '#brendSlider .button-next',
+                prevEl: '#brendSlider .button-prev',
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                },
+                440: {
+                    slidesPerView: 2,
+                },
+                600: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 4,
+                },
+                1280: {
+                    slidesPerView: 5,
+                },
+            }
+        });
+
+    }
+
+    if (document.getElementsByClassName("music__slider-products").length) {
+        let swiperCatalog = new Swiper('.music__slider-products', {
             pagination: {},
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
             },
             slidesPerView: 4,
-            lazy: true,
-            observer: true,
-            observeParents: true,
-            //loop: true,
-            //simulateTouch: false,
+            spaceBetween: 30,
             breakpoints: {
                 300: {
                     slidesPerView: 'auto',
@@ -62,20 +87,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     slidesPerView: 2,
                     centeredSlides: true,
                     simulateTouch: true,
+                    spaceBetween: 10,
                 },
                 600: {
                     slidesPerView: 2,
+                    spaceBetween: 10,
                 },
-                991: {
-                    slidesPerView: 3,
+                768: {
+                    slidesPerView: 2,
                 },
                 1280: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                 },
             }
         });
     }
-    */
 
 
 

@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="./css/lib.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,7 +15,8 @@
         <div class="music__header__action">
             <div class="container">
 
-                <button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="toast" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
                 <span>СКИДКА 5% ПРИ ОПЛАТЕ ЗАКАЗА ОНЛАЙН</span>
             </div>
         </div>
@@ -144,10 +146,15 @@
         </div>
 
         <div class="music__header__bottom">
-            <div class="container">
+            <div class="container position-relative">
                 <div class="d-flex music__header__bottom__row">
                     <div class="music__header__bottom__col-toggle-btn">
-
+                        <button class="hamburger  hamburger--collapse navbar-toggler collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#navDopMenu" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                              </span>
+                        </button>
                     </div>
                     <div class="music__header__bottom__col-main-nav">
                         <div class="nav justify-content-between w-100 nav--main">
@@ -199,6 +206,31 @@
                                     <span>Акции</span>
                                 </a>
                             </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="music__header__bottom__dop-menu">
+                    <div class="collapse" id="navDopMenu">
+                        <div class="music__header__bottom__dop-menu__wrap">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="nav flex-column">
+                                        <li><a href="">Виниловые проигрыватели</a></li>
+                                        <li><a href="">Портативная акустика</a></li>
+                                        <li><a href="">Аксессуары для виниловых проигрывателей</a></li>
+                                        <li><a href="">Системы хранения пластинок</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="nav flex-column">
+                                        <li><a href="">Подобрать проигрыватель</a></li>
+                                        <li><a href="">Подарочные сертификаты</a></li>
+                                        <li><a href="">Кредит на покупку</a></li>
+                                        <li><a href="">Бренды</a></li>
+                                        <li><a href="">Акции</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
