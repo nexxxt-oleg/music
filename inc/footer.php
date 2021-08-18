@@ -1,5 +1,11 @@
 <footer class="music__footer">
-    <div class="container">
+    <div class="container position-relative">
+        <a href="#top" class="music__btn-top" id="btnTop">
+            <svg width="12" height="14">
+                <use xlink:href="#svg-up"></use>
+            </svg>
+            <span>НАВЕРХ</span>
+        </a>
         <div class="row fpad30">
             <div class="col-lg-4 col-xl-4 fpad30">
                 <ul class="nav flex-column music__footer__nav">
@@ -105,11 +111,30 @@
                         <a href="" target="_blank">
                             <svg width="24" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56.3">
                                 <path fill="#ff0000"
-                                              d="M76.88,4.83C74,1.4,68.66,0,58.48,0h-37C11.1,0,5.68,1.49,2.8,5.15S0,14,0,21.23V35.08C0,49.15,3.33,56.3,21.52,56.3h37c8.83,0,13.72-1.23,16.89-4.26S80,43.86,80,35.08V21.23C80,13.56,79.78,8.28,76.88,4.83ZM51.36,30.06,34.58,38.83a2.58,2.58,0,0,1-3.78-2.28V19.06a2.58,2.58,0,0,1,3.77-2.29l16.78,8.72a2.57,2.57,0,0,1,0,4.57Z"/>
+                                      d="M76.88,4.83C74,1.4,68.66,0,58.48,0h-37C11.1,0,5.68,1.49,2.8,5.15S0,14,0,21.23V35.08C0,49.15,3.33,56.3,21.52,56.3h37c8.83,0,13.72-1.23,16.89-4.26S80,43.86,80,35.08V21.23C80,13.56,79.78,8.28,76.88,4.83ZM51.36,30.06,34.58,38.83a2.58,2.58,0,0,1-3.78-2.28V19.06a2.58,2.58,0,0,1,3.77-2.29l16.78,8.72a2.57,2.57,0,0,1,0,4.57Z"/>
                             </svg>
                         </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="music__footer__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-xl-4">
+                    <a href="/" class="music__footer__logo">
+                        <svg width="160" height="23">
+                            <use xlink:href="#svg-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-xl-5">
+                    <span class="music__footer__copy">© 2021 MUSICROOM. Все права защищены.</span>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                    <span class="music__footer__link">Разработка сайта - <a href="" target="_blank">“Клондайк”</a></span>
+                </div>
             </div>
         </div>
     </div>

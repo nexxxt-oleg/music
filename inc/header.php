@@ -10,7 +10,7 @@
     <title>music</title>
 </head>
 <body class="music">
-<div class="music__main">
+<div class="music__main" id="top">
     <div id="actionToast" class="toast hide w-100 music__top-action" data-bs-autohide="false">
         <div class="music__header__action">
             <div class="container">
