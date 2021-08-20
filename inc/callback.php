@@ -8,7 +8,7 @@
             </div>
             <form action="" class="music__form">
                 <div class="music__form__box-inp">
-                    <input type="email" class="music__form__inp" value="" placeholder="Укажите Ваш E-mail" required>
+                    <input type="email" class="music__form__inp music__form__inp--center" value="" placeholder="Укажите Ваш E-mail" required>
                 </div>
                 <div class="music__form__box-inp">
                     <input type="submit" class="music__form__submit" value="ПОДПИСАТЬСЯ">

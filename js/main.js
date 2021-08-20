@@ -141,6 +141,40 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }*/
 
+    if(document.getElementById('priceRange')) {
+        let priceRange = document.getElementById('priceRange');
+
+        noUiSlider.create(priceRange, {
+            start: [0, parseInt(priceRange.dataset.maxPrice)],
+            step: 1000,
+            connect: true,
+            format: wNumb({
+                decimals: 0,
+                thousand: ' ',
+                suffix: ' ₽'
+            }),
+            range: {
+                'min': 0,
+                'max': parseInt(priceRange.dataset.maxPrice)
+            }
+        });
+
+        let priceMin = document.getElementById('priceMin'),
+            priceMax = document.getElementById('priceMax');
+
+
+        priceRange.noUiSlider.on('update', function (values, handle) {
+            //priceValue[handle].value = values[handle];
+            if(handle == 0) {
+                priceMin.value = values[handle];
+            } else {
+                priceMax.value = values[handle];
+            }
+        });
+    }
+
+
+
 });
 
 
