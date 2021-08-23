@@ -1072,12 +1072,17 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     let swiper = new Swiper("#sliderProductThumbnail", {
-        spaceBetween: 10,
-        slidesPerView: 5,
-        freeMode: true,
+        spaceBetween: 30,
+        slidesPerView: 6,
+        /*freeMode: true,*/
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         direction: "vertical",
+        navigation: {
+            nextEl: ".button-down",
+            prevEl: ".button-up",
+        },
+        loop: false,
     });
     let swiper2 = new Swiper("#sliderProductPic", {
         spaceBetween: 10,
@@ -1107,9 +1112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    if (window.screen.width > 768) {
-        new BeerSlider(document.getElementById('slider'));
-    }
+
 
     if (document.getElementById('mobGallery')) {
 
@@ -1122,41 +1125,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 loop: true,
                 on: {
                     init: function () {
-                        lightGallery(document.getElementById('mobGallery'), {
-                            download: false,
-                            counter: false,
-                            selector: 'a'
-                        });
+
                     }
                 },
             });
         } else {
-            lightGallery(document.getElementById('mobGallery'), {
-                download: false,
-                counter: false,
-                selector: 'a'
-            });
+
         }
 
 
     }
-    /*
-        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#productDescNav',
-            offset: 50
-        });
 
-        setTimeout(() => {
 
-        }, 1000);
-
-        //let ss = bootstrap.ScrollSpy.getInstance(document.getElementById('scrollBody'));
-
-        scrollSpy.refresh();
-        //document.getElementById('scrollBody').scrollspy('refresh');
-    */
-
-    let section = document.querySelectorAll(".zone__section");
+    let section = document.querySelectorAll(".music__section");
     let sections = {};
     let i = 0;
 
@@ -1170,11 +1151,16 @@ document.addEventListener("DOMContentLoaded", () => {
         for (i in sections) {
             if (sections[i] <= scrollPosition) {
                 //console.log(i);
-                let scrollNavActiveItem = document.querySelector('a[href*=' + i + ']');
+                let scrollNavActiveItem = document.querySelector('#productDescNav a[href*=' + i + ']');
                 if (scrollNavActiveItem.classList.contains('active')) {
 
                 } else {
-                    document.querySelector('.slon__main__anchor.active').classList.remove('active');
+                    try {
+                        document.querySelector('.music__product__navigation__anchor.active').classList.remove('active');
+                    } catch (e) {
+                        console.log( "не сработает" );
+                    }
+
                     scrollNavActiveItem.classList.add('active');
                 }
                 //document.querySelector('.active').setAttribute('class', ' ');
@@ -1183,7 +1169,40 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    if (window.screen.width > 991) {
 
+        function offset(el) {
+            var rect = el.getBoundingClientRect(),
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+        }
+
+        let productTop = document.getElementById('productTop');
+        let divOffset = offset(productTop);
+        let topNavFix = productTop.scrollHeight + divOffset.top + 70;
+
+        console.log(topNavFix);
+
+        function getScrollMenu() {
+            if(document.getElementById('productDescNav')) {
+                let el = document.getElementById('productDescNav');
+                if (pageYOffset > topNavFix) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove("active");
+                }
+            }
+        }
+
+        getScrollMenu();
+        window.addEventListener('scroll', function () {
+            getScrollMenu();
+        });
+
+    }
+
+/*
     function setEqualHeight(elements) {
         let mainDivs = document.querySelectorAll(elements);
         let maxHeight = 0;
@@ -1291,6 +1310,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
     }
+
+
+ */
 
 
 });

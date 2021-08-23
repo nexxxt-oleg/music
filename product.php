@@ -1,8 +1,8 @@
 <?php
 include_once __DIR__ . '/inc/header.php'
 ?>
-<div class="container">
-    <div class="row">
+<div class="container" id="productTop">
+    <div class="row fpad70">
         <div class="col-12 music__page music__produc">
             <div class="music__page__breadcrumbs">
                 <ul class="nav">
@@ -52,8 +52,23 @@ include_once __DIR__ . '/inc/header.php'
                                                 <img src="./img/prod_mob.png" alt="">
                                             </figure>
                                         </div>
+                                        <div class="swiper-slide">
+                                            <figure class="music__product-thumbnail__item">
+                                                <img src="./img/prod_mob.png" alt="">
+                                            </figure>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="button-up music__product-thumbnail__nav">
+                                <svg width="12" height="6">
+                                    <use xlink:href="#svg-slider-up"></use>
+                                </svg>
+                            </div>
+                            <div class="button-down music__product-thumbnail__nav">
+                                <svg width="12" height="6">
+                                    <use xlink:href="#svg-slider-down"></use>
+                                </svg>
                             </div>
                         </div>
                         <div class="music__product__slider__big-img">
@@ -109,23 +124,32 @@ include_once __DIR__ . '/inc/header.php'
                                                 <img src="./img/prod.png" alt="">
                                             </a>
                                         </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="products" href="./img/prod.png"
+                                               class="music__product-pic__item">
+                                                <img src="./img/prod.png" alt="">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-
+                                <svg width="32" height="32" class="music__product-pic__zoom">
+                                    <use xlink:href="#svg-zoom"></use>
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="row justify-content-end align-items-center slon__main__single-product__top-row">
+                    <div class="row justify-content-end align-items-center music__product__top-row">
                         <div class="col-7">
-                            <div class="slon__main__single-product__articule">
-                                Артикул: <b>FUSION Black-Orange</b>
+                            <div class="music__product__articule">
+                                <b>Артикул:</b> L-3808 Matt Grey
                             </div>
                         </div>
                         <div class="col-5">
-                            <a href="" class="slon__main__single-product__brend">
-                                <img src="./img/brend.png" data-src="./img/brend.png" data-srcset="./img/brend@2.png 2x"
+                            <a href="" class="music__product__brend">
+                                <img src="./img/brend.png"
+                                     data-src="./img/brend.png" data-srcset="./img/brend@2.png 2x"
                                      alt="">
                             </a>
                         </div>
@@ -160,172 +184,111 @@ include_once __DIR__ . '/inc/header.php'
                                 </span>
                             </div>
                         </div>
-                        <div class="slon__main__single-product__col-all-rev">
+                        <div class="music__product__col-all-rev">
                             <a href="#reviews" class="anchor">15 отзывов</a>
                         </div>
                     </div>
 
-                    <div class="slon__main__single-product__top-right">
-                        <h1>Кресло компьютерное
-                            игровое Cougar FUSION</h1>
-                        <div class="slon__main__single-product__top-right__item slon__main__single-product__top-right__item--fav">
-                            <a href="" class="slon__main__single-product__compare slon__main__link-ico">
-                                В избранное
-                            </a>
-                            <a href="" class="slon__main__single-product__compare slon__main__link-ico">
-                                В сравнение
-                            </a>
-                        </div>
-                        <!-- выбор размера -->
-                        <div class="slon__main__single-product__top-right__item">
-                            <span class="slon__main__single-product__top-right__item__label">Размер:</span>
-                            <ul class="nav slon__main__single-product__razmer">
-                                <li>
-                                    <a href="" class="slon__main__single-product__razmer__item ">
-                                        S
+                    <div class="music__product__top-right">
+                        <h1>Виниловый проигрыватель
+                            Lenco L-3808 Matt Grey</h1>
+                        <div class="music__product__top-right__item music__product__top-right__item--fav">
+                            <div class="row">
+                                <div class="col-lg-5 col-xl-4">
+                                    <a href="" class="music__product__link-ico">
+                                        <svg width="24" height="21">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        В избранное
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" class="slon__main__single-product__razmer__item is_active">
-                                        M
+                                </div>
+                                <div class="col-lg-7 col-xl-8">
+                                    <a href="" class="music__product__link-ico">
+                                        <svg width="18" height="24">
+                                            <use xlink:href="#svg-compare"></use>
+                                        </svg>
+                                        В сравнение
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" class="slon__main__single-product__razmer__item ">
-                                        XL
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="slon__main__single-product__razmer__item ">
-                                        XXL
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="slon__main__single-product__razmer__info">
-                                <a href="" class="slon__main__link" data-toggle="modal" data-target="#razmerModal">
-                                    Размерная сетка
-                                </a>
+                                </div>
                             </div>
                         </div>
+
                         <!-- выбор цвета -->
-                        <div class="slon__main__single-product__top-right__item">
-                            <span class="slon__main__single-product__top-right__item__label">Цвет:</span>
-                            <ul class="nav slon__list-catalog__product__politra">
+                        <div class="music__product__top-right__item music__product__top-right__item--color">
+                            <span class="music__product__top-right__item__label">Цвет:</span>
+                            <ul class="nav music__product__politra">
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color is_active"
-                                       style="background: #ff4545"></a>
+                                    <a href="" class="slon__list-catalog__product__politra__color is_active">
+                                        <img src="./img/color1.png" alt="">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color"
-                                       style="background: #73ba00"></a>
+                                    <a href="" class="slon__list-catalog__product__politra__color">
+                                        <img src="./img/color2.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="slon__list-catalog__product__politra__color">
+                                        <img src="./img/color3.png" alt="">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <!-- цена -->
-                        <div class="slon__main__single-product__top-right__item">
-                            <div class="slon__list-catalog__product__price">
-                                <span class="slon__product__price-value">26 091 <span class="b-rub">Р</span></span>
-                                <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
-                            </div>
-                            <div class="slon__product__promo">
-                                <div id="productPromoOpen" class="slon__product__promo__label">
-                                    Скидка -10% по промокоду <b>LETO</b>
-                                </div>
-                                <div id="productPromoBox" class="slon__product__promo__wrap">
-                                    <span id="productPromoClose" class="slon__product__promo__close"></span>
-                                    <div class="fpad15">
-                                        <p>Получи скидку -10%<br>
-                                            по промокоду <b class="slon__product__promo__string">LETO</b><br>
-                                            при заказе товара до 10 июня.
-                                        </p>
-
-                                        <a href="" class="slon__all-link"><span>Все товары с этим промокодом</span></a>
+                        <div class="music__product__top-right__item music__product__top-right__item--price">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="music__product__price">
+                                        <span class="music__product__price__price-value">
+                                            26 091 <span class="b-rub">Р</span>
+                                        </span>
+                                        <span class="music__product__price__old-price-value">
+                                            28 990 <span class="b-rub">Р</span>
+                                        </span>
                                     </div>
-                                    <button class="slon__btn-border slon__btn-border--small slon__btn-border--black">
-                                        <span>Скопировать промокод</span>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="music__product__promo">
+                                        <div class="music__product__promo__label">
+                                            Скидка -10% по промокоду <b>LETO</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="music__product__top-right__item music__product__top-right__item--btn">
+                            <div class="row music__product__btn-row">
+                                <div class="col-6 fpad15">
+                                    <button class="btn-bay">
+                                        <span>В КОРЗИНУ</span>
                                     </button>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="slon__main__single-product__top-right__item">
-                            <div class="slon__list-catalog__product__price">
-                                <span class="slon__product__price-value">26 091 <span class="b-rub">Р</span></span>
-                                <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
-                            </div>
-                            <div class="slon__product__promo slon__product__promo--gift">
-                                <div id="productGiftOpen" class="slon__product__promo__label">
-                                    Подарок за покупку
-                                </div>
-                                <div id="productGiftBox" class="slon__product__promo__wrap">
-                                    <span id="productGiftClose" class="slon__product__promo__close"></span>
-                                    <div class="slon__product__gift">
-                                        <div class="slon__product__gift__caption">Подарок за покупку</div>
-                                        <a href="" class="slon__product__gift__link">
-                                            <div class="slon__product__gift__pic">
-                                                <img src="./img/t1.png" data-src="./img/t1.png"
-                                                     data-srcset="./img/t1@2.png 2x" alt="">
-                                            </div>
-                                            <div class="slon__product__gift__title">
-                                                Кресло компьютерное игровое Cougar FUSION OrangeКресло компьютерное
-                                                игровое Cougar FUSION Orange
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- две кнопки покупки -->
-                        <div class="slon__main__single-product__top-right__item">
-                            <div class="row slon__main__single-product__btn-row w-100">
                                 <div class="col-6 fpad15">
-                                    <div class="slon__btn-azure__box">
-                                        <button class="slon__btn-azure2 h-60" data-toggle="modal"
-                                                data-target="#cartModal">
-                                            <i class="ico-cart"></i> В КОРЗИНУ
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-6 fpad15">
-                                    <button class="slon__btn-border" data-toggle="modal" data-target="#oneBayModal">
+                                    <button class="btn-border" data-toggle="modal" data-target="#oneBayModal">
                                         <span>Купить в 1 клик</span>
                                     </button>
                                 </div>
                             </div>
-                            <a href="" class="slon__main__single-product__credit">
-                                Купить в кредит за 3 000 ₽ / мес
-                            </a>
-                        </div>
-                        <!-- одна кнопка купить -->
-                        <div class="slon__main__single-product__top-right__item">
-                            <div class="row slon__main__single-product__btn-row w-100">
-                                <div class="col-lg-12 fpad15">
-                                    <div class="slon__btn-azure__box">
-                                        <button class="slon__btn-azure2 h-60" data-toggle="modal"
-                                                data-target="#cartModal">
-                                            <i class="ico-cart"></i> В КОРЗИНУ
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="slon__main__single-product__credit">
+                            <a href="" class="music__product__credit">
                                 Купить в кредит за 3 000 ₽ / мес
                             </a>
                         </div>
 
 
-                        <div class="slon__main__single-product__top-right__footer">
-                            <div class="slon__main__single-product__delivery">
-                                <span class="slon__main__single-product__delivery__label">Доставка</span>
+                        <div class="music__product__top-right__footer">
+                            <div class="music__product__delivery">
+                                <span class="music__product__delivery__label">Доставка</span>
                                 <span>20 ноября</span>
                                 <span>от 300 ₽</span>
                             </div>
-                            <div class="slon__main__single-product__delivery">
-                                <span class="slon__main__single-product__delivery__label">Самовывоз</span>
+                            <div class="music__product__delivery">
+                                <span class="music__product__delivery__label">Самовывоз</span>
                                 <span>19 ноября</span>
                                 <span>бесплатно</span>
                             </div>
-                            <a href="" class="slon__main__single-product__delivery__link">Подробнее про условия доставки
+                            <a href="" class="music__product__delivery__link">
+                                Подробнее про условия доставки
                                 и оплаты</a>
                         </div>
                     </div>
@@ -335,6 +298,371 @@ include_once __DIR__ . '/inc/header.php'
         </div>
     </div>
 </div>
+<div class="music__product__navigation">
+    <div class="music__product__navigation__wrap" id="productDescNav">
+        <div class="container">
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#description" class="nav-link music__product__navigation__anchor active">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#characteristic" class="nav-link music__product__navigation__anchor">Характеристики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#driver" class="nav-link music__product__navigation__anchor">Драйверы и инструкции</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#overview" class="nav-link music__product__navigation__anchor">ОБЗОРЫ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link music__product__navigation__anchor">ГАЛЕРЕЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link music__product__navigation__anchor">Отзывы</a>
+                    </li>
+                </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="music__section" id="description">
+    <div class="music__product__full-screen  music__product__full-screen--n1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 music__text text-white">
+                    <h2>Функция “Быстрый Запуск". Легко и просто</h2>
+                    <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную
+                        раскрутку пластинки до необходимой скорости, что также называется «быстрым запуском».</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media screen and (min-width: 1921px) {
+                .music__product__full-screen--n1 {
+                    background-image: url("./img/bg-product1@2.jpg");
+                }
+            }
+            @media screen and (max-width: 1920px) {
+                .music__product__full-screen--n1 {
+                    background-image: url("./img/bg-product1.jpg");
+                }
+            }
+        </style>
+    </div>
+    <div class="music__product__full-screen music__product__full-screen--n2">
+        <div class="container">
+            <div class="row flex-row-reverse align-items-center">
+                <div class="col-lg-6 music__text text-white">
+                    <h2>Профессиональный проигрыватель винила</h2>
+                    <p>Благодаря встроенному фонокорректору вы можете подключить Lenco L-3808 напрямую к микшеру или
+                        стереосистеме. Нет необходимости приобретать усилитель, ведь он уже встроен в L-3808.
+                        Наслаждайтесь винилом без искажений и помех. Предустановленный магнитный картридж Audio Technica
+                        гарантирует качественный звук при воспроизведении виниловых пластинок.</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media screen and (min-width: 1921px) {
+                .music__product__full-screen--n2 {
+                    background-image: url("./img/bg-product2@2.jpg");
+                }
+            }
+            @media screen and (max-width: 1920px) {
+                .music__product__full-screen--n2 {
+                    background-image: url("./img/bg-product2.jpg");
+                }
+            }
+        </style>
+    </div>
+    <div class="music__product__full-screen music__product__full-screen--n3">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 music__text text-white text-center">
+                    <h2>Возможность оцифровки записи через USB</h2>
+                    <p>Благодаря привлекательному внешнему виду, неподвластному времени, Lenco L-3808 вписывается в любой интерьер, позволяя вам наслаждаться качественным, аналоговым звуком. С Lenco L-3808 вы сможете оцифровать свои виниловые записи на свой компьютер. Проигрыватель поставляется со съёмной пылезащитной крышкой.</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media screen and (min-width: 1921px) {
+                .music__product__full-screen--n3 {
+                    background-image: url("./img/bg-product3@2.jpg");
+                }
+            }
+            @media screen and (max-width: 1920px) {
+                .music__product__full-screen--n3 {
+                    background-image: url("./img/bg-product3.jpg");
+                }
+            }
+        </style>
+    </div>
+    <div class="container tpad70">
+        <div class="row align-items-center fpad70">
+            <div class="col-lg-6 music__box__item">
+                <div class="music__box__item__img music__box__item__img--h37">
+                    <img
+                            src="./img/action.jpg"
+                            data-src="./img/action.jpg"
+                            data-srcset="./img/action@2.jpg 2x"
+                            alt=""
+                    />
+                </div>
+            </div>
+            <div class="col-lg-6 music__box__item">
+                <div  class="music__page__list__item__desc">
+                    <h2 class="music__box__item__title2">Встроенный фонокорректор</h2>
+                    <p>Благодаря встроенному фонокорректору вы можете подключить Lenco L-3808 напрямую к микшеру или стереосистеме. Нет необходимости приобретать усилитель, ведь он уже встроен в L-3808. Наслаждайтесь винилом без искажений и помех. Предустановленный магнитный картридж Audio Technica гарантирует качественный звук при воспроизведении виниловых пластинок.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center fpad70">
+            <div class="col-lg-6 music__box__item">
+                <div  class="music__page__list__item__desc">
+                    <h2 class="music__box__item__title2">Магнитный картридж Audio Technica</h2>
+                    <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную раскрутку пластинки до необходимой скорости, что также называется «быстрым запуском».</p>
+                </div>
+            </div>
+            <div class="col-lg-6 music__box__item">
+                <div class="music__box__item__img music__box__item__img--h37">
+                    <img
+                            src="./img/action.jpg"
+                            data-src="./img/action.jpg"
+                            data-srcset="./img/action@2.jpg 2x"
+                            alt=""
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="row fpad40">
+            <div class="col-lg-4 fpad30">
+                <div class="music__box__item">
+                    <figure class="music__box__item__img music__box__item__img--h26">
+                        <img
+                                src="./img/art.jpg"
+                                data-src="./img/art.jpg"
+                                data-srcset="./img/art@2.jpg 2x"
+                                alt=""
+                        />
+                    </figure>
+                    <div class="music__box__item__footer">
+                        <h2 class="music__box__item__title2">Противовес</h2>
+                        <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную раскрутку пластинки до необходимой скорости.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 fpad30">
+                <div class="music__box__item">
+                    <figure class="music__box__item__img music__box__item__img--h26">
+                        <img
+                                src="./img/art.jpg"
+                                data-src="./img/art.jpg"
+                                data-srcset="./img/art@2.jpg 2x"
+                                alt=""
+                        />
+                    </figure>
+                    <div class="music__box__item__footer">
+                        <h2 class="music__box__item__title2">Противовес</h2>
+                        <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную раскрутку пластинки до необходимой скорости.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 fpad30">
+                <div class="music__box__item">
+                    <figure class="music__box__item__img music__box__item__img--h26">
+                        <img
+                                src="./img/art.jpg"
+                                data-src="./img/art.jpg"
+                                data-srcset="./img/art@2.jpg 2x"
+                                alt=""
+                        />
+                    </figure>
+                    <div class="music__box__item__footer">
+                        <h2 class="music__box__item__title2">Противовес</h2>
+                        <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную раскрутку пластинки до необходимой скорости.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="music__section " id="characteristic">
+    <div class="music__section__characteristic">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="music__section__caption">Характеристики</div>
+                </div>
+                <div class="col-lg-8 music__characteristic">
+                    <div class="music__characteristic__title">Проигрыватель</div>
+                    <ul class="music__characteristic__list nav d-block">
+                        <li>
+                            <dl class="music__characteristic__item row">
+                                <dt class="col-lg-6 col-6">Тип</dt>
+                                <dd class="col-lg-6 col-6">2-х скоростной с ручным управлением</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="music__characteristic__item row">
+                                <dt class="col-lg-6 col-6">Мотор</dt>
+                                <dd class="col-lg-6 col-6">8-полярный, 2-х фазный вентильный
+                                    электродвигатель</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="music__characteristic__item row">
+                                <dt class="col-lg-6 col-6">Тип привода</dt>
+                                <dd class="col-lg-6 col-6">Прямой привод</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="music__characteristic__title">Предусилитель / фонокорректор</div>
+                    <ul class="music__characteristic__list nav d-block">
+                        <li>
+                            <dl class="music__characteristic__item row">
+                                <dt class="col-lg-6 col-6">Тип</dt>
+                                <dd class="col-lg-6 col-6">2-х скоростной с ручным управлением</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="music__characteristic__item row">
+                                <dt class="col-lg-6 col-6">Мотор</dt>
+                                <dd class="col-lg-6 col-6">8-полярный, 2-х фазный вентильный
+                                    электродвигатель</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="music__characteristic__item row">
+                                <dt class="col-lg-6 col-6">Тип привода</dt>
+                                <dd class="col-lg-6 col-6">Прямой привод</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="music__section music__section--border" id="driver">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="music__section__caption">Драйверы и инструкции</div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 fpad30">
+                        <a href="" download="" class="music__download-file">
+                            <svg width="29" height="36">
+                                <use xlink:href="#svg-download"></use>
+                            </svg>
+                            <span class="music__download-file__caption">Инструкция для L-3808</span>
+                            <span class="music__download-file__size">1.53 МБ</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 fpad30">
+                        <a href="" download="" class="music__download-file">
+                            <svg width="29" height="36">
+                                <use xlink:href="#svg-download"></use>
+                            </svg>
+                            <span class="music__download-file__caption">Инструкция для L-3809</span>
+                            <span class="music__download-file__size">1.53 МБ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="music__section " id="overview">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="music__section__caption">Обзоры</div>
+            </div>
+
+            <div class="col-lg-8 fpad70">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="" class="music__box__item">
+                            <figure class="music__box__item__img music__box__item__img--h37">
+                                <img
+                                        src="./img/art.jpg"
+                                        data-src="./img/art.jpg"
+                                        data-srcset="./img/art@2.jpg 2x"
+                                        alt=""
+                                />
+                            </figure>
+                            <div class="music__box__item__footer">
+                                <span class="music__box__item__date">21.04.2021</span>
+                                <h3 class="music__box__item__title">ION AUDIO НА CES 2021</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="" class="music__box__item">
+                            <figure class="music__box__item__img music__box__item__img--h37">
+                                <img
+                                        src="./img/art.jpg"
+                                        data-src="./img/art.jpg"
+                                        data-srcset="./img/art@2.jpg 2x"
+                                        alt=""
+                                />
+                            </figure>
+                            <div class="music__box__item__footer">
+                                <span class="music__box__item__date">21.04.2021</span>
+                                <h3 class="music__box__item__title">ION AUDIO НА CES 2021</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a data-fancybox="video" href="https://www.youtube.com/watch?v=P_A2kNpyQBs" class="music__box__item">
+                            <figure class="music__box__item__img music__box__item__img--h20 music__box__item__img--video">
+                                <img
+                                        src="./img/art.jpg"
+                                        data-src="./img/art.jpg"
+                                        data-srcset="./img/art@2.jpg 2x"
+                                        alt=""
+                                />
+                            </figure>
+                            <div class="music__box__item__footer">
+                                <span class="music__box__item__date">21.04.2021</span>
+                                <h3 class="music__box__item__title">ПРОИГРЫВАТЕЛь ВИНИЛА LENCO  L-3808</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="music__section " id="gallery">
+    <div class="container">
+        11111
+    </div>
+</div>
+
+<div class="music__section " id="reviews">
+    <div class="music__section__rev">
+        <div class="container">
+            <div class="row">
+                <div>
+                    Отзывы 22
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="fpad70 tpad70">
     <?php
     include __DIR__ . '/inc/callback.php';
