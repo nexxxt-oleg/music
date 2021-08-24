@@ -1202,117 +1202,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-/*
-    function setEqualHeight(elements) {
-        let mainDivs = document.querySelectorAll(elements);
-        let maxHeight = 0;
-        for (let i = 0; i < mainDivs.length; ++i) {
-            if (maxHeight < mainDivs[i].clientHeight) {
-                maxHeight = mainDivs[i].clientHeight;
-            }
-        }
-
-        for (let i = 0; i < mainDivs.length; ++i) {
-            mainDivs[i].style.minHeight = maxHeight + "px";
-        }
-        mainDivs = '';
-    }
-
-    if (document.getElementById('compareSlider1')) {
-        let compare1 = new Swiper("#compareSlider1", {
-            spaceBetween: 30,
-            slidesPerView: 4,
+    if (document.getElementById('gallerySlider')) {
+        new Swiper("#gallerySlider", {
+            spaceBetween: 10,
             navigation: {
-                nextEl: "#compareSlider1 .button-next",
-                prevEl: "#compareSlider1 .button-prev",
-            },
-            breakpoints: {
-                220: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                574: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                1200: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                },
-            },
-            on: {
-                init: function () {
-
-                }
+                nextEl: ".music__next-gallery",
             },
         });
     }
 
-    if (document.getElementById('compareSlider2') && window.screen.width < 768) {
-        let compare2 = new Swiper("#compareSlider2", {
-
-            slidesPerView: 1,
-            navigation: {
-                nextEl: "#compareSlider2 .button-next",
-                prevEl: "#compareSlider2 .button-prev",
-            },
-
-            on: {
-                init: function () {
-                    let propsCompare = document.querySelectorAll('#compareSlider2 .swiper-wrapper .swiper-slide:first-child .zone__product__compare__item__props');
-                    //console.log(propsCompare);
-                    [].forEach.call(propsCompare, el => {
-                        //console.log(el.dataset.row);
-                        setEqualHeight('.zone__product__compare__item__props[data-row="' + el.dataset.row + '"]');
-                    });
-                }
-            },
-        });
-        compare2.slideTo(1);
-
-    }
-
-    if (document.getElementById('newsSlider')) {
-        let compare1 = new Swiper("#newsSlider", {
-            spaceBetween: 30,
-            slidesPerView: 3,
+    if (document.getElementById('setSlider')) {
+        new Swiper("#setSlider", {
+            spaceBetween: 10,
             loop: true,
             navigation: {
-                nextEl: ".zone__news-slider__nav--next",
-                prevEl: ".zone__news-slider__nav--prev",
+                nextEl: "#setSlider .button-next",
+                prevEl: "#setSlider .button-prev",
             },
-            breakpoints: {
-                220: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                574: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
+            pagination: {
+                el: '#setSlider .slider-footer-nav__page',
+                clickable: true,
             },
-
         });
     }
-
-
- */
 
 
 });

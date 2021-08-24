@@ -191,3 +191,12 @@ function passOpen(e) {
         e.previousElementSibling.type = 'text';
     }
 }
+
+
+function passOpen(e) {
+    if (e.previousElementSibling.type == 'text') {
+        e.previousElementSibling.type = 'password';
+    } else {
+        e.previousElementSibling.type = 'text';
+    }
+}
