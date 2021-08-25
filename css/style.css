@@ -10147,6 +10147,76 @@ textarea.form-control-lg {
   top: auto;
   right: 28px; }
 
+.questions__nav-left .nav-item {
+  border-bottom: 1px solid #ededed;
+  padding: 0; }
+.questions__nav-left .nav-link {
+  padding: 15px 25px;
+  display: block;
+  border-left: 3px solid transparent;
+  position: relative;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #585858; }
+  .questions__nav-left .nav-link.active {
+    border-left-color: #bea68f;
+    color: #231e1f; }
+    .questions__nav-left .nav-link.active::after {
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-left: 4px solid #bea68f;
+      border-bottom: 4px solid transparent;
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 0;
+      margin-top: -4px; }
+.questions__caption-mob {
+  display: none; }
+.questions__collapse {
+  border: 1px solid #ededed;
+  border-radius: 0 15px 0 15px;
+  margin-bottom: 20px; }
+  .questions__collapse__title {
+    position: relative;
+    padding: 15px 30px 15px 70px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #231e1f; }
+    .questions__collapse__title::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 25px;
+      margin-top: -1px;
+      width: 12px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #bea68f; }
+    .questions__collapse__title.collapsed {
+      color: #585858 !important; }
+      .questions__collapse__title.collapsed::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 30px;
+        margin-top: -6px;
+        width: 2px;
+        height: 12px;
+        border-radius: 1px;
+        background-color: #bea68f; }
+  .questions__collapse__body {
+    padding: 10px 30px 20px 70px; }
+
 body {
   font-family: 'TT Norms';
   color: #585858; }
@@ -11106,6 +11176,7 @@ body {
   border: none;
   color: #585858;
   font-family: Phenomena, sans-serif;
+  text-decoration: none !important;
   text-transform: uppercase;
   font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
@@ -11570,6 +11641,9 @@ a {
     line-height: 40px;
     margin: 0;
     padding-bottom: 20px; }
+    .music__text h1.fonts60, .music__text .fonts60.h1 {
+      font-size: 60px;
+      line-height: 66px; }
   .music__text h2, .music__text .h2 {
     font-weight: bold;
     font-family: Phenomena, sans-serif;
@@ -13202,5 +13276,86 @@ textarea.music__form__inp {
     line-height: 24px;
     font-weight: bold;
     padding-bottom: 20px; }
+
+.music__404 {
+  padding: 15px 0 15px 70px; }
+  .music__404 h1, .music__404 .h1 {
+    font-size: 60px !important;
+    line-height: 1.2 !important; }
+  .music__404 .music__desc-404 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #bea68f;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 40px;
+    padding-top: 10px; }
+  .music__404 .music__form__submit {
+    max-width: 310px; }
+
+.music__list-bay__item {
+  overflow: hidden;
+  padding-top: 5px;
+  position: relative;
+  margin-left: -5px;
+  padding-left: 5px; }
+  .music__list-bay__item__ico {
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    padding-bottom: 50px; }
+  .music__list-bay__item__desc {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .music__list-bay__item__title {
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px; }
+    .music__list-bay__item__title b {
+      display: block;
+      font-size: 18px;
+      font-weight: bold; }
+  .music__list-bay__item:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: url("../img/step.png") 0 0 repeat-y;
+    position: absolute;
+    top: 75px;
+    left: 36px; }
+  .music__list-bay__item__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 30px; }
+    .music__list-bay__item__text b {
+      font-weight: 500; }
+
+.music__circle-ico {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  -webkit-box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+          box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df; }
+  .music__circle-ico svg {
+    display: block; }
+
+.tpad10 {
+  padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
