@@ -13077,6 +13077,10 @@ textarea.music__form__inp {
     border-radius: 0 50px 0 50px;
     -webkit-box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
             box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df; }
+    .music__box-lk__wrap.music__box-lk__wrap--min {
+      -ms-flex-preferred-size: 450px;
+          flex-basis: 450px;
+      max-width: 450px; }
     .music__box-lk__wrap__row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -13091,6 +13095,27 @@ textarea.music__form__inp {
   .music__box-lk__col-left {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
+  .music__box-lk__col-right {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .music__box-lk__col-right__col1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 150px;
+      font-size: 16px;
+      line-height: 24px;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+    .music__box-lk__col-right__col2 {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
 
 .music__form__box-inp__pass {
   position: relative; }
@@ -13113,5 +13138,69 @@ textarea.music__form__inp {
     color: #d9c9ba; }
     .music__form__box-inp__pass .music__form__box-inp__show-pass:hover, .music__form__box-inp__pass .music__form__box-inp__show-pass.active {
       color: #bda68f; }
+
+.music__reg-soc__list {
+  display: block; }
+  .music__reg-soc__list li:not(:last-child) {
+    padding-bottom: 20px; }
+
+.fonts14 {
+  font-size: 14px;
+  line-height: 24px; }
+
+.music__reg-soc__btn {
+  height: 48px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 0 15px 0 15px;
+  -webkit-box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+          box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+  font-size: 14px;
+  line-height: 1; }
+  .music__reg-soc__btn .icon-box {
+    -ms-flex-preferred-size: 30px;
+        flex-basis: 30px;
+    min-width: 30px;
+    margin-right: 10px; }
+    .music__reg-soc__btn .icon-box svg {
+      display: block;
+      margin: 0 auto; }
+  .music__reg-soc__btn:not(:hover) svg path {
+    fill: #bea68f; }
+
+.music__form__text {
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px; }
+
+.music__page__card {
+  padding: 30px 30px 10px;
+  background-color: #f8f4ef;
+  min-height: 100%; }
+  .music__page__card__list {
+    padding-bottom: 0 !important; }
+    .music__page__card__list li {
+      padding-left: 0 !important;
+      padding-bottom: 20px; }
+      .music__page__card__list li b {
+        font-weight: 500; }
+      .music__page__card__list li::after {
+        display: none !important; }
+      .music__page__card__list li:not(:last-child) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #d9c8b9; }
+  .music__page__card__ico {
+    height: 70px; }
+  .music__page__card__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
