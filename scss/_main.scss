@@ -3337,6 +3337,10 @@ textarea.music__form__inp {
     padding: 40px;
     border-radius: 0 50px 0 50px;
     box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+    &.music__box-lk__wrap--min {
+      flex-basis: 450px;
+      max-width: 450px;
+    }
     &__row {
       display: flex;
     }
@@ -3351,7 +3355,21 @@ textarea.music__form__inp {
   }
   &__col-left {
     flex-basis: 50%;
-
+  }
+  &__col-right {
+    flex-basis: 50%;
+    display: flex;
+    &__col1 {
+      display: flex;
+      justify-content: center;
+      padding-top: 150px;
+      font-size: 16px;
+      line-height: 24px;
+      flex-basis: 50%;
+    }
+    &__col2 {
+      flex-basis: 50%;
+    }
   }
 }
 .music__form__box-inp__pass {
@@ -3373,5 +3391,78 @@ textarea.music__form__inp {
     &.active {
       color: #bda68f;
     }
+  }
+}
+.music__reg-soc__list {
+  display: block;
+  li:not(:last-child) {
+    padding-bottom: 20px;
+  }
+}
+.fonts14 {
+  font-size: 14px;
+  line-height: 24px;
+}
+.music__reg-soc__btn {
+  height: 48px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 15px 0 15px;
+  box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+  font-size: 14px;
+  line-height: 1;
+  .icon-box {
+    flex-basis: 30px;
+    min-width: 30px;
+    margin-right: 10px;
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &:not(:hover) {
+    svg {
+      path {
+        fill: #bea68f;
+      }
+    }
+  }
+}
+.music__form__text {
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.music__page__card {
+  padding: 30px 30px 10px;
+  background-color: #f8f4ef;
+  min-height: 100%;
+  &__list {
+    padding-bottom: 0 !important;
+    li {
+      padding-left: 0 !important;
+      padding-bottom: 20px;
+      b {
+        font-weight: 500;
+      }
+      &::after {
+        display: none !important;
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #d9c8b9;
+      }
+    }
+  }
+  &__ico {
+    height: 70px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
   }
 }
