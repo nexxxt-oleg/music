@@ -13354,8 +13354,140 @@ textarea.music__form__inp {
           box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df; }
   .music__circle-ico svg {
     display: block; }
+  .music__circle-ico__text2 {
+    display: block;
+    font-size: 12px;
+    line-height: 14px; }
+  .music__circle-ico__text {
+    display: block;
+    font-size: 14px;
+    line-height: 24px; }
 
 .tpad10 {
   padding-top: 10px; }
+
+.music__left-ico {
+  position: relative;
+  padding-left: 35px; }
+  .music__left-ico .ico {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #bea68f; }
+
+.h-60 {
+  min-height: 60px; }
+
+.music__phone {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none !important; }
+
+.tpad30 {
+  padding-top: 30px; }
+
+.fonts24 {
+  font-size: 24px !important; }
+
+.music__link2 {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid #bea68f; }
+  .music__link2:hover {
+    border-bottom-color: transparent; }
+
+.music__section__sub-caption {
+  padding-bottom: 30px;
+  color: #bea68f;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px; }
+
+.img-w {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.music__text__adv__big {
+  font-size: 36px;
+  line-height: 1;
+  color: #bea68f;
+  font-weight: bold;
+  padding-bottom: 5px; }
+.music__text__adv__min {
+  font-size: 16px;
+  line-height: 1;
+  color: #585858;
+  font-weight: bold; }
+
+.music__brend--min .music__brend__link {
+  height: 140px; }
+
+.musc__page__cart2 {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8f4ef; }
+  .musc__page__cart2__ico {
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 30px;
+    max-width: 100px; }
+    .musc__page__cart2__ico svg {
+      display: block;
+      margin-left: auto; }
+  .musc__page__cart2 span {
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    padding-right: 30px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; }
+
+.lpad15 {
+  padding-left: 15px; }
+
+.fonts30 {
+  font-size: 30px !important; }
+
+.music__service-adr {
+  height: 100%;
+  padding: 25px 30px 25px 25px;
+  background-color: #f9f9f9; }
+  .music__service-adr__title {
+    padding: 0 0 15px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold; }
+  .music__service-adr__info li {
+    position: relative;
+    padding-left: 32px !important;
+    font-size: 14px !important;
+    line-height: 20px; }
+    .music__service-adr__info li .ico {
+      position: absolute;
+      z-index: 1;
+      top: 3px;
+      left: 0;
+      color: #bea68f; }
+    .music__service-adr__info li:not(:last-child) {
+      padding-bottom: 25px; }
+    .music__service-adr__info li::after {
+      display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
