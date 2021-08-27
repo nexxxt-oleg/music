@@ -28,7 +28,7 @@
                          data-bs-target="#collapse1_tab1">
                         Есть ли система скидок постоянным покупателям?
                     </div>
-                    <div id="collapse1_tab1" class="collapse show" >
+                    <div id="collapse1_tab1" class="collapse show">
                         <div class="questions__collapse__body music__text">
                             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                                 terry
@@ -52,7 +52,7 @@
                          data-bs-target="#collapse2_tab1">
                         Бывают ли у вас Акции? как найти товар по Акции?
                     </div>
-                    <div id="collapse2_tab1" class="collapse" >
+                    <div id="collapse2_tab1" class="collapse">
                         <div class="questions__collapse__body music__text">
                             <p>При входе на сайт ваш город определится автоматически, Акции по
                                 федеральным округам России могут различаться.</p>
@@ -82,7 +82,7 @@
                          data-bs-target="#collapse2_tab1">
                         Есть ли система скидок постоянным покупателям?
                     </div>
-                    <div id="collapse2_tab1" class="collapse show" >
+                    <div id="collapse2_tab1" class="collapse show">
                         <div class="questions__collapse__body music__text">
                             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                                 terry
@@ -106,7 +106,7 @@
                          data-bs-target="#collapse1_tab2">
                         Бывают ли у вас Акции? как найти товар по Акции?
                     </div>
-                    <div id="collapse1_tab2" class="collapse" >
+                    <div id="collapse1_tab2" class="collapse">
                         <div class="questions__collapse__body music__text">
                             <p>При входе на сайт ваш город определится автоматически, Акции по
                                 федеральным округам России могут различаться.</p>
@@ -130,13 +130,14 @@
             </div>
             <div class="tab-pane fade" id="tab3">
                 <div class="music__col-tab-q__caption questions__caption-mob">Санкт-Петербург и Ленинградская
-                    область</div>
+                    область
+                </div>
                 <div class="questions__collapse">
                     <div class="questions__collapse__title" data-bs-toggle="collapse"
                          data-bs-target="#collapse2_tab1">
                         Есть ли система скидок постоянным покупателям?
                     </div>
-                    <div id="collapse2_tab1" class="collapse show" >
+                    <div id="collapse2_tab1" class="collapse show">
                         <div class="questions__collapse__body music__text">
                             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                                 terry
@@ -160,7 +161,7 @@
                          data-bs-target="#collapse1_tab3">
                         Бывают ли у вас Акции? как найти товар по Акции?
                     </div>
-                    <div id="collapse1_tab3" class="collapse" >
+                    <div id="collapse1_tab3" class="collapse">
                         <div class="questions__collapse__body music__text">
                             <p>При входе на сайт ваш город определится автоматически, Акции по
                                 федеральным округам России могут различаться.</p>
@@ -189,7 +190,7 @@
                          data-bs-target="#collapse2_tab1">
                         Есть ли система скидок постоянным покупателям?
                     </div>
-                    <div id="collapse2_tab1" class="collapse show" >
+                    <div id="collapse2_tab1" class="collapse show">
                         <div class="questions__collapse__body music__text">
                             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                                 terry
@@ -213,7 +214,7 @@
                          data-bs-target="#collapse1_tab4">
                         Бывают ли у вас Акции? как найти товар по Акции?
                     </div>
-                    <div id="collapse1_tab4" class="collapse" >
+                    <div id="collapse1_tab4" class="collapse">
                         <div class="questions__collapse__body music__text">
                             <p>При входе на сайт ваш город определится автоматически, Акции по
                                 федеральным округам России могут различаться.</p>
