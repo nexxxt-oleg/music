@@ -6,8 +6,8 @@
             </svg>
             <span>НАВЕРХ</span>
         </a>
-        <div class="row fpad30">
-            <div class="col-lg-4 col-xl-4 fpad30">
+        <div class="row fpad30 ">
+            <div class="col-lg-4 col-xl-4 fpad30 music__footer__nav-box">
                 <ul class="nav flex-column music__footer__nav">
                     <li><a href=""><b>Виниловые проигрыватели</b></a></li>
                     <li><a href=""><b>Портативная акустика</b></a></li>
@@ -18,7 +18,7 @@
                     <li><a href=""><b>Акции</b></a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-xl-2 fpad30">
+            <div class="col-lg-3 col-xl-2 fpad30 music__footer__nav-box">
                 <ul class="nav flex-column music__footer__nav">
                     <li><a href="">О нас</a></li>
                     <li><a href="">Оплата <span>/</span> Доставка</a></li>
@@ -27,7 +27,7 @@
                     <li><a href="">Контакты</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-xl-3 fpad30">
+            <div class="col-lg-3 col-xl-3 fpad30 music__footer__nav-box">
                 <ul class="nav flex-column music__footer__nav">
                     <li><a href="">Как купить</a></li>
                     <li><a href="">Кредит на покупку</a></li>
@@ -37,7 +37,12 @@
                     <li><a href="">Политика конфиденциальности</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-xl-3 fpad30">
+            <div class="col-lg-3 col-xl-3 fpad30 music__footer__contact-mob">
+                <a href="/" class="music__footer__logo-mob">
+                    <svg width="160" height="23">
+                        <use xlink:href="#svg-logo"></use>
+                    </svg>
+                </a>
                 <a class="music__footer__tel" href="tel:88007005829">8-800-700-58-29</a>
                 <a class="music__footer__email" href="mailto:hi@musicroom.ru">hi@musicroom.ru</a>
                 <ul class="nav music__footer__soc">

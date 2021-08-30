@@ -1,12 +1,141 @@
 @media screen and (max-width: 1199px) {
-
+  .music__consul-form__label {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .music__header__top__col-nav {
+    display: none;
+  }
+  .music__header__top__col-tel {
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .music__footer__nav-box {
+    display: none;
+  }
+  .music__footer__tel {
+    text-align: center;
+  }
+  .music__footer__contact-mob {
+    text-align: center;
+  }
+  .music__footer__email {
+    margin-bottom: 20px;
+  }
+  .music__footer__soc {
+    justify-content: center;
+  }
+  .music__footer__logo-mob {
+    display: block;
+    margin-bottom: 20px;
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .music__footer__bottom {
+    text-align: center;
+    .music__footer__logo {
+      display: none;
+    }
+  }
+  .music__carusel-product .swiper-container {
+    padding: 0 20px !important;
+    margin: 0 -20px !important;
+  }
+  .music__header__mob {
+    display: block;
+    padding-top: 10px;
+    .music__header__top__col-tel {
+      margin-left: auto;
+    }
 
+    &__top-row {
+      padding-bottom: 10px;
+    }
+  }
+
+  .music__header__top,
+  .music__header__middle,
+  .music__header__bottom {
+    display: none !important;
+  }
+
+  .music__header__mob__navbar {
+    justify-content: flex-end;
+    li {
+      flex-basis: 36px;
+      max-width: 36px;
+      a {
+        display: flex;
+        color: #565656;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+      }
+    }
+  }
+  .music__header__mob__footer {
+    border-top: 1px solid #ededed;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    &.active {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
+    .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .music__header__mob__bottom-row {
+    padding-bottom: 5px;
+  }
+  .music__header__mob__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #actionToast {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .music__callback__center {
+    flex-basis: 270px;
+    min-width: 270px;
+    padding: 0 20px 20px;
+  }
+  .music__caption {
+    font-size: 30px;
+  }
+  .music__callback__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .music__btn-top {
+    display: none;
+  }
+  .music__footer {
+    padding-top: 25px;
+  }
+  .music__footer__contact-mob {
+    padding-bottom: 0 !important;
+  }
+}
 
 @media screen and (max-width: 440px) {
+  .music__consul-form__label {
+    font-size: 24px;
+  }
 
 }

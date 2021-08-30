@@ -10431,6 +10431,270 @@ textarea.form-control-lg {
             transform: translate(0, -50%);
     color: #bea68f; }
 
+.music__compare__header {
+  min-height: 64px;
+  padding: 15px;
+  border-radius: 32px;
+  background-color: #f8f4ef;
+  margin-bottom: 30px; }
+  .music__compare__header__col-count {
+    padding-left: 30px !important; }
+  .music__compare__header > .row {
+    min-height: 34px; }
+
+.music__label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; }
+
+.music__count-products {
+  margin-left: 10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 2px;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #bda68f;
+  display: inline-block;
+  border-radius: 9px; }
+
+.music__list-filter {
+  margin-left: 20px; }
+  .music__list-filter li:not(:last-child) {
+    padding-right: 15px; }
+
+.music__radiobutton input {
+  display: none; }
+  .music__radiobutton input:checked + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 4px;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    background-color: #585858; }
+.music__radiobutton span {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 24px; }
+  .music__radiobutton span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #eeeded; }
+
+.btn-sort {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #585858; }
+
+.music__page__sort {
+  padding-right: 30px !important; }
+  .music__page__sort .btn-sort {
+    margin-left: 10px; }
+
+.music__compare__header__mob-sort,
+.music__mob-compare-params,
+.music__compare__col-products--mob,
+.pagination {
+  display: none; }
+
+.music__item-product__fav-compare__inner.active {
+  color: #cebcab !important; }
+
+.music__compare__item {
+  padding: 0 !important; }
+  .music__compare__item .music__item-product__img {
+    padding: 0 30px; }
+
+.music__compare {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 70px; }
+  .music__compare .button-prev {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    z-index: 110;
+    width: 49px;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #fff;
+    -webkit-box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+            box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .music__compare .button-next {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    z-index: 110;
+    width: 49px;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #fff;
+    -webkit-box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 4px 3px 10px 0px #e8e3df;
+            box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 4px 3px 10px 0px #e8e3df;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.music__nav-props {
+  display: block !important;
+  position: relative;
+  z-index: 100; }
+  .music__nav-props li {
+    padding: 5px 0;
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    font-weight: 500; }
+    .music__nav-props li::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background-color: #f3f3f3;
+      position: absolute; }
+
+.music__compare__col-props {
+  position: relative;
+  z-index: 100; }
+
+.music__compare__col-products {
+  position: relative;
+  z-index: 1; }
+
+.music__item-product__compare-list li {
+  padding: 5px 0;
+  font-size: 16px;
+  line-height: 18px;
+  display: block; }
+
+@media screen and (max-width: 768px) {
+  .music__nav-props li {
+    padding-top: 2px;
+    padding-bottom: 30px;
+    font-size: 8px;
+    line-height: 14px;
+    text-transform: uppercase; }
+
+  .music__compare__col-props {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 0; }
+
+  .music__item-product__compare-list li {
+    padding-top: 20px; }
+
+  .music__mob-compare-params {
+    display: block; }
+    .music__mob-compare-params .music__mob-compare-params__title {
+      font-size: 20px;
+      line-height: 1;
+      font-weight: bold; }
+    .music__mob-compare-params .music__lk-sender {
+      height: auto;
+      padding: 0 0 15px; }
+
+  .music__item-product__compare-list {
+    margin-top: 50px; }
+
+  .music__compare__col-products .music__item-product__category {
+    margin-top: 50px; }
+
+  .music__compare .button-next,
+  .music__compare .button-prev {
+    top: 240px;
+    width: 30px;
+    height: 30px; }
+
+  .music__compare__col-products .pagination {
+    display: block;
+    position: absolute;
+    z-index: 101;
+    top: 245px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px; }
+
+  .music__compare__header__col-filter {
+    display: none !important; }
+
+  .music__page__header {
+    display: block !important;
+    padding-bottom: 30px; }
+    .music__page__header .music__page__title {
+      padding-bottom: 15px; }
+
+  .music__link--del {
+    margin-top: 0 !important;
+    padding: 10px 15px;
+    border: 1px solid #585858;
+    width: 100%; }
+
+  .music__compare__header {
+    min-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+
+  .music__compare__header__col-count {
+    padding-left: 15px !important; }
+
+  .music__compare__item .music__item-product__img {
+    padding: 0 20px; }
+
+  .music__compare__col-products--mob {
+    display: block; }
+
+  .music__item-product__fav-compare__inner {
+    width: 20px !important; }
+
+  .music__compare .music__item-product__title {
+    font-size: 16px !important;
+    line-height: 24px; }
+  .music__compare .music__item-product__footer {
+    display: block !important; }
+    .music__compare .music__item-product__footer .music__item-product__btn-bay {
+      margin-top: 10px;
+      text-align: center; } }
 body {
   font-family: 'TT Norms';
   color: #585858; }
@@ -10790,7 +11054,7 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #e0d2c5;
-  height: 48px;
+  min-height: 48px;
   text-decoration: none;
   border-radius: 24px;
   display: -webkit-inline-box;
@@ -10803,6 +11067,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 174px;
+  padding: 5px;
   -webkit-box-shadow: 5px 5px 10px 0px #9b7a5d, -2px -2px 5px 0px #dec4ab;
           box-shadow: 5px 5px 10px 0px #9b7a5d, -2px -2px 5px 0px #dec4ab; }
   .music__btn span {
@@ -10811,7 +11076,8 @@ body {
     font-weight: bold;
     color: #585858;
     font-size: 20px;
-    line-height: 1; }
+    line-height: 1;
+    text-align: center; }
   .music__btn:hover {
     -webkit-box-shadow: 5px 5px 10px 0px #9b7a5d inset, -2px -2px 5px 0px #dec4ab inset;
             box-shadow: 5px 5px 10px 0px #9b7a5d inset, -2px -2px 5px 0px #dec4ab inset; }
@@ -11096,6 +11362,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .music__item-product__img--min {
+      min-height: 250px; }
     .music__item-product__img img {
       display: block;
       max-width: 100%;
@@ -11160,7 +11428,8 @@ body {
     padding: 0 15px;
     border-radius: 18px;
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    display: block; }
     .music__item-product__btn-bay.active {
       opacity: 1;
       visibility: visible; }
@@ -11213,7 +11482,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 0;
-  left: 0;
+  left: 15px;
   display: block !important; }
   .music__item-product__label li {
     padding-bottom: 10px; }
@@ -13784,5 +14053,162 @@ textarea.music__form__inp {
   font-size: 14px;
   line-height: 16px;
   color: #959595; }
+
+.swiper-button-disabled {
+  opacity: 0;
+  visibility: hidden; }
+
+.music__consul-form {
+  background-color: #bea68f;
+  border-radius: 0 20px 0 20px;
+  padding: 20px; }
+  .music__consul-form__wrap {
+    padding: 60px 20px;
+    border-radius: 0 20px 0 20px;
+    border: 1px solid #d9c9ba; }
+  .music__consul-form__label {
+    text-align: right;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Phenomena, sans-serif;
+    color: #fff;
+    text-transform: uppercase; }
+
+.music__footer__logo-mob,
+.music__header__mob {
+  display: none; }
+
+@media screen and (max-width: 1199px) {
+  .music__consul-form__label {
+    text-align: center;
+    padding-bottom: 20px; }
+
+  .music__header__top__col-nav {
+    display: none; }
+
+  .music__header__top__col-tel {
+    margin-left: auto; } }
+@media screen and (max-width: 991px) {
+  .music__footer__nav-box {
+    display: none; }
+
+  .music__footer__tel {
+    text-align: center; }
+
+  .music__footer__contact-mob {
+    text-align: center; }
+
+  .music__footer__email {
+    margin-bottom: 20px; }
+
+  .music__footer__soc {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .music__footer__logo-mob {
+    display: block;
+    margin-bottom: 20px; }
+    .music__footer__logo-mob svg {
+      display: block;
+      margin: 0 auto; }
+
+  .music__footer__bottom {
+    text-align: center; }
+    .music__footer__bottom .music__footer__logo {
+      display: none; }
+
+  .music__carusel-product .swiper-container {
+    padding: 0 20px !important;
+    margin: 0 -20px !important; }
+
+  .music__header__mob {
+    display: block;
+    padding-top: 10px; }
+    .music__header__mob .music__header__top__col-tel {
+      margin-left: auto; }
+    .music__header__mob__top-row {
+      padding-bottom: 10px; }
+
+  .music__header__top,
+  .music__header__middle,
+  .music__header__bottom {
+    display: none !important; }
+
+  .music__header__mob__navbar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .music__header__mob__navbar li {
+      -ms-flex-preferred-size: 36px;
+          flex-basis: 36px;
+      max-width: 36px; }
+      .music__header__mob__navbar li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #565656;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+        height: 30px; }
+
+  .music__header__mob__footer {
+    border-top: 1px solid #ededed;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden; }
+    .music__header__mob__footer.active {
+      height: auto;
+      opacity: 1;
+      visibility: visible; }
+    .music__header__mob__footer .container {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+
+  .music__header__mob__bottom-row {
+    padding-bottom: 5px; }
+
+  .music__header__mob__menu {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+  #actionToast {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .music__callback__center {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+    min-width: 270px;
+    padding: 0 20px 20px; }
+
+  .music__caption {
+    font-size: 30px; }
+
+  .music__callback__subtitle {
+    font-size: 14px;
+    line-height: 20px; }
+
+  .music__btn-top {
+    display: none; }
+
+  .music__footer {
+    padding-top: 25px; }
+
+  .music__footer__contact-mob {
+    padding-bottom: 0 !important; } }
+@media screen and (max-width: 440px) {
+  .music__consul-form__label {
+    font-size: 24px; } }
 
 /*# sourceMappingURL=style.css.map */

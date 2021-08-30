@@ -104,8 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-
-
     function setEqualHeight(elements) {
         var mainDivs = document.getElementsByClassName(elements);
         var maxHeight = 0;
@@ -115,14 +113,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         for (var i = 0; i < mainDivs.length; ++i) {
-            mainDivs[i].style.height = minHeight + "px";
+            mainDivs[i].style.minHeight = maxHeight + "px";
         }
     }
 
     /**
      * баннер с акцией в шапке сайта
      */
-    if(document.getElementById('actionToast')) {
+    if (document.getElementById('actionToast')) {
         let actionToast = document.getElementById('actionToast');
         let objActionToast = new bootstrap.Toast(actionToast);
         objActionToast.show();
@@ -141,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }*/
 
-    if(document.getElementById('priceRange')) {
+    if (document.getElementById('priceRange')) {
         let priceRange = document.getElementById('priceRange');
 
         noUiSlider.create(priceRange, {
@@ -165,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         priceRange.noUiSlider.on('update', function (values, handle) {
             //priceValue[handle].value = values[handle];
-            if(handle == 0) {
+            if (handle == 0) {
                 priceMin.value = values[handle];
             } else {
                 priceMax.value = values[handle];
@@ -174,6 +172,79 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    function activeSlideCompare() {
+        let compareSlider = new Swiper('#compareSlider', {
+
+            navigation: {
+                nextEl: '#compareSlider .button-next',
+                prevEl: '#compareSlider .button-prev',
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            //loop: true,
+            breakpoints: {
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    pagination: {
+                        el: "#compareSlider .pagination",
+                        type: "fraction",
+                    },
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+            on: {
+                init: function () {
+                    sinfroCompareRow();
+                },
+                resize: function () {
+                    sinfroCompareRow();
+                }
+            },
+
+        });
+
+
+    }
+
+    function sinfroCompareRow() {
+        let rowCompare = [].slice.call(document.querySelectorAll('.js-compare-props li'))
+        rowCompare.forEach(function (e) {
+            setEqualHeight(e.dataset.sinhro);
+        });
+    }
+
+
+    if (document.getElementById('compareSlider')) {
+        activeSlideCompare();
+
+        let compareSlider2 = new Swiper('#compareSlider2', {
+
+            navigation: {
+                nextEl: '#compareSlider2 .button-next',
+                prevEl: '#compareSlider2 .button-prev',
+            },
+            slidesPerView: 1,
+            pagination: {
+                el: "#compareSlider2 .pagination",
+                type: "fraction",
+            },
+            on: {
+                init: function () {
+
+                },
+            }
+        });
+
+        compareSlider2.slideTo(1);
+    }
 
 });
 

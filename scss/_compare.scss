@@ -1,0 +1,286 @@
+.music__compare__header {
+  min-height: 64px;
+  padding: 15px;
+  border-radius: 32px;
+  background-color: #f8f4ef;
+  margin-bottom: 30px;
+  &__col-count {
+    padding-left: 30px !important;
+  }
+  & > .row {
+    min-height: 34px;
+  }
+}
+.music__label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.music__count-products {
+  margin-left: 10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 2px;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #bda68f;
+  display: inline-block;
+  border-radius: 9px;
+
+}
+.music__list-filter {
+  margin-left: 20px;
+  li:not(:last-child) {
+    padding-right: 15px;
+  }
+}
+.music__radiobutton {
+  input {
+    display: none;
+    &:checked {
+      & + span {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: 2;
+          top: 8px;
+          left: 4px;
+          height: 8px;
+          width: 8px;
+          border-radius: 4px;
+          background-color: #585858;
+        }
+      }
+    }
+  }
+  span {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 24px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 4px;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      border-radius: 8px;
+      background-color: #fff;
+      border: 1px solid #eeeded;
+    }
+
+  }
+}
+.btn-sort {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #585858;
+}
+.music__page__sort {
+  padding-right: 30px !important;
+  .btn-sort {
+    margin-left: 10px;
+  }
+}
+.music__compare__header__mob-sort,
+.music__mob-compare-params,
+.music__compare__col-products--mob,
+.pagination {
+  display: none;
+}
+.music__item-product__fav-compare__inner.active {
+  color: #cebcab !important;
+}
+.music__compare__item {
+  padding: 0 !important;
+  .music__item-product__img {
+    padding: 0 30px;
+  }
+}
+.music__compare {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 70px;
+  .button-prev {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    z-index: 110;
+    width: 49px;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 7.986px 6.018px 10px 0px #e8e3df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-next {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    z-index: 110;
+    width: 49px;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: -3.536px -3.536px 5px 0px #faf7f4, 4px 3px 10px 0px #e8e3df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.music__nav-props {
+  display: block !important;
+  position: relative;
+  z-index: 100;
+  li {
+    padding: 5px 0;
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    font-weight: 500;
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background-color: #f3f3f3;
+      position: absolute;
+    }
+  }
+}
+.music__compare__col-props {
+  position: relative;
+  z-index: 100;
+}
+.music__compare__col-products {
+  position: relative;
+  z-index: 1;
+}
+.music__item-product__compare-list {
+  li {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .music__nav-props li {
+    padding-top: 2px;
+    padding-bottom: 30px;
+    font-size: 8px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  .music__compare__col-props {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 0;
+  }
+  .music__item-product__compare-list {
+    li {
+      padding-top: 20px;
+    }
+  }
+  .music__mob-compare-params {
+    display: block;
+    .music__mob-compare-params__title {
+      font-size: 20px;
+      line-height: 1;
+      font-weight: bold;
+    }
+    .music__lk-sender {
+      height: auto;
+      padding: 0 0 15px;
+    }
+  }
+  .music__item-product__compare-list {
+    margin-top: 50px;
+  }
+  .music__compare__col-products .music__item-product__category {
+    margin-top: 50px;
+  }
+  .music__compare .button-next,
+  .music__compare .button-prev {
+    top: 240px;
+    width: 30px;
+    height: 30px;
+
+  }
+  .music__compare__col-products .pagination {
+    display: block;
+    position: absolute;
+    z-index: 101;
+    top: 245px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .music__compare__header__col-filter {
+    display: none !important;
+  }
+  .music__page__header {
+    display: block !important;
+    padding-bottom: 30px;
+    .music__page__title {
+      padding-bottom: 15px;
+    }
+  }
+  .music__link--del {
+    margin-top: 0 !important;
+    padding: 10px 15px;
+    border: 1px solid #585858;
+    width: 100%;
+  }
+  .music__compare__header {
+    min-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .music__compare__header__col-count {
+    padding-left: 15px !important;
+  }
+  .music__compare__item .music__item-product__img {
+    padding: 0 20px;
+  }
+  .music__compare__col-products--mob {
+    display: block;
+  }
+  .music__item-product__fav-compare__inner {
+    width: 20px !important;
+  }
+  .music__compare {
+    .music__item-product__title {
+      font-size: 16px !important;
+      line-height: 24px;
+    }
+    .music__item-product__footer {
+      display: block !important;
+      .music__item-product__btn-bay {
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+}

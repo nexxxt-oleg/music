@@ -24,12 +24,133 @@
 
     <header class="music__header">
 
+        <div id="scrollMenu" class="music__header__mob">
+            <div class="music__header__mob__menu">
+                <div class="collapse" id="navMobMenu">
+                    <div class="music__header__mob__menu__top">
+                        <div class="container">
+                            <a  href="#navMobMenu" data-bs-toggle="collapse"  class="music__header__mob__menu__top__close">
+                                <svg class="icon-silver" width="12" height="12">
+                                    <use xlink:href="#svg-close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <ul class="nav music__header__mob__menu__list">
+                            <li><a href=""></a></li>
+                            <li><a href="">Виниловые проигрыватели</a></li>
+                            <li><a href="">Портативная акустика</a></li>
+                            <li><a href="">Аксессуары</a></li>
+                            <li><a href="">Системы хранения пластинок</a></li>
+                            <li><a href="">Подобрать проигрыватель</a></li>
+                            <li><a href="">Бренды</a></li>
+                            <li><a href="">Акции</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Оплата / Доставка</a></li>
+                            <li><a href="">Гарантия / Возврат</a></li>
+                            <li><a href="">Сервисные центры</a></li>
+                            <li><a href="">Контакты</a></li>
+                            <li><a href="">Как купить</a></li>
+                            <li><a href="">Кредит на покупку</a></li>
+                            <li><a href="">Часто задаваемые вопросы</a></li>
+                            <li><a href="">Подарочные сертификаты</a></li>
+                            <li><a href="">Бонусная программа</a></li>
+                            <li><a href="">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row music__header__mob__top-row">
+                    <div class="col-6">
+                        <a href="/">
+                            <svg width="200" height="28">
+                                <use xlink:href="#svg-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="music__header__top__col-tel">
+                            <a href="tel:88007005829" class="tel">8-800-700-58-29</a>
+                            <span class="music__header__work-time">Ежедневно с 9:00 до 20:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row music__header__mob__bottom-row">
+                    <div class="col-6">
+                        <div class="music__header__col-city">
+                            <div class="dropdown">
+                                <span class="music__city-btn dropdown-toggle" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
+                                    Санкт-Петербург
+                                </span>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                                    <li><a class="dropdown-item" href="#">Москва</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul class="nav music__header__mob__navbar">
+                            <li>
+                                <a href="" id="js-mob-search">
+                                    <svg class="icon" width="24" height="24">
+                                        <use xlink:href="#svg-search"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="icon" width="18" height="24">
+                                        <use xlink:href="#svg-user"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#navMobMenu"
+                                   data-bs-toggle="collapse"
+                                >
+                                    <svg class="icon" width="32" height="18">
+                                        <use xlink:href="#svg-menu"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobSearch" class="music__header__mob__footer">
+                <div class="container">
+                    <div  class="music__header__mob__search">
+                        <form action="" class="music__header__search-form">
+                            <div class="music__header__search">
+                                <input type="text" required="" class="music__header__search__inp" placeholder="Поиск">
+                                <button type="submit" class="music__header__search__submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="#a9a9a9"
+                                              d="M508.88,493.79,353.09,338a201.62,201.62,0,0,0,52.24-135.34C405.33,90.92,314.42,0,202.67,0S0,90.92,0,202.67,90.92,405.33,202.67,405.33A201.62,201.62,0,0,0,338,353.09L493.79,508.88a10.67,10.67,0,1,0,15.09-15.09ZM202.67,384c-100,0-181.34-81.34-181.34-181.33S102.69,21.33,202.67,21.33,384,102.68,384,202.67,302.65,384,202.67,384Z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <a id="searchClose" href="" class="smart-filter__header__close">
+                            <svg class="icon-silver" width="12" height="12">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="music__header__top">
             <div class="container">
                 <div class="music__header__top__row d-flex">
                     <div class="music__header__col-city">
                         <div class="dropdown">
-                            <span class="music__city-btn dropdown-toggle" id="dropdownCity" data-bs-toggle="dropdown"
+                            <span class="music__city-btn dropdown-toggle" data-bs-toggle="dropdown"
                                   aria-expanded="false">
                                 Санкт-Петербург
                             </span>
@@ -40,20 +161,12 @@
                         </div>
                     </div>
                     <div class="music__header__top__col-nav">
-                        <nav class="navbar navbar-expand-lg ">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarTopMenu">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse w-100" id="navbarTopMenu">
-                                <ul class="navbar-nav navbar-nav--top">
-                                    <li><a href="">Как купить</a></li>
-                                    <li><a href="">Оплата <span>/</span> Доставка</a></li>
-                                    <li><a href="">Гарантия <span>/</span> Возврат</a></li>
-                                    <li><a href="">Сервисные центры</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+                        <ul class="nav navbar-nav--top">
+                            <li><a href="">Как купить</a></li>
+                            <li><a href="">Оплата <span>/</span> Доставка</a></li>
+                            <li><a href="">Гарантия <span>/</span> Возврат</a></li>
+                            <li><a href="">Сервисные центры</a></li>
+                        </ul>
                     </div>
                     <div class="music__header__top__col-tel">
                         <a href="tel:88007005829" class="tel">8-800-700-58-29</a>
@@ -149,7 +262,8 @@
             <div class="container position-relative">
                 <div class="d-flex music__header__bottom__row">
                     <div class="music__header__bottom__col-toggle-btn">
-                        <button class="hamburger  hamburger--collapse navbar-toggler collapsed" data-bs-toggle="collapse"
+                        <button class="hamburger  hamburger--collapse navbar-toggler collapsed"
+                                data-bs-toggle="collapse"
                                 data-bs-target="#navDopMenu" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>

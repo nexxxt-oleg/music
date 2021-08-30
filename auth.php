@@ -91,7 +91,7 @@ include_once __DIR__ . '/inc/header.php'
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="music__reg-soc__btn slon__reg-soc__btn--inst">
+                                    <a href="" class="music__reg-soc__btn music__reg-soc__btn--inst">
 
                                         <div class="icon-box">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47.65 47.65" width="32" height="22" >

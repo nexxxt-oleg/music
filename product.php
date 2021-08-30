@@ -218,17 +218,17 @@ include_once __DIR__ . '/inc/header.php'
                             <span class="music__product__top-right__item__label">Цвет:</span>
                             <ul class="nav music__product__politra">
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color is_active">
+                                    <a href="" class="music__list-catalog__product__politra__color is_active">
                                         <img src="./img/color1.png" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color">
+                                    <a href="" class="music__list-catalog__product__politra__color">
                                         <img src="./img/color2.png" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color">
+                                    <a href="" class="music__list-catalog__product__politra__color">
                                         <img src="./img/color3.png" alt="">
                                     </a>
                                 </li>
