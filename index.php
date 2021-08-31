@@ -165,7 +165,7 @@ include_once __DIR__ . '/inc/header.php'
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-2">
-                    <div class="music__ico-rotate">
+                    <div class="music__ico-rotate music__mob-center">
 
                         <svg width="94" height="94" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.28 185.15">
                             <defs>
@@ -536,7 +536,7 @@ include __DIR__ . '/inc/callback.php';
                 <section class="music__box">
                     <header class="d-flex align-items-center justify-content-between music__box__header">
                         <h2 class="music__caption">Статьи и обзоры</h2>
-                        <a href="" class="music__more-link">Все cтатьи и обзоры</a>
+                        <a href="" class="music__more-link">Все cтатьи</a>
                     </header>
                     <aside class="row fpad40">
                         <div class="col-lg-4 fpad30">
@@ -623,49 +623,49 @@ include __DIR__ . '/inc/callback.php';
 
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__img">
                                 <img src="./img/inst.jpg" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__img">
                                 <img src="./img/inst.jpg" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__img">
                                 <img src="./img/inst.jpg" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__img">
                                 <img src="./img/inst.jpg" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__img">
                                 <img src="./img/inst.jpg" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__img">
                                 <img src="./img/inst.jpg" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12 col-mob-hidden">
                         <a href="" target="_blank" class="music__instagram__link">
                             <div class="music__instagram__link__more">
                                 <span></span>
@@ -673,6 +673,43 @@ include __DIR__ . '/inc/callback.php';
                                 <span></span>
                             </div>
                         </a>
+                    </div>
+                    <div class="col-12 only-mob music__mob-inst">
+                        <div class="swiper-container" id="slMobInst">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="" target="_blank" class="music__instagram__link">
+                                        <div class="music__instagram__link__img">
+                                            <img src="./img/inst.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" target="_blank" class="music__instagram__link">
+                                        <div class="music__instagram__link__img">
+                                            <img src="./img/inst.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" target="_blank" class="music__instagram__link">
+                                        <div class="music__instagram__link__img">
+                                            <img src="./img/inst.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-prev music__nav-slider" id="slMobInstPrev">
+                            <svg width="9" height="18">
+                                <use xlink:href="#svg-str-prev"></use>
+                            </svg>
+                        </div>
+                        <div class="button-next music__nav-slider" id="slMobInstNext">
+                            <svg width="9" height="18">
+                                <use xlink:href="#svg-str-next"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -74,6 +74,10 @@ body {
           span {
             color: #bea68f;
           }
+
+          &:hover {
+            color: #bea68f;
+          }
         }
       }
     }
@@ -88,19 +92,23 @@ body {
   &__col-city {
     flex-basis: 180px;
 
-    .dropdown-toggle {
-      color: #231e1f;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 18px;
-      cursor: pointer;
 
-      &::after {
-        border-top-color: #d9c9ba;
-      }
-    }
   }
 
+}
+.dropdown-menu.dropdown-menu--city {
+    color: #231e1f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    cursor: pointer;
+    margin-left: -5px !important;
+    padding-left: 0 !important;
+    box-shadow: 3px 3px 5px 0px #e8e3df;
+
+    &::after {
+      border-top-color: #d9c9ba;
+    }
 }
 
 .music__lk-btn {
@@ -115,6 +123,45 @@ body {
   font-size: 12px;
   line-height: 1;
   text-decoration: none;
+  &:hover {
+    color: $color_hover;
+  }
+}
+.music__header__mob__search {
+  display: flex;
+  .music__header__search-form {
+    flex-grow: 1;
+    .music__header__search {
+      position: relative;
+      max-width: 100%;
+      &__inp {
+        padding-right: 50px;
+      }
+      &__submit {
+        justify-content: flex-start;
+      }
+    }
+    &__close {
+      flex-basis: 30px;
+      min-width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 20px;
+    }
+  }
+}
+.music__mob-search {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  z-index: 102;
+}
+.music__header__mob {
+  position: relative;
+  z-index: 202;
 }
 
 .nav--soc {
@@ -124,10 +171,30 @@ body {
     a {
       display: block;
       color: #bea68f;
+      &:hover {
+        color: #d9c9ba;
+      }
     }
   }
 }
+.hamburger:hover {
+  .hamburger-inner {
+    background-color: #bea68f;
 
+    &::after,
+    &::before {
+      background-color: #bea68f;
+    }
+  }
+}
+.only-mob,
+.music__carusel-product .swiper-scrollbar,
+.music__col-toggle-cat {
+  display: none;
+}
+.music__mob-inst {
+  position: relative;
+}
 .music__header__middle {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -232,10 +299,22 @@ body {
       line-height: 12px;
       text-transform: uppercase;
       font-weight: 500;
+
+    }
+    &:hover {
+      .music__header__item-r__caption {
+        color: $color_hover;
+      }
     }
   }
 }
 
+.button-prev-home:hover,
+.button-next-home:hover,
+.button-next:hover,
+.button-prev:hover {
+  color: $color_hover;
+}
 .music__header__bottom__row {
   position: relative;
 }
@@ -270,6 +349,10 @@ body {
 
       svg {
         margin-right: 15px;
+      }
+
+      &:hover {
+        color: $color_hover;
       }
     }
   }
@@ -490,6 +573,9 @@ body {
           font-size: 24px;
           line-height: 30px;
           display: inline-block;
+          &:hover {
+            color: $color_hover;
+          }
         }
       }
     }
@@ -746,6 +832,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &--min {
       min-height: 250px;
     }
@@ -2705,8 +2792,10 @@ textarea.music__form__inp {
       height: 500%;
     }
   }
+
   &--min {
     height: 36px;
+
     span {
       font-size: 18px;
       padding: 0 15px;
@@ -2767,8 +2856,10 @@ textarea.music__form__inp {
       height: 500%;
     }
   }
+
   &--min {
     height: 36px;
+
     span {
       padding: 0 15px;
       font-size: 18px;
@@ -3637,12 +3728,14 @@ textarea.music__form__inp {
     font-size: 16px;
     line-height: 24px;
     padding-top: 8px;
+
     b {
       display: block;
       font-size: 18px;
       font-weight: bold;
     }
   }
+
   &:not(:last-child) {
     &::after {
       content: "";
@@ -3655,10 +3748,12 @@ textarea.music__form__inp {
       left: 36px;
     }
   }
+
   &__text {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 30px;
+
     b {
       font-weight: 500;
     }
@@ -3680,11 +3775,13 @@ textarea.music__form__inp {
   svg {
     display: block;
   }
+
   &__text2 {
     display: block;
     font-size: 12px;
     line-height: 14px;
   }
+
   &__text {
     display: block;
     font-size: 14px;
@@ -3692,12 +3789,15 @@ textarea.music__form__inp {
   }
 
 }
+
 .tpad10 {
   padding-top: 10px;
 }
+
 .music__left-ico {
   position: relative;
   padding-left: 35px;
+
   .ico {
     position: absolute;
     z-index: 1;
@@ -3706,9 +3806,11 @@ textarea.music__form__inp {
     color: #bea68f;
   }
 }
+
 .h-60 {
   min-height: 60px;
 }
+
 .music__phone {
   display: block;
   font-size: 20px;
@@ -3716,22 +3818,27 @@ textarea.music__form__inp {
   font-weight: bold;
   text-decoration: none !important;
 }
+
 .tpad30 {
   padding-top: 30px;
 }
+
 .fonts24 {
   font-size: 24px !important;
 }
+
 .music__link2 {
   display: inline-block;
   line-height: 20px;
   font-size: 14px;
   font-weight: 500;
   border-bottom: 1px solid #bea68f;
+
   &:hover {
     border-bottom-color: transparent;
   }
 }
+
 .music__section__sub-caption {
   padding-bottom: 30px;
   color: #bea68f;
@@ -3739,11 +3846,13 @@ textarea.music__form__inp {
   font-size: 14px;
   line-height: 20px;
 }
+
 .img-w {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .music__text__adv {
   &__big {
     font-size: 36px;
@@ -3752,6 +3861,7 @@ textarea.music__form__inp {
     font-weight: bold;
     padding-bottom: 5px;
   }
+
   &__min {
     font-size: 16px;
     line-height: 1;
@@ -3759,26 +3869,31 @@ textarea.music__form__inp {
     font-weight: bold;
   }
 }
+
 .music__brend--min {
   .music__brend__link {
     height: 140px;
   }
 }
+
 .musc__page__cart2 {
   height: 140px;
   display: flex;
   align-items: center;
   background-color: #f8f4ef;
+
   &__ico {
     flex-basis: 100px;
     display: flex;
     padding-right: 30px;
     max-width: 100px;
+
     svg {
       display: block;
       margin-left: auto;
     }
   }
+
   span {
     flex-basis: 100px;
     padding-right: 30px;
@@ -3788,28 +3903,34 @@ textarea.music__form__inp {
     line-height: 24px;
   }
 }
+
 .lpad15 {
   padding-left: 15px;
 }
+
 .fonts30 {
   font-size: 30px !important;
 }
+
 .music__service-adr {
   height: 100%;
   padding: 25px 30px 25px 25px;
   background-color: #f9f9f9;
+
   &__title {
     padding: 0 0 15px 32px;
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
   }
+
   &__info {
     li {
       position: relative;
       padding-left: 32px !important;
       font-size: 14px !important;
       line-height: 20px;
+
       .ico {
         position: absolute;
         z-index: 1;
@@ -3817,9 +3938,11 @@ textarea.music__form__inp {
         left: 0;
         color: #bea68f;
       }
+
       &:not(:last-child) {
         padding-bottom: 25px;
       }
+
       &::after {
         display: none !important;
       }
@@ -3827,18 +3950,23 @@ textarea.music__form__inp {
   }
 
 }
+
 .lk-top {
   background-color: #f8f4ef;
+
   &__nav {
     padding-bottom: 10px;
     align-items: center;
+
     li {
       &:not(:last-child) {
         padding-right: 30px;
       }
+
       &:last-child {
         margin-left: auto;
       }
+
       a {
         display: flex;
         align-items: center;
@@ -3847,9 +3975,11 @@ textarea.music__form__inp {
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
+
         &.active {
           color: #bea68f;
         }
+
         .lk-top__nav__ico {
           color: #585858;
           margin-right: 10px;
@@ -3863,6 +3993,7 @@ textarea.music__form__inp {
           background-color: #fff;
           box-shadow: -3.536px -3.536px 10px 0px #faf7f4, 7.986px 6.018px 20px 0px #e8e3df;
         }
+
         .lk-top__nav__ico2 {
           color: #585858;
           margin-right: 10px;
@@ -3878,25 +4009,30 @@ textarea.music__form__inp {
     }
   }
 }
+
 .music__form__desc {
   font-size: 14px;
   line-height: 16px;
   color: #959595;
 }
+
 .swiper-button-disabled {
   opacity: 0;
   visibility: hidden;
 }
+
 .music__consul-form {
   background-color: #bea68f;
   border-radius: 0 20px 0 20px;
   padding: 20px;
+
   &__wrap {
     padding: 60px 20px;
     border-radius: 0 20px 0 20px;
     border: 1px solid #d9c9ba;
   }
-  &__label{
+
+  &__label {
     text-align: right;
     font-size: 48px;
     line-height: 1.2;
@@ -3906,6 +4042,7 @@ textarea.music__form__inp {
     text-transform: uppercase;
   }
 }
+
 .music__footer__logo-mob,
 .music__header__mob {
   display: none;

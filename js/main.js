@@ -67,6 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
+    if (document.getElementById('slMobInst')) {
+
+        let slHomePic = new Swiper('#slMobInst', {
+            loop: true,
+            navigation: {
+                nextEl: '#slMobInstNext',
+                prevEl: '#slMobInstPrev',
+            },
+        });
+
+    }
 
     if (document.getElementsByClassName("music__slider-products").length) {
         let swiperCatalog = new Swiper('.music__slider-products', {
@@ -79,19 +90,23 @@ document.addEventListener("DOMContentLoaded", () => {
             spaceBetween: 30,
             breakpoints: {
                 300: {
-                    slidesPerView: 'auto',
-                    centeredSlides: true,
-                    simulateTouch: true,
+                    slidesPerView: 1,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                        draggable: true,
+                    },
                 },
                 440: {
                     slidesPerView: 2,
-                    centeredSlides: true,
-                    simulateTouch: true,
-                    spaceBetween: 10,
+                    spaceBetween: 15,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                        draggable: true,
+                    },
                 },
                 600: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
+                    spaceBetween: 20,
                 },
                 768: {
                     slidesPerView: 2,

@@ -53,5 +53,6 @@
                 <use xlink:href="#svg-str-next"></use>
             </svg>
         </div>
+        <div class="swiper-scrollbar"></div>
     </div>
 </div>
