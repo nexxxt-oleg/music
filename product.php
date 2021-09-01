@@ -194,7 +194,7 @@ include_once __DIR__ . '/inc/header.php'
                             Lenco L-3808 Matt Grey</h1>
                         <div class="music__product__top-right__item music__product__top-right__item--fav">
                             <div class="row">
-                                <div class="col-lg-5 col-xl-4">
+                                <div class="col-lg-5 col-xl-4 col-6">
                                     <a href="" class="music__product__link-ico">
                                         <svg width="24" height="21">
                                             <use xlink:href="#svg-fav"></use>
@@ -202,7 +202,7 @@ include_once __DIR__ . '/inc/header.php'
                                         В избранное
                                     </a>
                                 </div>
-                                <div class="col-lg-7 col-xl-8">
+                                <div class="col-lg-7 col-xl-8 col-6">
                                     <a href="" class="music__product__link-ico">
                                         <svg width="18" height="24">
                                             <use xlink:href="#svg-compare"></use>
@@ -260,12 +260,12 @@ include_once __DIR__ . '/inc/header.php'
                         <div class="music__product__top-right__item music__product__top-right__item--btn">
                             <div class="row music__product__btn-row">
                                 <div class="col-6 fpad15">
-                                    <button class="btn-bay">
+                                    <button class="btn-bay" data-bs-toggle="modal" data-bs-target="#orderModal">
                                         <span>В КОРЗИНУ</span>
                                     </button>
                                 </div>
                                 <div class="col-6 fpad15">
-                                    <button class="btn-border" data-toggle="modal" data-target="#oneBayModal">
+                                    <button class="btn-border" data-bs-toggle="modal" data-bs-target="#bayOneClickModal">
                                         <span>Купить в 1 клик</span>
                                     </button>
                                 </div>
@@ -1369,6 +1369,226 @@ include_once __DIR__ . '/inc/header.php'
     include __DIR__ . '/inc/callback.php';
     ?>
 </div>
+
+<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog--w9">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Товар добавлен в корзину</div>
+                <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+                <div class="order-info__item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="music__item-product__link">
+                                <ul class="music__item-product__label nav flex-column">
+                                    <li>
+                                        <div class="music__item-product__label__sale">
+                                            <span>-10%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <figure class="music__item-product__img">
+                                    <img src="./img/lot1.jpg" data-src="./img/lot1.jpg"
+                                         data-srcset="./img/lot1@2.jpg 2x" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-5">
+                            <div class="order-info__item__brand">L-3808 Matt Grey</div>
+                            <div class="order-info__item__title">
+                                ПРОФЕССИОНАЛЬНЫЙ ВИНИЛОВЫЙ
+                                ПРОИГРЫВАТЕЛЬ LENCO 3808
+                            </div>
+                            <div class="order-info__item__color">
+                                <img src="./img/color3.png" alt="">
+                            </div>
+                            <div class="order-info__item__price">
+                                <span class="music__item-product__old-price">31 990 <span class="b-rub">Р</span></span>
+                                <span class="music__item-product__price">29 490 <span class="b-rub">Р</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 ml-auto">
+                            <div class="order-info__item__links">
+                                <div class="music__product__count-box mb-20">
+                                    <button class="music__product__count-box__nav music__product__count-box__nav--minus"
+                                            onclick="countProduct('minus', 'countProduct')">
+                                        <svg width="12" height="12">
+                                            <use xlink:href="#svg-minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="2" data-product-id="3537" readonly=""
+                                           class="music__product__count-box__value" id="countProduct">
+                                    <button class="music__product__count-box__nav music__product__count-box__nav--plus"
+                                            onclick="countProduct('plus', 'countProduct')">
+                                        <svg width="12" height="12">
+                                            <use xlink:href="#svg-plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <a href="" class="btn-bay mb-20"><span>ПЕРЕЙТИ В КОРЗИНУ</span></a>
+                                <a href="" class="btn-border"><span>ПРОДОЛЖИТЬ ПОКУПКИ</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music__rele-slider">
+                    <div class="music__rele-slider__top d-flex align-items-center">
+                        <div class="music__rele-slider__caption">
+                            С этим товаром покупают
+                        </div>
+                        <ul class="nav ml-auto music__rele-slider__nav">
+                            <li>
+                                <div class="button-prev-top" id="prevRele">
+                                    <svg width="9" height="18">
+                                        <use xlink:href="#svg-str-prev"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-next-top" id="nextRele">
+                                    <svg width="9" height="18">
+                                        <use xlink:href="#svg-str-next"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-container" id="slRele">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                            <div class="swiper-slide slide-min">
+                                <?php
+                                include __DIR__ . '/inc/item-product.php';
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bayOneClickModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog--w9">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Купить в 1 клик</div>
+                <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="music__order-one-click">
+                            <div class="music__item-product__link">
+                                <ul class="music__item-product__label nav flex-column">
+                                    <li>
+                                        <div class="music__item-product__label__sale">
+                                            <span>-10%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <figure class="music__item-product__img">
+                                    <img src="./img/lot1.jpg" data-src="./img/lot1.jpg"
+                                         data-srcset="./img/lot1@2.jpg 2x" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="order-info__item__brand">L-3808 Matt Grey</div>
+                            <div class="order-info__item__title">
+                                ПРОФЕССИОНАЛЬНЫЙ ВИНИЛОВЫЙ
+                                ПРОИГРЫВАТЕЛЬ LENCO 3808
+                            </div>
+                            <div class="order-info__item__color">
+                                <img src="./img/color3.png" alt="">
+                            </div>
+                            <div class="order-info__item__price">
+                                <span class="music__item-product__old-price">31 990 <span class="b-rub">Р</span></span>
+                                <span class="music__item-product__price">29 490 <span class="b-rub">Р</span></span>
+                            </div>
+                            <div class="music__product__count-box">
+                                <button class="music__product__count-box__nav music__product__count-box__nav--minus"
+                                        onclick="countProduct('minus', 'countProduct2')">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-minus"></use>
+                                    </svg>
+                                </button>
+                                <input type="text" value="1" data-product-id="3537" readonly=""
+                                       class="music__product__count-box__value" id="countProduct2">
+                                <button class="music__product__count-box__nav music__product__count-box__nav--plus"
+                                        onclick="countProduct('plus', 'countProduct2')">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="" class="music__form music__form--one-bay-click">
+
+                            <div class="music__form__box-inp">
+                                <input type="text" required name="fio" class="music__form__inp" placeholder="Ваше имя*">
+                            </div>
+                            <div class="music__form__box-inp">
+                                <input type="tel" required name="tel" class="music__form__inp"
+                                       placeholder="Номер телефона*">
+                            </div>
+                            <div class="music__form__box-inp">
+                                <input type="email" required name="email" class="music__form__inp"
+                                       placeholder="Ваш E-mail*">
+                            </div>
+                            <div class="music__form__box-inp">
+                                <textarea name="text" class="music__form__inp" placeholder="Комментарий"></textarea>
+                            </div>
+                            <div class="music__form__box-inp">
+                                <button type="submit" class="btn-bay"><span>Купить</span></button>
+                            </div>
+                            <div class="music__form__ps">
+                                Нажимая на кнопку “Купить”, я принимаю условия<br>
+                                <a href="" target="_blank">Политики конфиденциальности</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="/js/product.js"></script>
 <?php
 include_once __DIR__ . '/inc/footer.php';

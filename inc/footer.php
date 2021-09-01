@@ -150,6 +150,7 @@
 
 <?php
 include_once __DIR__ . '/sprite.php';
+include_once __DIR__ . '/modal.php';
 ?>
 
 </div>

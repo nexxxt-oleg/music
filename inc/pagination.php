@@ -4,7 +4,7 @@
     </div>
     <nav class="music__page__pagination__nav">
         <ul class="nav justify-content-center align-items-center">
-            <li>
+            <li class="music__page__pagination__prev">
                 <a href="" class="music__page__pagination__nav__prev">
                     <svg width="9" height="18">
                         <use xlink:href="#svg-str-prev"></use>
@@ -18,7 +18,7 @@
             <li><a href="" class="music__page__pagination__nav__page">5</a></li>
             <li><span class="music__page__pagination__nav__dots">...</span></li>
             <li><a href="" class="music__page__pagination__nav__page">10</a></li>
-            <li>
+            <li class="music__page__pagination__next">
                 <a href="" class="music__page__pagination__nav__next">
                     <svg width="9" height="18">
                         <use xlink:href="#svg-str-next"></use>

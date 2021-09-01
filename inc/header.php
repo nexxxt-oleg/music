@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row music__header__mob__top-row">
                     <div class="col-6">
-                        <a href="/">
+                        <a href="/" class="music__header__mob__logo">
                             <svg width="200" height="28">
                                 <use xlink:href="#svg-logo"></use>
                             </svg>

@@ -286,3 +286,15 @@ function passOpen(e) {
         e.previousElementSibling.type = 'text';
     }
 }
+
+function countProduct(action, input) {
+    if (document.getElementById(input)) {
+        let count = parseInt(document.getElementById(input).value);
+        if (action == 'plus') {
+            document.getElementById(input).value = count + 1;
+        }
+        if (action == 'minus' && count > 1) {
+            document.getElementById(input).value = count * 1 - 1;
+        }
+    }
+}

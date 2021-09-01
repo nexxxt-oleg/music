@@ -107,7 +107,7 @@ include_once __DIR__ . '/inc/header.php'
                                         <label>
                                             <input type="file" name="file" multiple
                                                    id="uploaded-file">
-                                            Загрузить
+                                            <span>Загрузить</span>
                                         </label>
                                     </div>
                                     <div class="music__form__box-inp__example pt-0">

@@ -11989,6 +11989,8 @@ a {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 70px; }
+    .music__footer__email:hover {
+      border-bottom-color: #bea68f; }
   .music__footer__soc li:not(:last-child) {
     padding-right: 18px; }
   .music__footer__soc li {
@@ -12531,25 +12533,29 @@ textarea.music__form__inp {
   min-width: 140px; }
   .music__form__file-upload label {
     display: block;
-    position: relative;
-    cursor: pointer;
-    height: 36px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 18px;
-    color: #fff;
-    overflow: hidden;
-    background-color: #bea68f;
-    text-transform: uppercase;
-    font-family: Phenomena, sans-serif;
-    font-weight: bold;
-    padding: 0 !important;
-    font-size: 18px !important; }
+    position: relative; }
     .music__form__file-upload label input {
       position: absolute;
       opacity: 0;
-      top: 100%;
-      left: 100%; }
+      top: 200%;
+      left: 200%;
+      width: 1px;
+      height: 1px; }
+    .music__form__file-upload label span {
+      display: block;
+      cursor: pointer;
+      height: 36px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 18px;
+      color: #fff;
+      overflow: hidden;
+      background-color: #bea68f;
+      text-transform: uppercase;
+      font-family: Phenomena, sans-serif;
+      font-weight: bold;
+      padding: 0 !important;
+      font-size: 18px !important; }
 
 .pb-0 {
   padding-bottom: 0 !important; }
@@ -12576,6 +12582,7 @@ textarea.music__form__inp {
         flex-basis: 70px;
     height: 70px;
     min-width: 70px;
+    width: 70px;
     border-radius: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12686,6 +12693,8 @@ textarea.music__form__inp {
       font-size: 18px;
       line-height: 35px;
       border-radius: 18px; }
+      .music__filter-box__dropdown-menu__footer .music__filter-box__submit:hover {
+        background-color: #585858; }
 
 .music__filter-box__price-row {
   padding: 5px 0 30px;
@@ -13174,10 +13183,10 @@ textarea.music__form__inp {
         font-weight: 500; }
 
 .music__product__delivery__link {
-  display: block;
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 20px; }
 
 .music__product-pic__zoom {
   position: absolute;
@@ -13484,6 +13493,14 @@ textarea.music__form__inp {
       background-color: #bea68f; }
     .music__rev-box__wrap .music__page__pagination__more-page a {
       background-color: #f8f4ef; }
+      .music__rev-box__wrap .music__page__pagination__more-page a:hover {
+        color: #bea68f; }
+
+.music__page__pagination__more-page a:hover {
+  color: #bea68f; }
+
+.music__page__pagination__nav li a:hover {
+  color: #bea68f; }
 
 .rating-area {
   display: -webkit-box;
@@ -14159,6 +14176,160 @@ textarea.music__form__inp {
 .music__header__mob {
   display: none; }
 
+input:hover,
+input:active,
+input:focus-visible,
+input:focus,
+button:hover,
+button:active,
+button:focus-visible,
+button:focus {
+  outline: none !important; }
+
+.music__header__col-city .dropdown-toggle {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.modal-dialog.modal-dialog--w9 {
+  max-width: 900px; }
+
+.modal-dialog .order-info__item {
+  padding-top: 0;
+  border-bottom: none; }
+.modal-dialog .order-info__item__price {
+  padding-top: 15px; }
+  .modal-dialog .order-info__item__price > span {
+    display: block; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.order-info__item__links > a {
+  height: auto;
+  min-height: 36px; }
+  .order-info__item__links > a span {
+    font-size: 18px;
+    line-height: 24px; }
+
+.music__product__count-box {
+  height: 36px;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f9f9f9; }
+  .music__product__count-box__nav {
+    -ms-flex-preferred-size: 36px;
+        flex-basis: 36px;
+    min-width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: #585858; }
+    .music__product__count-box__nav:hover {
+      color: #231e1f; }
+  .music__product__count-box__value {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    height: 36px;
+    line-height: 36px;
+    background: transparent;
+    font-size: 18px;
+    color: #585858;
+    border: none; }
+
+.music__rele-slider__top {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0ebe7; }
+
+.music__rele-slider__caption {
+  font-family: Phenomena, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: bold; }
+
+.music__rele-slider__top li {
+  -ms-flex-preferred-size: 25px;
+      flex-basis: 25px;
+  min-width: 25px;
+  width: 25px; }
+  .music__rele-slider__top li > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30px;
+    width: 25px; }
+
+.slide-min .music__item-product__img {
+  min-height: 200px; }
+.slide-min .music__item-product {
+  padding: 0; }
+.slide-min .music__item-product__footer {
+  display: block !important; }
+  .slide-min .music__item-product__footer .music__item-product__btn-bay {
+    text-align: center;
+    margin-top: 10px; }
+
+.music__order-one-click {
+  text-align: center; }
+  .music__order-one-click .music__product__count-box {
+    max-width: 200px;
+    margin: 10px auto; }
+  .music__order-one-click .order-info__item__color {
+    width: 24px;
+    margin: 0 auto; }
+  .music__order-one-click .music__item-product__img {
+    min-height: 300px; }
+
+.music__product__link-ico:hover {
+  color: #bea68f !important; }
+  .music__product__link-ico:hover svg {
+    color: #231e1f !important; }
+
+.music__product__credit {
+  border-bottom: 1px solid transparent; }
+  .music__product__credit:hover {
+    border-bottom-color: #bea68f; }
+
+.music__product__delivery__link {
+  border-bottom: 1px solid transparent; }
+  .music__product__delivery__link:hover {
+    border-bottom-color: #bea68f; }
+
+.music__page__breadcrumbs a:hover {
+  color: #bea68f; }
+
 @media screen and (max-width: 1199px) {
   .music__consul-form__label {
     text-align: center;
@@ -14311,7 +14482,25 @@ textarea.music__form__inp {
     height: auto; }
 
   .music__home-slider__text {
-    padding: 30px 0; } }
+    padding: 30px 0; }
+
+  .music__box__item--action-desc {
+    padding-bottom: 30px; }
+
+  .music__footer {
+    padding-bottom: 72px; }
+
+  .music__page__header--cat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .music__page__header--cat .music__page__title {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      text-align: center; }
+    .music__page__header--cat .music__catalog-top__ico {
+      margin-right: auto;
+      margin-left: auto; } }
 @media screen and (max-width: 768px) {
   .music__callback__center {
     -ms-flex-preferred-size: 270px;
@@ -14365,7 +14554,11 @@ textarea.music__form__inp {
       .music__instagram__link.music__ico-rotate .music__instagram__link__ico .music__instagram__link__name {
         top: auto;
         position: relative;
-        margin-top: 15px; } }
+        margin-top: 15px; }
+
+  .music__page__pagination__prev,
+  .music__page__pagination__next {
+    display: none; } }
 @media screen and (max-width: 575px) {
   .music__consul-form__label {
     font-size: 24px; }
@@ -14443,7 +14636,37 @@ textarea.music__form__inp {
   .music__home-slider__item-img picture img,
   .music__home-slider__item-img,
   .music__home-slider__item-img picture {
-    height: 200px; } }
+    height: 200px; }
+
+  .music__page__pagination__nav li {
+    padding: 0; }
+
+  .music__page__title {
+    font-size: 30px; }
+
+  .music__filter-box__dropdown-menu {
+    left: auto !important;
+    margin-left: 0 !important; }
+    .music__filter-box__dropdown-menu.show {
+      /*transform: translate3d(0, 38px, 0px) !important;*/ }
+
+  .music__filter-box__dropdown-menu::after {
+    display: none; }
+
+  .music__text h1, .music__text .h1, .music__text .h1 {
+    font-size: 30px;
+    line-height: 1.3; }
+
+  .music__header__mob__logo svg {
+    width: 100%;
+    height: auto;
+    max-width: 130px; }
+
+  .music__header__top__col-tel .tel {
+    font-size: 14px; }
+
+  .music__header__top__col-tel .music__header__work-time {
+    font-size: 9px; } }
 @media screen and (max-width: 440px) {
   .music__carusel-product .music__nav-slider {
     display: none; }

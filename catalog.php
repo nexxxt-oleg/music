@@ -11,7 +11,7 @@ include_once __DIR__ . '/inc/header.php'
                             <li><span>Виниловые проигрыватели </span></li>
                         </ul>
                     </div>
-                    <header class="d-flex music__page__header">
+                    <header class="d-flex music__page__header music__page__header--cat">
                         <div class="music__catalog-top__ico">
                             <svg width="32" height="32">
                                 <use xlink:href="#svg-nav1"></use>
@@ -47,9 +47,9 @@ include_once __DIR__ . '/inc/header.php'
                                         <div class="dropdown-menu music__filter-box__dropdown-menu ">
                                             <div class="music__filter-box__dropdown-menu__top">
                                                 <div class="d-flex music__filter-box__price-row">
-                                                    <input type="text" class="music__filter-box__price" id="priceMin">
+                                                    <input type="text" class="music__filter-box__price" id="priceMin" readonly>
                                                     <span></span>
-                                                    <input type="text" class="music__filter-box__price" id="priceMax">
+                                                    <input type="text" class="music__filter-box__price" id="priceMax" readonly>
                                                 </div>
                                                 <div class="music__filter-box__range-price">
                                                     <div id="priceRange" data-max-price="100000"></div>

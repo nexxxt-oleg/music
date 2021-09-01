@@ -1113,7 +1113,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-
     if (document.getElementById('mobGallery')) {
 
         if (window.screen.width < 575) {
@@ -1158,7 +1157,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     try {
                         document.querySelector('.music__product__navigation__anchor.active').classList.remove('active');
                     } catch (e) {
-                        console.log( "не сработает" );
+                        console.log("не сработает");
                     }
 
                     scrollNavActiveItem.classList.add('active');
@@ -1175,7 +1174,7 @@ document.addEventListener("DOMContentLoaded", () => {
             var rect = el.getBoundingClientRect(),
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+            return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
         }
 
         let productTop = document.getElementById('productTop');
@@ -1185,7 +1184,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(topNavFix);
 
         function getScrollMenu() {
-            if(document.getElementById('productDescNav')) {
+            if (document.getElementById('productDescNav')) {
                 let el = document.getElementById('productDescNav');
                 if (pageYOffset > topNavFix) {
                     el.classList.add('active');
@@ -1226,5 +1225,47 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
+    /**
+     * модалка при добавлении товара в корзину
+     */
+    if (document.getElementById('orderModal')) {
+
+
+        let orderModal = document.getElementById('orderModal');
+        let relevantSliderPopup = '';
+        orderModal.addEventListener('shown.bs.modal', function (event) {
+            if (relevantSliderPopup === '') {
+                swiperRelevantSliderPopup();
+            }
+        });
+
+        function swiperRelevantSliderPopup() {
+            relevantSliderPopup = new Swiper('#slRele', {
+                navigation: {
+                    prevEl: '#prevRele',
+                    nextEl: '#nextRele',
+                },
+                slidesPerView: 4,
+                spaceBetween: 30,
+                breakpoints: {
+                    300: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1180: {
+                        slidesPerView: 4,
+                    },
+                }
+            });
+        }
+    }
 
 });
