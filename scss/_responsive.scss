@@ -178,6 +178,87 @@
       margin-left: auto;
     }
   }
+  .music__product__navigation__wrap {
+    display: none;
+  }
+  .music__section__mob-header {
+    display: block;
+  }
+  .music__section {
+    border-top: 1px solid #d9c9ba;
+  }
+  .music__section__mob-header__caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    height: 60px;
+    &::after {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-bottom: 1px solid #d9c9ba;
+      border-right: 1px solid #d9c9ba;
+      transform: rotate(-135deg);
+      transition: all 0.3s ease-in;
+    }
+    &.collapsed::after {
+      transform: rotate(45deg);
+    }
+  }
+  .music__section {
+    padding-top: 0;
+  }
+  .music__section__characteristic {
+    margin-top: 0;
+  }
+  .music__section.music__section--border {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .music__gallery-item img,
+  .music__next-gallery {
+    height: 200px;
+  }
+  .music__section-mob-group {
+    border-bottom: 1px solid #d9c9ba;
+    margin-bottom: 50px;
+  }
+  .music__section {
+    border-top: none;
+  }
+  .music__section__mob-header {
+    border-top: 1px solid #d9c9ba;
+  }
+  .music__rev-box__wrap {
+    padding-right: 0;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100vw;
+      left: 100%;
+      z-index: 10;
+      background-color: #f8f4ef;
+    }
+  }
+  .music__product__promo {
+    margin-top: 20px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .music__section__mob-body {
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -243,6 +324,13 @@
   .music__page__pagination__prev,
   .music__page__pagination__next{
     display: none;
+  }
+  .music__slider-set__item__action {
+    top: 100%;
+    right: 50%;
+    margin-right: -25px;
+    margin-top: -60px;
+    z-index: 100;
   }
 }
 
@@ -364,6 +452,21 @@
   .music__header__top__col-tel .music__header__work-time {
     font-size: 9px;
   }
+  .music__product__slider__min-img {
+    display: none;
+  }
+  .music__produc__title-mob {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Phenomena, sans-serif;
+    font-weight: bold;
+    display: block;
+  }
+  .music__product__top-right h1 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -387,4 +490,17 @@
   .music__home-slider__item-img picture  {
     height: 150px;
   }
+  .music__product-pic__item {
+    height: 300px;
+  }
+  .music__product__slider__big-img {
+    width: 100%;
+  }
+  .music__product__slider {
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+
 }

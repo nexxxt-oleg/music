@@ -1136,39 +1136,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    let section = document.querySelectorAll(".music__section");
-    let sections = {};
-    let i = 0;
 
-    Array.prototype.forEach.call(section, function (e) {
-        sections[e.id] = e.offsetTop;
-    });
-
-    window.onscroll = function () {
-        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-        for (i in sections) {
-            if (sections[i] <= scrollPosition) {
-                //console.log(i);
-                let scrollNavActiveItem = document.querySelector('#productDescNav a[href*=' + i + ']');
-                if (scrollNavActiveItem.classList.contains('active')) {
-
-                } else {
-                    try {
-                        document.querySelector('.music__product__navigation__anchor.active').classList.remove('active');
-                    } catch (e) {
-                        console.log("не сработает");
-                    }
-
-                    scrollNavActiveItem.classList.add('active');
-                }
-                //document.querySelector('.active').setAttribute('class', ' ');
-                //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
-            }
-        }
-    };
 
     if (window.screen.width > 991) {
+
+        let section = document.querySelectorAll(".music__section");
+        let sections = {};
+        let i = 0;
+
+        Array.prototype.forEach.call(section, function (e) {
+            sections[e.id] = e.offsetTop;
+        });
+
+        window.onscroll = function () {
+            let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+            for (i in sections) {
+                if (sections[i] <= scrollPosition) {
+                    //console.log(i);
+                    let scrollNavActiveItem = document.querySelector('#productDescNav a[href*=' + i + ']');
+                    if (scrollNavActiveItem.classList.contains('active')) {
+
+                    } else {
+                        try {
+                            document.querySelector('.music__product__navigation__anchor.active').classList.remove('active');
+                        } catch (e) {
+                            console.log("не сработает");
+                        }
+
+                        scrollNavActiveItem.classList.add('active');
+                    }
+                    //document.querySelector('.active').setAttribute('class', ' ');
+                    //document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+                }
+            }
+        };
+
 
         function offset(el) {
             var rect = el.getBoundingClientRect(),
@@ -1181,7 +1184,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let divOffset = offset(productTop);
         let topNavFix = productTop.scrollHeight + divOffset.top + 70;
 
-        console.log(topNavFix);
+        //console.log(topNavFix);
 
         function getScrollMenu() {
             if (document.getElementById('productDescNav')) {
@@ -1268,4 +1271,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    new ClipboardJS('#clickPromo');
 });

@@ -247,9 +247,25 @@ include_once __DIR__ . '/inc/header.php'
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 d-flex">
                                     <div class="music__product__promo">
-                                        <div class="music__product__promo__label">
+                                        <div id="promocod" class="music__product__promo__top collapse">
+                                            <div class="music__product__promo__wrap">
+                                                <a href="#promocod" data-bs-toggle="collapse"
+                                                   class="close">
+                                                    <svg class="icon-silver" width="12" height="12">
+                                                        <use xlink:href="#svg-close"></use>
+                                                    </svg>
+                                                </a>
+                                                <p>Получи скидку -10%<br>
+                                                по промокоду <b>LETO</b><br>
+                                                при заказе товара до 10 июня.</p>
+
+                                                <a href="" class="link">Все товары с этим промокодом</a>
+                                                <button class="btn-orange" id="clickPromo" data-clipboard-text="LETO">СКОПИРОВАТЬ ПРОМОКОД</button>
+                                            </div>
+                                        </div>
+                                        <div data-bs-toggle="collapse" data-bs-target="#promocod" class="music__product__promo__label collapsed">
                                             Скидка -10% по промокоду <b>LETO</b>
                                         </div>
                                     </div>
@@ -265,7 +281,8 @@ include_once __DIR__ . '/inc/header.php'
                                     </button>
                                 </div>
                                 <div class="col-6 fpad15">
-                                    <button class="btn-border" data-bs-toggle="modal" data-bs-target="#bayOneClickModal">
+                                    <button class="btn-border" data-bs-toggle="modal"
+                                            data-bs-target="#bayOneClickModal">
                                         <span>Купить в 1 клик</span>
                                     </button>
                                 </div>
@@ -299,7 +316,7 @@ include_once __DIR__ . '/inc/header.php'
     </div>
 </div>
 <div class="music__product__navigation">
-    <div class="music__product__navigation__wrap" id="productDescNav">
+    <div class="music__product__navigation__wrap " id="productDescNav">
         <div class="container">
 
             <ul class="nav">
@@ -328,286 +345,143 @@ include_once __DIR__ . '/inc/header.php'
     </div>
 </div>
 
-<div class="music__section" id="description">
-    <div class="music__product__full-screen  music__product__full-screen--n1">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 music__text text-white">
-                    <h2>Функция “Быстрый Запуск". Легко и просто</h2>
-                    <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную
-                        раскрутку пластинки до необходимой скорости, что также называется «быстрым запуском».</p>
-                </div>
-            </div>
-        </div>
-        <style>
-            @media screen and (min-width: 1921px) {
-                .music__product__full-screen--n1 {
-                    background-image: url("./img/bg-product1@2.jpg");
-                }
-            }
+<div class="music__section-mob-group">
 
-            @media screen and (max-width: 1920px) {
-                .music__product__full-screen--n1 {
-                    background-image: url("./img/bg-product1.jpg");
-                }
-            }
-        </style>
-    </div>
-    <div class="music__product__full-screen music__product__full-screen--n2">
-        <div class="container">
-            <div class="row flex-row-reverse align-items-center">
-                <div class="col-lg-6 music__text text-white">
-                    <h2>Профессиональный проигрыватель винила</h2>
-                    <p>Благодаря встроенному фонокорректору вы можете подключить Lenco L-3808 напрямую к микшеру или
-                        стереосистеме. Нет необходимости приобретать усилитель, ведь он уже встроен в L-3808.
-                        Наслаждайтесь винилом без искажений и помех. Предустановленный магнитный картридж Audio Technica
-                        гарантирует качественный звук при воспроизведении виниловых пластинок.</p>
-                </div>
+    <div class="music__section" id="description">
+        <div class="music__section__mob-header">
+            <div class="container">
+                <a href="#descriptionMob" data-bs-toggle="collapse" class="music__section__mob-header__caption collapsed">
+                    Описание
+                </a>
             </div>
         </div>
-        <style>
-            @media screen and (min-width: 1921px) {
-                .music__product__full-screen--n2 {
-                    background-image: url("./img/bg-product2@2.jpg");
-                }
-            }
-
-            @media screen and (max-width: 1920px) {
-                .music__product__full-screen--n2 {
-                    background-image: url("./img/bg-product2.jpg");
-                }
-            }
-        </style>
-    </div>
-    <div class="music__product__full-screen music__product__full-screen--n3">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 music__text text-white text-center">
-                    <h2>Возможность оцифровки записи через USB</h2>
-                    <p>Благодаря привлекательному внешнему виду, неподвластному времени, Lenco L-3808 вписывается в
-                        любой интерьер, позволяя вам наслаждаться качественным, аналоговым звуком. С Lenco L-3808 вы
-                        сможете оцифровать свои виниловые записи на свой компьютер. Проигрыватель поставляется со
-                        съёмной пылезащитной крышкой.</p>
-                </div>
-            </div>
-        </div>
-        <style>
-            @media screen and (min-width: 1921px) {
-                .music__product__full-screen--n3 {
-                    background-image: url("./img/bg-product3@2.jpg");
-                }
-            }
-
-            @media screen and (max-width: 1920px) {
-                .music__product__full-screen--n3 {
-                    background-image: url("./img/bg-product3.jpg");
-                }
-            }
-        </style>
-    </div>
-    <div class="container tpad70">
-        <div class="row align-items-center fpad70">
-            <div class="col-lg-6 music__box__item">
-                <div class="music__box__item__img music__box__item__img--h37">
-                    <img
-                            src="./img/action.jpg"
-                            data-src="./img/action.jpg"
-                            data-srcset="./img/action@2.jpg 2x"
-                            alt=""
-                    />
-                </div>
-            </div>
-            <div class="col-lg-6 music__box__item">
-                <div class="music__page__list__item__desc">
-                    <h2 class="music__box__item__title2">Встроенный фонокорректор</h2>
-                    <p>Благодаря встроенному фонокорректору вы можете подключить Lenco L-3808 напрямую к микшеру или
-                        стереосистеме. Нет необходимости приобретать усилитель, ведь он уже встроен в L-3808.
-                        Наслаждайтесь винилом без искажений и помех. Предустановленный магнитный картридж Audio Technica
-                        гарантирует качественный звук при воспроизведении виниловых пластинок.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center fpad70">
-            <div class="col-lg-6 music__box__item">
-                <div class="music__page__list__item__desc">
-                    <h2 class="music__box__item__title2">Магнитный картридж Audio Technica</h2>
-                    <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит моментальную
-                        раскрутку пластинки до необходимой скорости, что также называется «быстрым запуском».</p>
-                </div>
-            </div>
-            <div class="col-lg-6 music__box__item">
-                <div class="music__box__item__img music__box__item__img--h37">
-                    <img
-                            src="./img/action.jpg"
-                            data-src="./img/action.jpg"
-                            data-srcset="./img/action@2.jpg 2x"
-                            alt=""
-                    />
-                </div>
-            </div>
-        </div>
-        <div class="row fpad40">
-            <div class="col-lg-4 fpad30">
-                <div class="music__box__item">
-                    <figure class="music__box__item__img music__box__item__img--h26">
-                        <img
-                                src="./img/art.jpg"
-                                data-src="./img/art.jpg"
-                                data-srcset="./img/art@2.jpg 2x"
-                                alt=""
-                        />
-                    </figure>
-                    <div class="music__box__item__footer">
-                        <h2 class="music__box__item__title2">Противовес</h2>
-                        <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
-                            моментальную раскрутку пластинки до необходимой скорости.</p>
+        <div class="music__section__mob-body collapse" id="descriptionMob">
+            <div class="music__product__full-screen  music__product__full-screen--n1">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 music__text text-white">
+                            <h2>Функция “Быстрый Запуск". Легко и просто</h2>
+                            <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
+                                моментальную
+                                раскрутку пластинки до необходимой скорости, что также называется «быстрым запуском».</p>
+                        </div>
                     </div>
                 </div>
+                <style>
+                    @media screen and (min-width: 1921px) {
+                        .music__product__full-screen--n1 {
+                            background-image: url("./img/bg-product1@2.jpg");
+                        }
+                    }
+
+                    @media screen and (max-width: 1920px) {
+                        .music__product__full-screen--n1 {
+                            background-image: url("./img/bg-product1.jpg");
+                        }
+                    }
+                </style>
             </div>
-            <div class="col-lg-4 fpad30">
-                <div class="music__box__item">
-                    <figure class="music__box__item__img music__box__item__img--h26">
-                        <img
-                                src="./img/art.jpg"
-                                data-src="./img/art.jpg"
-                                data-srcset="./img/art@2.jpg 2x"
-                                alt=""
-                        />
-                    </figure>
-                    <div class="music__box__item__footer">
-                        <h2 class="music__box__item__title2">Противовес</h2>
-                        <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
-                            моментальную раскрутку пластинки до необходимой скорости.</p>
+            <div class="music__product__full-screen music__product__full-screen--n2">
+                <div class="container">
+                    <div class="row flex-row-reverse align-items-center">
+                        <div class="col-lg-6 music__text text-white">
+                            <h2>Профессиональный проигрыватель винила</h2>
+                            <p>Благодаря встроенному фонокорректору вы можете подключить Lenco L-3808 напрямую к микшеру или
+                                стереосистеме. Нет необходимости приобретать усилитель, ведь он уже встроен в L-3808.
+                                Наслаждайтесь винилом без искажений и помех. Предустановленный магнитный картридж Audio
+                                Technica
+                                гарантирует качественный звук при воспроизведении виниловых пластинок.</p>
+                        </div>
                     </div>
                 </div>
+                <style>
+                    @media screen and (min-width: 1921px) {
+                        .music__product__full-screen--n2 {
+                            background-image: url("./img/bg-product2@2.jpg");
+                        }
+                    }
+
+                    @media screen and (max-width: 1920px) {
+                        .music__product__full-screen--n2 {
+                            background-image: url("./img/bg-product2.jpg");
+                        }
+                    }
+                </style>
             </div>
-            <div class="col-lg-4 fpad30">
-                <div class="music__box__item">
-                    <figure class="music__box__item__img music__box__item__img--h26">
-                        <img
-                                src="./img/art.jpg"
-                                data-src="./img/art.jpg"
-                                data-srcset="./img/art@2.jpg 2x"
-                                alt=""
-                        />
-                    </figure>
-                    <div class="music__box__item__footer">
-                        <h2 class="music__box__item__title2">Противовес</h2>
-                        <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
-                            моментальную раскрутку пластинки до необходимой скорости.</p>
+            <div class="music__product__full-screen music__product__full-screen--n3">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6 music__text text-white text-center">
+                            <h2>Возможность оцифровки записи через USB</h2>
+                            <p>Благодаря привлекательному внешнему виду, неподвластному времени, Lenco L-3808 вписывается в
+                                любой интерьер, позволяя вам наслаждаться качественным, аналоговым звуком. С Lenco L-3808 вы
+                                сможете оцифровать свои виниловые записи на свой компьютер. Проигрыватель поставляется со
+                                съёмной пылезащитной крышкой.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <style>
+                    @media screen and (min-width: 1921px) {
+                        .music__product__full-screen--n3 {
+                            background-image: url("./img/bg-product3@2.jpg");
+                        }
+                    }
 
-        </div>
-    </div>
-</div>
-
-<div class="music__section " id="characteristic">
-    <div class="music__section__characteristic">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="music__section__caption">Характеристики</div>
-                </div>
-                <div class="col-lg-8 music__characteristic">
-                    <div class="music__characteristic__title">Проигрыватель</div>
-                    <ul class="music__characteristic__list nav d-block">
-                        <li>
-                            <dl class="music__characteristic__item row">
-                                <dt class="col-lg-6 col-6">Тип</dt>
-                                <dd class="col-lg-6 col-6">2-х скоростной с ручным управлением</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl class="music__characteristic__item row">
-                                <dt class="col-lg-6 col-6">Мотор</dt>
-                                <dd class="col-lg-6 col-6">8-полярный, 2-х фазный вентильный
-                                    электродвигатель
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl class="music__characteristic__item row">
-                                <dt class="col-lg-6 col-6">Тип привода</dt>
-                                <dd class="col-lg-6 col-6">Прямой привод</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <div class="music__characteristic__title">Предусилитель / фонокорректор</div>
-                    <ul class="music__characteristic__list nav d-block">
-                        <li>
-                            <dl class="music__characteristic__item row">
-                                <dt class="col-lg-6 col-6">Тип</dt>
-                                <dd class="col-lg-6 col-6">2-х скоростной с ручным управлением</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl class="music__characteristic__item row">
-                                <dt class="col-lg-6 col-6">Мотор</dt>
-                                <dd class="col-lg-6 col-6">8-полярный, 2-х фазный вентильный
-                                    электродвигатель
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl class="music__characteristic__item row">
-                                <dt class="col-lg-6 col-6">Тип привода</dt>
-                                <dd class="col-lg-6 col-6">Прямой привод</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </div>
+                    @media screen and (max-width: 1920px) {
+                        .music__product__full-screen--n3 {
+                            background-image: url("./img/bg-product3.jpg");
+                        }
+                    }
+                </style>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="music__section music__section--border" id="driver">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="music__section__caption">Драйверы и инструкции</div>
-            </div>
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-lg-6 fpad30">
-                        <a href="" download="" class="music__download-file">
-                            <svg width="29" height="36">
-                                <use xlink:href="#svg-download"></use>
-                            </svg>
-                            <span class="music__download-file__caption">Инструкция для L-3808</span>
-                            <span class="music__download-file__size">1.53 МБ</span>
-                        </a>
+            <div class="container tpad70">
+                <div class="row align-items-center fpad70">
+                    <div class="col-lg-6 music__box__item">
+                        <div class="music__box__item__img music__box__item__img--h37">
+                            <img
+                                    src="./img/action.jpg"
+                                    data-src="./img/action.jpg"
+                                    data-srcset="./img/action@2.jpg 2x"
+                                    alt=""
+                            />
+                        </div>
                     </div>
-                    <div class="col-lg-6 fpad30">
-                        <a href="" download="" class="music__download-file">
-                            <svg width="29" height="36">
-                                <use xlink:href="#svg-download"></use>
-                            </svg>
-                            <span class="music__download-file__caption">Инструкция для L-3809</span>
-                            <span class="music__download-file__size">1.53 МБ</span>
-                        </a>
+                    <div class="col-lg-6 music__box__item">
+                        <div class="music__page__list__item__desc">
+                            <h2 class="music__box__item__title2">Встроенный фонокорректор</h2>
+                            <p>Благодаря встроенному фонокорректору вы можете подключить Lenco L-3808 напрямую к микшеру или
+                                стереосистеме. Нет необходимости приобретать усилитель, ведь он уже встроен в L-3808.
+                                Наслаждайтесь винилом без искажений и помех. Предустановленный магнитный картридж Audio
+                                Technica
+                                гарантирует качественный звук при воспроизведении виниловых пластинок.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="music__section " id="overview">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="music__section__caption">Обзоры</div>
-            </div>
-
-            <div class="col-lg-8 fpad70">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href="" class="music__box__item">
-                            <figure class="music__box__item__img music__box__item__img--h37">
+                <div class="row align-items-center fpad70">
+                    <div class="col-lg-6 music__box__item">
+                        <div class="music__page__list__item__desc">
+                            <h2 class="music__box__item__title2">Магнитный картридж Audio Technica</h2>
+                            <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
+                                моментальную
+                                раскрутку пластинки до необходимой скорости, что также называется «быстрым запуском».</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 music__box__item">
+                        <div class="music__box__item__img music__box__item__img--h37">
+                            <img
+                                    src="./img/action.jpg"
+                                    data-src="./img/action.jpg"
+                                    data-srcset="./img/action@2.jpg 2x"
+                                    alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row fpad40">
+                    <div class="col-lg-4 fpad30">
+                        <div class="music__box__item">
+                            <figure class="music__box__item__img music__box__item__img--h26">
                                 <img
                                         src="./img/art.jpg"
                                         data-src="./img/art.jpg"
@@ -616,14 +490,15 @@ include_once __DIR__ . '/inc/header.php'
                                 />
                             </figure>
                             <div class="music__box__item__footer">
-                                <span class="music__box__item__date">21.04.2021</span>
-                                <h3 class="music__box__item__title">ION AUDIO НА CES 2021</h3>
+                                <h2 class="music__box__item__title2">Противовес</h2>
+                                <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
+                                    моментальную раскрутку пластинки до необходимой скорости.</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a href="" class="music__box__item">
-                            <figure class="music__box__item__img music__box__item__img--h37">
+                    <div class="col-lg-4 fpad30">
+                        <div class="music__box__item">
+                            <figure class="music__box__item__img music__box__item__img--h26">
                                 <img
                                         src="./img/art.jpg"
                                         data-src="./img/art.jpg"
@@ -632,352 +507,557 @@ include_once __DIR__ . '/inc/header.php'
                                 />
                             </figure>
                             <div class="music__box__item__footer">
-                                <span class="music__box__item__date">21.04.2021</span>
-                                <h3 class="music__box__item__title">ION AUDIO НА CES 2021</h3>
+                                <h2 class="music__box__item__title2">Противовес</h2>
+                                <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
+                                    моментальную раскрутку пластинки до необходимой скорости.</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a data-fancybox="video" href="https://www.youtube.com/watch?v=P_A2kNpyQBs"
-                           class="music__box__item">
-                            <figure class="music__box__item__img music__box__item__img--h20 music__box__item__img--video">
+                    <div class="col-lg-4 fpad30">
+                        <div class="music__box__item">
+                            <figure class="music__box__item__img music__box__item__img--h26">
                                 <img
                                         src="./img/art.jpg"
                                         data-src="./img/art.jpg"
                                         data-srcset="./img/art@2.jpg 2x"
                                         alt=""
                                 />
-                                <svg class="ico-play" width="70" height="49">
-                                    <use xlink:href="#svg-play"></use>
-                                </svg>
                             </figure>
                             <div class="music__box__item__footer">
-                                <span class="music__box__item__date">21.04.2021</span>
-                                <h3 class="music__box__item__title">ПРОИГРЫВАТЕЛь ВИНИЛА LENCO L-3808</h3>
+                                <h2 class="music__box__item__title2">Противовес</h2>
+                                <p>Lenco L-3808 подходит как для ди-джеев, так и для меломанов. Прямой привод обеспечит
+                                    моментальную раскрутку пластинки до необходимой скорости.</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="music__section " id="gallery">
-    <div class="container">
-        <div class="swiper-container" id="gallerySlider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="row row--nopad">
-                        <div class="col-12 col-md-8">
-                            <a href="/img/gallery2.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="music__next-gallery">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row row--nopad">
-                        <div class="col-12 col-md-8">
-                            <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a href="/img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
-                                <img
-                                        src="./img/gallery2.jpg"
-                                        data-src="./img/gallery2.jpg"
-                                        data-srcset="./img/gallery.jpg 2x"
-                                        alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="music__next-gallery">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="music__section " id="characteristic">
+        <div class="music__section__mob-header">
+            <div class="container">
+                <a href="#characteristicMob" data-bs-toggle="collapse"
+                   class="music__section__mob-header__caption collapsed">
+                    Характеристики
+                </a>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="music__section" id="reviews">
-    <div class="music__section__rev">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="music__rev-box">
-                        <div class="music__rev-box__wrap">
-                            <div class="music__section__caption">Отзывы <sup class="music__rev-box__count">22</sup>
-                            </div>
-                            <ul class="nav d-block music__rev-list">
-                                <li class="music__rev__item">
-                                    <div class="music__rev__item__header">
-                                        <div class="music__rev__item__header__col">
-                                            <span class="music__rev__item__fio">Александр</span>
-                                            <div class="rating-result">
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="164" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span>
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="music__rev__item__header__date">
-                                            10 июля 2021
-                                        </div>
-                                    </div>
-                                    <div class="music__rev__item__body">
-                                        Отличный дизайн, хороший звук, картридж Audio-Technica в комплекте, функция
-                                        оцифровки пластинок
-                                    </div>
+        <div class="music__section__mob-body collapse" id="characteristicMob">
+            <div class="music__section__characteristic">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="music__section__caption">Характеристики</div>
+                        </div>
+                        <div class="col-lg-8 music__characteristic">
+                            <div class="music__characteristic__title">Проигрыватель</div>
+                            <ul class="music__characteristic__list nav d-block">
+                                <li>
+                                    <dl class="music__characteristic__item row">
+                                        <dt class="col-lg-6 col-md-4 col-12">Тип</dt>
+                                        <dd class="col-lg-6 col-md-8 col-12">2-х скоростной с ручным управлением</dd>
+                                    </dl>
                                 </li>
-                                <li class="music__rev__item">
-                                    <div class="music__rev__item__header">
-                                        <div class="music__rev__item__header__col">
-                                            <span class="music__rev__item__fio">Александр</span>
-                                            <div class="rating-result">
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="164" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span>
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="music__rev__item__header__date">
-                                            10 июля 2021
-                                        </div>
-                                    </div>
-                                    <div class="music__rev__item__body">
-                                        Отличный дизайн, хороший звук, картридж Audio-Technica в комплекте, функция
-                                        оцифровки пластинок
-                                    </div>
+                                <li>
+                                    <dl class="music__characteristic__item row">
+                                        <dt class="col-lg-6 col-md-4 col-12">Мотор</dt>
+                                        <dd class="col-lg-6 col-md-8 col-12">8-полярный, 2-х фазный вентильный
+                                            электродвигатель
+                                        </dd>
+                                    </dl>
                                 </li>
-                                <li class="music__rev__item">
-                                    <div class="music__rev__item__header">
-                                        <div class="music__rev__item__header__col">
-                                            <span class="music__rev__item__fio">Александр</span>
-                                            <div class="rating-result">
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="164" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span class="active">
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                                <span>
-                                                    <svg width="14" height="14">
-                                                        <use xlink:href="#svg-star"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="music__rev__item__header__date">
-                                            10 июля 2021
-                                        </div>
-                                    </div>
-                                    <div class="music__rev__item__body">
-                                        Отличный дизайн, хороший звук, картридж Audio-Technica в комплекте, функция
-                                        оцифровки пластинок
-                                    </div>
+                                <li>
+                                    <dl class="music__characteristic__item row">
+                                        <dt class="col-lg-6 col-md-4 col-12">Тип привода</dt>
+                                        <dd class="col-lg-6 col-md-8 col-12">Прямой привод</dd>
+                                    </dl>
                                 </li>
                             </ul>
-                            <?php
-                            include __DIR__ . '/inc/pagination.php';
-                            ?>
+                            <div class="music__characteristic__title">Предусилитель / фонокорректор</div>
+                            <ul class="music__characteristic__list nav d-block">
+                                <li>
+                                    <dl class="music__characteristic__item row">
+                                        <dt class="col-lg-6 col-md-4 col-12">Тип</dt>
+                                        <dd class="col-lg-6 col-md-8 col-12">2-х скоростной с ручным управлением</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="music__characteristic__item row">
+                                        <dt class="col-lg-6 col-md-4 col-12">Мотор</dt>
+                                        <dd class="col-lg-6 col-md-8 col-12">8-полярный, 2-х фазный вентильный
+                                            электродвигатель
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="music__characteristic__item row">
+                                        <dt class="col-lg-6 col-md-4 col-12">Тип привода</dt>
+                                        <dd class="col-lg-6 col-md-8 col-12">Прямой привод</dd>
+                                    </dl>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <form action="" class="music__form music__form--rev">
-                        <div class="music__section__caption">Оставить отзыв</div>
-                        <div class="d-flex fpad30">
-                            <span class="music__form__label">Ваша оценка</span>
-                            <div class="rating-area">
-                                <input type="radio" id="star-5" name="rating" value="5">
-                                <label for=star-5" title="Оценка «5»">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-star"></use>
+            </div>
+        </div>
+    </div>
+
+    <div class="music__section music__section--border" id="driver">
+        <div class="music__section__mob-header">
+            <div class="container">
+                <a href="#driverMob" data-bs-toggle="collapse" class="music__section__mob-header__caption collapsed">
+                    Драйверы и инструкции
+                </a>
+            </div>
+        </div>
+        <div class="music__section__mob-body collapse" id="driverMob">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="music__section__caption">Драйверы и инструкции</div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-6 fpad30">
+                                <a href="" download="" class="music__download-file">
+                                    <svg width="29" height="36">
+                                        <use xlink:href="#svg-download"></use>
                                     </svg>
-                                </label>
-                                <input type="radio" id="star-4" name="rating" value="4">
-                                <label for="star-4" title="Оценка «4»">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-star"></use>
+                                    <span class="music__download-file__caption">Инструкция для L-3808</span>
+                                    <span class="music__download-file__size">1.53 МБ</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 fpad30">
+                                <a href="" download="" class="music__download-file">
+                                    <svg width="29" height="36">
+                                        <use xlink:href="#svg-download"></use>
                                     </svg>
-                                </label>
-                                <input type="radio" id="star-3" name="rating" value="3">
-                                <label for="star-3" title="Оценка «3»">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-star"></use>
-                                    </svg>
-                                </label>
-                                <input type="radio" id="star-2" name="rating" value="2">
-                                <label for="star-2" title="Оценка «2»">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-star"></use>
-                                    </svg>
-                                </label>
-                                <input type="radio" id="star-1" name="rating" value="1">
-                                <label for="star-1" title="Оценка «1»">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-star"></use>
-                                    </svg>
-                                </label>
+                                    <span class="music__download-file__caption">Инструкция для L-3809</span>
+                                    <span class="music__download-file__size">1.53 МБ</span>
+                                </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music__section " id="overview">
+        <div class="music__section__mob-header">
+            <div class="container">
+                <a href="#overviewMob" data-bs-toggle="collapse" class="music__section__mob-header__caption collapsed">
+                    Обзоры
+                </a>
+            </div>
+        </div>
+        <div class="music__section__mob-body collapse" id="overviewMob">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="music__section__caption">Обзоры</div>
+                    </div>
+
+                    <div class="col-lg-8 fpad70">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="" class="music__box__item">
+                                    <figure class="music__box__item__img music__box__item__img--h37">
+                                        <img
+                                                src="./img/art.jpg"
+                                                data-src="./img/art.jpg"
+                                                data-srcset="./img/art@2.jpg 2x"
+                                                alt=""
+                                        />
+                                    </figure>
+                                    <div class="music__box__item__footer">
+                                        <span class="music__box__item__date">21.04.2021</span>
+                                        <h3 class="music__box__item__title">ION AUDIO НА CES 2021</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="" class="music__box__item">
+                                    <figure class="music__box__item__img music__box__item__img--h37">
+                                        <img
+                                                src="./img/art.jpg"
+                                                data-src="./img/art.jpg"
+                                                data-srcset="./img/art@2.jpg 2x"
+                                                alt=""
+                                        />
+                                    </figure>
+                                    <div class="music__box__item__footer">
+                                        <span class="music__box__item__date">21.04.2021</span>
+                                        <h3 class="music__box__item__title">ION AUDIO НА CES 2021</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a data-fancybox="video" href="https://www.youtube.com/watch?v=P_A2kNpyQBs"
+                                   class="music__box__item">
+                                    <figure class="music__box__item__img music__box__item__img--h20 music__box__item__img--video">
+                                        <img
+                                                src="./img/art.jpg"
+                                                data-src="./img/art.jpg"
+                                                data-srcset="./img/art@2.jpg 2x"
+                                                alt=""
+                                        />
+                                        <svg class="ico-play" width="70" height="49">
+                                            <use xlink:href="#svg-play"></use>
+                                        </svg>
+                                    </figure>
+                                    <div class="music__box__item__footer">
+                                        <span class="music__box__item__date">21.04.2021</span>
+                                        <h3 class="music__box__item__title">ПРОИГРЫВАТЕЛь ВИНИЛА LENCO L-3808</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music__section " id="gallery">
+        <div class="music__section__mob-header">
+            <div class="container">
+                <a href="#galleryMob" data-bs-toggle="collapse" class="music__section__mob-header__caption collapsed">
+                    Галерея
+                </a>
+            </div>
+        </div>
+        <div class="music__section__mob-body collapse" id="galleryMob">
+            <div class="container">
+                <div class="swiper-container" id="gallerySlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row row--nopad">
+                                <div class="col-12 col-md-8">
+                                    <a href="/img/gallery2.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="music__next-gallery">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row row--nopad">
+                                <div class="col-12 col-md-8">
+                                    <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a href="./img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a href="/img/gallery.jpg" data-fancybox="gallery" class="music__gallery-item">
+                                        <img
+                                                src="./img/gallery2.jpg"
+                                                data-src="./img/gallery2.jpg"
+                                                data-srcset="./img/gallery.jpg 2x"
+                                                alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="music__next-gallery">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music__section" id="reviews">
+
+    <div class="music__section__mob-header">
+        <div class="container">
+            <a href="#reviewsMob" data-bs-toggle="collapse" class="music__section__mob-header__caption collapsed">
+                Отзывы
+            </a>
+        </div>
+    </div>
+    <div class="music__section__mob-body collapse" id="reviewsMob">
+        <div class="music__section__rev">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="music__rev-box">
+                            <div class="music__rev-box__wrap">
+                                <div class="music__section__caption">Отзывы <sup class="music__rev-box__count">22</sup>
+                                </div>
+                                <ul class="nav d-block music__rev-list">
+                                    <li class="music__rev__item">
+                                        <div class="music__rev__item__header">
+                                            <div class="music__rev__item__header__col">
+                                                <span class="music__rev__item__fio">Александр</span>
+                                                <div class="rating-result">
+                                                <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="164" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span>
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            <div class="music__rev__item__header__date">
+                                                10 июля 2021
+                                            </div>
+                                        </div>
+                                        <div class="music__rev__item__body">
+                                            Отличный дизайн, хороший звук, картридж Audio-Technica в комплекте, функция
+                                            оцифровки пластинок
+                                        </div>
+                                    </li>
+                                    <li class="music__rev__item">
+                                        <div class="music__rev__item__header">
+                                            <div class="music__rev__item__header__col">
+                                                <span class="music__rev__item__fio">Александр</span>
+                                                <div class="rating-result">
+                                                <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="164" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span>
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            <div class="music__rev__item__header__date">
+                                                10 июля 2021
+                                            </div>
+                                        </div>
+                                        <div class="music__rev__item__body">
+                                            Отличный дизайн, хороший звук, картридж Audio-Technica в комплекте, функция
+                                            оцифровки пластинок
+                                        </div>
+                                    </li>
+                                    <li class="music__rev__item">
+                                        <div class="music__rev__item__header">
+                                            <div class="music__rev__item__header__col">
+                                                <span class="music__rev__item__fio">Александр</span>
+                                                <div class="rating-result">
+                                                <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="164" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span class="active">
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                    <span>
+                                                    <svg width="14" height="14">
+                                                        <use xlink:href="#svg-star"></use>
+                                                    </svg>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            <div class="music__rev__item__header__date">
+                                                10 июля 2021
+                                            </div>
+                                        </div>
+                                        <div class="music__rev__item__body">
+                                            Отличный дизайн, хороший звук, картридж Audio-Technica в комплекте, функция
+                                            оцифровки пластинок
+                                        </div>
+                                    </li>
+                                </ul>
+                                <?php
+                                include __DIR__ . '/inc/pagination.php';
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="" class="music__form music__form--rev">
+                            <div class="music__section__caption">Оставить отзыв</div>
+                            <div class="d-flex fpad30">
+                                <span class="music__form__label">Ваша оценка</span>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for=star-5" title="Оценка «5»">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </label>
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка «4»">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </label>
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка «3»">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </label>
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка «2»">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </label>
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка «1»">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
 
 
-                        <div class="music__form__box-inp">
-                            <input type="text" required name="fio" class="music__form__inp" placeholder="Ваше имя*">
-                        </div>
-                        <div class="music__form__box-inp">
-                            <input type="email" required name="email" class="music__form__inp"
-                                   placeholder="Ваш E-mail*">
-                        </div>
-                        <div class="music__form__box-inp">
-                            <textarea name="text" class="music__form__inp" placeholder="Отзыв"></textarea>
-                        </div>
-                        <div class="music__form__box-inp">
-                            <input type="submit" class="music__form__submit" value="ОТПРАВИТЬ">
-                        </div>
-                        <div class="music__form__ps">
-                            Нажимая на кнопку “Отправить”, я принимаю условия<br>
-                            <a href="" target="_blank">Политики конфиденциальности</a>
-                        </div>
-                    </form>
+                            <div class="music__form__box-inp">
+                                <input type="text" required name="fio" class="music__form__inp" placeholder="Ваше имя*">
+                            </div>
+                            <div class="music__form__box-inp">
+                                <input type="email" required name="email" class="music__form__inp"
+                                       placeholder="Ваш E-mail*">
+                            </div>
+                            <div class="music__form__box-inp">
+                                <textarea name="text" class="music__form__inp" placeholder="Отзыв"></textarea>
+                            </div>
+                            <div class="music__form__box-inp">
+                                <input type="submit" class="music__form__submit" value="ОТПРАВИТЬ">
+                            </div>
+                            <div class="music__form__ps">
+                                Нажимая на кнопку “Отправить”, я принимаю условия<br>
+                                <a href="" target="_blank">Политики конфиденциальности</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+</div>
 <div class="container">
     <div class="music__section music__section--border">
         <h2 class="music__caption">Комплектом дешевле</h2>
