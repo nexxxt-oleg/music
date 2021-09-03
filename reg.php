@@ -52,8 +52,8 @@ include_once __DIR__ . '/inc/header.php'
                             <div class="music__form__box-inp">
                                 <input type="submit" class="music__form__submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
                             </div>
-                            <div class="music__text text-center">
-                                <a href="">Я уже зарегистрирован</a>
+                            <div class="text-center">
+                                <a href="" class="music__link-border">Я уже зарегистрирован</a>
                             </div>
                         </form>
                     </div>

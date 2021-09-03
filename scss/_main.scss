@@ -1511,6 +1511,9 @@ a {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
+    &:hover {
+      color: $color_hover;
+    }
   }
 
   &__email {
@@ -2980,6 +2983,9 @@ textarea.music__form__inp {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  &:hover {
+    color: #585858 !important;
+  }
 }
 
 .music__product__top-right__footer {
@@ -4177,7 +4183,11 @@ input:focus,
 button:hover,
 button:active,
 button:focus-visible,
-button:focus {
+button:focus,
+div:focus-visible,
+div:focus,
+a:focus-visible,
+a:focus {
   outline: none !important;
 }
 
@@ -4333,6 +4343,7 @@ button:focus {
   border-bottom: 1px solid transparent;
   &:hover {
     border-bottom-color: $color_hover;
+    color: #585858;
   }
 }
 .music__page__breadcrumbs a:hover {
@@ -4360,3 +4371,20 @@ button:focus {
     background: #ac9681;
   }
 }
+.music__link-border {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #585858;
+  border-bottom: 1px solid #bea68f;
+  &:hover {
+    color: #585858 !important;
+    border-bottom-color: transparent;
+  }
+}
+.lk-top__nav2__col {
+  min-width: 200px;
+}
+
+:focus {outline: none !important;}
+::-moz-focus-inner {border: 0px !important;}

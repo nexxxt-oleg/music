@@ -38,8 +38,8 @@ include_once __DIR__ . '/inc/header.php'
                             <div class="music__form__box-inp">
                                 <input type="submit" class="music__form__submit" value="ВОЙТИ">
                             </div>
-                            <div class="music__text text-center">
-                                <a href="">Зарегистрироваться</a>
+                            <div class="text-center">
+                                <a href="" class="music__link-border">Зарегистрироваться</a>
                             </div>
                         </form>
                     </div>

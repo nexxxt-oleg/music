@@ -14,7 +14,7 @@ include_once __DIR__ . '/inc/header.php'
                     <header class="d-flex justify-content-between music__page__header">
                         <h1 class="music__page__title">Личный кабинет</h1>
                         <a href="" class="d-flex align-items-center">
-                            <div class="lk-top__nav__ico2">
+                            <div class="lk-top__nav__ico2 mr-2">
                                 <svg width="18" height="18" class="ico">
                                     <use xlink:href="#svg-lk7"></use>
                                 </svg>

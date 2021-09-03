@@ -71,7 +71,7 @@ include_once __DIR__ . '/inc/header.php'
                     </div>
                     <div class="col-lg-4">
                         <div class="music__carusel-product__item music__item-product">
-                            <a href="" class="music__item-product__link">
+                            <div class="music__item-product__link">
                                 <ul class="music__item-product__label nav flex-column">
                                     <li>
                                         <div class="music__item-product__label__sale">
@@ -95,22 +95,24 @@ include_once __DIR__ . '/inc/header.php'
                                         </a>
                                     </li>
                                 </ul>
-                                <figure class="music__item-product__img">
-                                    <img
-                                            src="./img/lot1.jpg"
-                                            data-src="./img/lot1.jpg"
-                                            data-srcset="./img/lot1@2.jpg 2x"
-                                            alt=""
-                                    />
-                                </figure>
-                                <div class="music__item-product__category">
-                                    L-3808 Matt Grey
-                                </div>
-                                <div class="music__item-product__title">
-                                    ПРОФЕССИОНАЛЬНЫЙ ВИНИЛОВЫЙ
-                                    ПРОИГРЫВАТЕЛЬ LENCO 3808
-                                </div>
-                            </a>
+                                <a href="">
+                                    <figure class="music__item-product__img">
+                                        <img
+                                                src="./img/lot1.jpg"
+                                                data-src="./img/lot1.jpg"
+                                                data-srcset="./img/lot1@2.jpg 2x"
+                                                alt=""
+                                        />
+                                    </figure>
+                                    <div class="music__item-product__category">
+                                        L-3808 Matt Grey
+                                    </div>
+                                    <div class="music__item-product__title">
+                                        ПРОФЕССИОНАЛЬНЫЙ ВИНИЛОВЫЙ
+                                        ПРОИГРЫВАТЕЛЬ LENCO 3808
+                                    </div>
+                                </a>
+                            </div>
                             <div class="music__item-product__footer">
                                 <div class="music__item-product__footer__col-cost">
                                     <span class="music__item-product__old-price">31 990 <span
@@ -129,7 +131,7 @@ include_once __DIR__ . '/inc/header.php'
                 <h2 class="music__caption">Другие Новости</h2>
                 <div class="row">
                     <div class="col-lg-6 fpad30">
-                        <a href="" class="music__box__item">
+                        <a href="#" class="music__box__item">
                             <figure class="music__box__item__img">
                                 <img
                                         src="./img/new1.jpg"

@@ -253,6 +253,12 @@
     margin-top: 20px;
     margin-right: auto;
   }
+  .lk-top__nav {
+    display: block !important;
+    li {
+      padding: 15px 0 0;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -332,11 +338,45 @@
     margin-top: -60px;
     z-index: 100;
   }
+  .music__characteristic__item dt {
+    font-weight: 500 !important;
+    padding-bottom: 10px;
+  }
+  .music__rev-box {
+    padding-right: 0 !important;
+  }
+  .music__page__single-news {
+    padding: 0 0 30px;
+  }
+  .music__box-lk {
+    padding: 50px 0;
+  }
+  .music__box-lk__wrap {
+    padding: 30px 15px;
+  }
+  .music__box-lk__wrap__row,
+  .music__box-lk__col-right {
+    display: block !important;
+  }
+  .music__box-lk__col-right__col1 {
+    padding-top: 50px;
+  }
+  .music__box-lk__col-right__col2 > div {
+    text-align: center;
+  }
+  .music__text__adv {
+    padding-bottom: 15px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .music__consul-form__label {
     font-size: 24px;
+  }
+  .music__characteristic__item dt {
+    font-weight: 500 !important;
+    padding-bottom: 10px;
   }
   .music__home-slider__img-box {
     width: auto;
@@ -466,6 +506,13 @@
   }
   .music__product__top-right h1 {
     display: none;
+  }
+  .music__brend.music__brend--min {
+    display: block !important;
+  }
+  .order-info__btn {
+    justify-content: center !important;
+    padding-top: 15px;
   }
 }
 
