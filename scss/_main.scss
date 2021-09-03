@@ -544,12 +544,15 @@ body {
     line-height: 1;
     text-align: center;
   }
+
   &:hover {
     box-shadow: 2px 2px 5px 0px rgba(155, 122, 93, 1), -1px -1px 1px 0px rgba(222, 196, 171, 1);
+
     span {
       color: #231e1f;
     }
   }
+
   &:active {
     box-shadow: 5px 5px 10px 0px rgba(155, 122, 93, 1) inset, -2px -2px 5px 0px rgba(222, 196, 171, 1) inset;
   }
@@ -1511,6 +1514,7 @@ a {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
+
     &:hover {
       color: $color_hover;
     }
@@ -2551,6 +2555,7 @@ textarea.music__form__inp {
     width: calc(100% - 100px);
   }
 }
+
 .music__product__promo__top {
   position: absolute;
   bottom: 100%;
@@ -2559,21 +2564,25 @@ textarea.music__form__inp {
   width: 220px;
   margin-bottom: 20px;
 }
+
 .music__product__promo__wrap {
   background-color: #fff;
   padding: 15px;
   box-shadow: 0px 2px 8px 0px rgba(189, 166, 143, 0.5);
   position: relative;
+
   p {
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
     margin-bottom: 20px;
+
     b {
       color: #bea68f;
       font-weight: 700;
     }
   }
+
   .link {
     font-size: 12px;
     line-height: 18px;
@@ -2582,10 +2591,12 @@ textarea.music__form__inp {
     text-decoration: underline;
     margin-bottom: 15px;
     display: block;
+
     &:hover {
       text-decoration: none;
     }
   }
+
   .close {
     display: block;
     position: absolute;
@@ -2593,6 +2604,7 @@ textarea.music__form__inp {
     top: 10px;
     right: 10px;
   }
+
   &::after {
     content: "";
     display: block;
@@ -2607,10 +2619,12 @@ textarea.music__form__inp {
     transform: rotate(45deg);
   }
 }
+
 .music__product__promo {
   position: relative;
   margin-left: auto;
 }
+
 .music__product-thumbnail__item {
   width: 70px;
   height: 70px;
@@ -2983,6 +2997,7 @@ textarea.music__form__inp {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+
   &:hover {
     color: #585858 !important;
   }
@@ -4254,6 +4269,7 @@ a:focus {
     padding: 0;
     cursor: pointer;
     color: #585858;
+
     &:hover {
       color: #231e1f;
     }
@@ -4273,22 +4289,26 @@ a:focus {
     border: none;
   }
 }
+
 .music__rele-slider__top {
   padding-bottom: 15px;
   margin-bottom: 20px;
   border-bottom: 1px solid #f0ebe7;
 }
+
 .music__rele-slider__caption {
   font-family: $font-p;
   font-size: 36px;
   line-height: 1.2;
   font-weight: bold;
 }
+
 .music__rele-slider__top {
   li {
     flex-basis: 25px;
     min-width: 25px;
     width: 25px;
+
     & > div {
       display: flex;
       align-items: center;
@@ -4298,60 +4318,77 @@ a:focus {
     }
   }
 }
+
 .slide-min {
   .music__item-product__img {
     min-height: 200px;
   }
+
   .music__item-product {
     padding: 0;
   }
+
   .music__item-product__footer {
     display: block !important;
+
     .music__item-product__btn-bay {
       text-align: center;
       margin-top: 10px;
     }
   }
 }
+
 .music__order-one-click {
   text-align: center;
+
   .music__product__count-box {
     max-width: 200px;
     margin: 10px auto;
   }
+
   .order-info__item__color {
     width: 24px;
     margin: 0 auto;
   }
+
   .music__item-product__img {
     min-height: 300px;
   }
 }
+
 .music__product__link-ico:hover {
   color: #bea68f !important;
+
   svg {
     color: #231e1f !important;
   }
 }
+
 .music__product__credit {
   border-bottom: 1px solid transparent;
+
   &:hover {
     border-bottom-color: $color_hover;
   }
 }
+
 .music__product__delivery__link {
   border-bottom: 1px solid transparent;
+
   &:hover {
     border-bottom-color: $color_hover;
     color: #585858;
   }
 }
+
 .music__page__breadcrumbs a:hover {
   color: $color_hover;
 }
+
 .music__section__mob-header {
   display: none;
 }
+
 .btn-orange {
   display: block;
   text-align: center;
@@ -4367,24 +4404,37 @@ a:focus {
   line-height: 36px;
   font-family: $font-p;
   width: 100%;
+
   &:hover {
     background: #ac9681;
   }
 }
+
 .music__link-border {
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
   color: #585858;
   border-bottom: 1px solid #bea68f;
+
   &:hover {
     color: #585858 !important;
     border-bottom-color: transparent;
   }
 }
+
 .lk-top__nav2__col {
   min-width: 200px;
 }
 
-:focus {outline: none !important;}
-::-moz-focus-inner {border: 0px !important;}
+:focus {
+  outline: none !important;
+}
+
+::-moz-focus-inner {
+  border: 0px !important;
+}
+
+#navDopMenu {
+  transition: all 0.3s ease-in;
+}
